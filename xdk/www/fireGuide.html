@@ -1,0 +1,133 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+	<title>ASU Emergency Response</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+   
+    </head> 
+    <body>
+    
+<!-------------------------->    
+<!--------GUIDE FIRE-------->
+<!-------------------------->
+<div data-role="page"  id="fireGuide">   
+
+    <!--header-->
+	<div data-role="header" data-position="fixed" >
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Fire</h1>
+       <a href="index.html">Home</a>
+    </div>
+   
+    <div data-role="content">        
+        <h3 style="color:#800000;text-align:center">Fire Emergency</h3>
+        
+           <!---Fire sub-sections (Collapsible set)------>
+            <div data-role="collapsible-set" data-inset="true">   
+                
+                <!---Discover fire or smoke--->
+                <div data-role="collapsible">                    
+                    <h3>Discover Fire or Smoke</h3>
+                    <div>  
+                        <ul>
+                            <li>If alarm is not sounding, pull fire alarm located near an exit.</li><br/> 
+                            <li>Immediately exit the building.</li><br/>
+                            <li>Call 911. Or activate an emergency blue light call box.</li><br/>                             
+                        </ul>
+                    </div>
+                </div>
+                <div data-role="collapsible">                    
+                    <h3>Fire Alarm Is Activated/Informed of a Fire</h3>                      
+                        <ul>
+                            <li>Walk to the nearest exit. <b>DO NOT USE THE ELEVATORS.</b></li><br/> 
+                            <li>If able, assist people with special needs.</li><br/>
+                            <li>Notify emergency personnel if others are still inside the building.</li><br/> 
+                            <li>Gather outside at designated area away from building. DO NOT attempt to re-enter building until authorized to do so by emergency responders.</li><br/>
+                        </ul>
+                
+                <!---Caught in smoke--->
+                </div>
+                <div data-role="collapsible">                    
+                    <h3>If Caught in Smoke</h3>
+                    <div>  
+                        <ul>
+                            <li>Drop to hands and knees and crawl towards the nearest exit.</li><br/>                        
+                            <li>Stay low as smoke will rise to ceiling level.</li><br/> 
+                            <li>Hold your breath as much as possible; breathe through your nose and use a filter such as a shirt or towel.</li><br/> 
+                        </ul>
+                    </div> 
+                </div>
+                
+                <!---Trapped in a room--->
+                <div data-role="collapsible">                    
+                    <h3>If Trapped in a Room</h3>
+                    <div>  
+                        <ul>
+                            <li>Close as many doors as possible between you and the fire.</li><br/>                        
+                            <li>Wet and place a cloth material around or under the door to help prevent smoke from entering the room.</li><br/>
+                            <li>If room has an outside window, be prepared to signal someone outside.</li><br/>                             
+                        </ul>
+                    </div> 
+                </div>
+                
+                <!---Clothes on fire--->
+                <div data-role="collapsible">                    
+                    <h3>Clothing on Fire</h3>
+                    <div>  
+                        <p><b>STOP, DROP AND ROLL</b></p>
+                        <ul>
+                            <li>Roll person around on floor to smother flame.</li><br/>                        
+                            <li>Only drench with water if safety shower is immediately available.</li><br/>         
+                        <li>Obtain medical attention. Call 911.</li>
+                        </ul>
+                    </div> 
+                </div>
+                
+                <!---Contact--->
+                <div data-role="collapsible">                    
+                    <h3>Emergency Contacts</h3>
+                    <div> 
+                        <li style="font-weight:bold">ASU Police by campus:</li>
+                        <p>Tempe <a href="tel:1(480) 965-3456">480.965.3456</a> | Poly <a href="tel:1(480) 727-3456">480.727.3456</a> or <a href="tel:1(480) 727-3456">480.727.3456</a> after hours | West <a href="tel:1(602) 543-3456">602.543.3456</a> | Downtown <a href="tel:1(602) 496-3456">602.496.3456</a></p>
+                        <p>Also see <a href="contactPage.html">Emergency Contacts</a> page.</p>
+                    </div> 
+                </div>
+        
+                <!---Quiz--->
+                <div data-role="collapsible">                    
+                    <h3>Fire Safety Quiz</h3>
+                    <div>  
+                        <p>Take fire saftey quiz:</p>
+                        <a data-ajax = "false" href="FireQuiz.html" data-role="button">Take Quiz</a>
+                    </div> 
+                </div>
+        
+                <!---Training--->
+                <div data-role="collapsible">                    
+                    <h3>Fire Safety Training</h3>
+                    <div>  
+                        <p>Register for Fire Safety Training:</p>
+                        <a href="trainingPage.html" data-role="button">Training Page</a>
+                    </div> 
+                </div>             
+            </div> <!---End fire sub-sections--->
+        </div>
+    
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+
+    </div>
+    </body>
+ </html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+	<title>ASU Emergency Response</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+   
+    </head> 
+<body>
+
+
+
+<!-------------------------->
+<!------Power Outage-------->
+<!-------------------------->    
+<div data-role="page" >
+
+    <!--header-->
+	<div data-role="header" data-position="fixed" >
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Power Outage</h1>
+        <a href="index.html">Home</a>
+    </div>
+
+    <div data-role="content">
+        <h3 style="color:#800000;text-align:center">Power Outage</h3>
+
+           <!--- Sub-sections (Collapsible set)------>
+            <div data-role="collapsible-set" data-inset="true">
+
+                <!---Major Imminent Flooding--->
+                <div data-role="collapsible">
+                    <h3>General</h3>
+                    <div>
+                        <ul>
+                            <li>Remain calm and don't panic. </li><br/>
+                            <li>Keep flashlights and batteries in key locations throughout your work areas.</li><br/>
+                            <li>In the event of a major, campus-wide outage, ASU has emergency generators that will immediately provide power to some areas of the campus. </li><br/>
+                            <li>Report a minor, localized power outage to Facilities Management & ASU Police</li><br/>
+                        </ul>
+                    </div>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Major, Campus-Wide Outage</h3>
+                        <ul>
+                            <li>Remain Calm and don't panic.</li><br/>
+                            <li>Follow directions from the ASU Police Department for immediate action.</li><br/>
+                            <li>If evacuation of a building is required, see <a href="evacuationGuide.html">EVACUATION</a> section of this guide.</li><br/>
+                            <li>Laboratory personnel should secure all experiments and unplug electrical equipment prior to evacuating.</li><br>
+                            <li>All chemicals should be stored in their original locations.</li><br>
+                            <li>If safe to do so, provide natural ventilation by opening all windows and/or doors. If this is not possible, or natural ventilation is inadequate, evacuate the laboratory until the power is returned.</li><br/>
+                            <li>Do not light candles or other type of flame for lighting.</li><br/>
+                            <li>Unplug all electrical equipment (including computers) and turn off light switches.</li><br/>
+                            
+                        </ul>
+
+                </div>
+               <div data-role="collapsible">
+                   <h3>Stuck in an elevator</h3>
+                   <ul>
+                        <li>Tell passengers to stay calm and that you are getting help.</li><br>
+                       <li>Instruct passengers to pick up the emergency phone in elevator so they can provide direct information to the emergency responders.</li><br/>
+                        <li>Notify the appropriate ASU Police Department</li><br/>
+                        <li>Stay near passengers until police or other assistance arrives, provided it is safe to stay in the building</li><br/>
+                   </ul>
+            </div>
+                <!---Contact--->
+                <div data-role="collapsible">
+                    <h3>Emergency Contacts</h3>
+                    <div>                        
+                        <li style="font-weight:bold">Facilities Management</li>
+                        <p>Tempe <a href="tel:1(480) 965-3633">480.965.3633</a> |Poly <a href="tel:1(480) 727-1110">480.727.1110</a> or <a href="tel:1(480) 727-3456">480.727.3456</a> after hours | West <a href="tel:1(602) 543-3200">602.543.3200</a> | Downtown <a href="tel:1(602) 496-2500">602.496.2500</a> or <a href="tel:1(602) 496-1502)">602.496.1502</a> for Mercado</p>               
+                    
+                        <li style="font-weight:bold">ASU Police by campus:</li>
+                        <p>Tempe <a href="tel:1(480) 965-3456">480.965.3456</a> | Poly <a href="tel:1(480) 727-3456">480.727.3456</a> or <a href="tel:1(480) 727-3456">480.727.3456</a> after hours | West <a href="tel:1(602) 543-3456">602.543.3456</a> | Downtown <a href="tel:1(602) 496-3456">602.496.3456</a></p>  
+                        <p>Also see <a href="contactPage.html">Emergency Contacts</a> page.</p>
+                    </div>
+                </div>
+
+                <!---Quiz--->
+                <div data-role="collapsible">
+                    <h3>Power Outage Safety Quiz</h3>
+                    <div>
+                        <p>Take power outage safety quiz:</p>
+                        <a data-ajax = "false" href="PowerOutageQuiz.html" data-role="button">Take Quiz</a>
+                    </div>
+                </div>
+
+            </div> <!---End sub-sections--->
+        </div>
+
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+
+</div>
+    </body>
+    </html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+	<title>ASU Emergency Response</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+   
+    </head> 
+<body>
+
+<!-------------------------->
+<!--------EVACUATION-------->
+<!-------------------------->
+<div data-role="page" id="evacuationGuide">
+     <!--header-->
+	<div data-role="header" data-position="fixed" >
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Evacuation</h1>
+        <a href="index.html">Home</a>
+    </div>
+
+    <div data-role="content">
+        <h3 style="color:#800000;text-align:center">Evacuation</h3>
+        
+        <!--- Sub-sections (Collapsible set)------>
+        <div data-role="collapsible-set" data-inset="true">
+       <div data-role="collapsible">
+            <h3>General</h3>
+        <ul>
+            <li>Before an emergency, know the nearest exit and the best route to follow.</li><br/>
+            <li>Contact department head for emergency preparedness documentation and information.</li><br/>
+            <li>During evacuation, if time permits, secure your workspace and take personal items.</li><br />
+            <li>Complete campus evacuation is not necessary. However, in certain emergencies, it may be necessary to relocate all University personnel to a safer location.</li><br />
+        </ul>
+        </div>
+            <div data-role="collapsible">
+                <h3>Evacuation from a Building</h3>
+                <ul>
+                    <li><b>Walk</b>, do not run.</li><br/>
+                    <li><b>Do not</b> use elevators.</li><br/>
+                    <li>If safe to do so, assist people with special needs as indicated by that person, or direct to the nearest stairwell, and contact ASU Police.</li><br/>
+                    <li>Gather outside at a designated staging area. There, your supervisor will take roll and account for all personnel.</li><br />
+                    <li>If you cannot return to your building, wait for instructions from ASU Police or the organization in charge.</li>
+                </ul>
+            </div>
+               
+            <div data-role="collapsible">
+                <h3>"In-Place" Evacuations</h3>
+                
+                    <ul>
+                        <li>In some instances, it is safer to evacuate "in-place" than it is to leave a building, e.g. smoke or fire is immediately outside your room, live electrical wires bar access to the exit, individuals with mobility issues are above or below ground floors, etc.</li><br>
+                        <li>If the hazard is fire or smoke, see the <a href="fireGuide.html">FIRE</a> section of this guide.</li><br/>
+                        <li>If safe to do so, go to the nearest stairwell and tell someone who is evacuating to notify emergency personnel of your location and that you are unable to evacuate the building.</li><br/>
+                        <li>Call 911 and tell them your name, location, that you are unable to evacuate, and why you are unable to evacuate.</li>
+                    </ul>
+            
+            </div>
+           
+            <div data-role="collapsible">
+                <h3>On-campus Staging Areas</h3>
+                <ul>
+                    <li>In the event of building or area evacuation, you will be notified of staging areas.</li><br/>
+                    <li>Food, water, first aid, shelter, and information will be available at these areas.</li><br/>
+                </ul>     
+            </div>
+                   <!---Contact--->
+            <div data-role="collapsible">
+                <h3>Emergency Contacts</h3>
+                 <div>
+                        <li style="font-weight:bold">ASU Police by campus</li>
+                        <p>Tempe <a href="tel:1(480) 965-3456">480.965.3456</a> | Poly <a href="tel:1(480) 727-3456">480.727.3456</a> or <a href="tel:1(480) 727-3456">480.727.3456</a> after hours | West <a href="tel:1(602) 543-3456">602.543.3456</a> | Downtown <a href="tel:1(602) 496-3456">602.496.3456</a></p>
+                       
+                        <p>Also see <a href="contactPage.html">Emergency Contacts</a> page.</p>
+                    </div>
+            </div>
+
+                <!---Quiz--->
+            <div data-role="collapsible">
+                <h3>Evacuation Safety Quiz</h3>
+                <div>
+                    <p>Take Evacuation quiz:</p>
+                    <a data-ajax = "false" href="EvacuationQuiz.html" data-role="button">Take Quiz</a>
+                </div>
+            </div>
+
+        </div> <!---End evacuation sub-sections--->
+        
+    </div>
+    
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+
+</div>
+    </body>
+    </html>

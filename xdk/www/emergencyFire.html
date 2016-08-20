@@ -1,0 +1,283 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+	<title>ASU Emergency Response</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script> 
+    </head> 
+    
+    <body>
+        
+<!-------------------------->    
+<!------EMERGENCY FIRE------>
+<!-------------------------->
+    <div data-role="page"  id="emergencyFire">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Fire Emergency</h1>
+        <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">
+    <h3 style="color:#800000;text-align: center">Fire Emergency</h3><hr><br>
+        <li style="text-align: center">Are You Trapped?</li>
+        <a href="#trappedYes" data-role="button">Yes</a>
+        <a href="#trappedNo" data-role="button">No</a>         
+    </div>
+        
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+
+</div>
+        
+<!------------------------->    
+<!------TRAPPED YES-------->
+<!------------------------->
+    <div data-role="page"  id="trappedYes">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Fire Emergency</h1>
+       <a href="index.html">Home</a>
+    </div>    
+    
+    
+    <div data-role="content">
+        <h3 style="color:#800000;text-align: center">If You Are Trapped</h3>
+        <hr><br>
+        <ul>
+            <li>Call 911 and await instructions:</li>
+        </ul>
+        <a href="#callPopup" data-rel="popup" data-role="button" >Call 911</a><br><hr><br>
+        <ul>
+            <li>Call or signal for help.</li>    
+        </ul>            
+    </div>
+        
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+    
+    <!------CALL 911 POPUP------->   
+    <div data-role="popup" id="callPopup">    
+
+        <div data-role="content">
+            <p style="text-align:center">    Call 911:    </p><br>
+            <a href="#" data-role="button" data-inline="true">Yes</a>
+            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+        </div>
+    </div>
+    
+
+</div>
+        
+<!------------------------->    
+<!-------TRAPPED NO-------->
+<!------------------------->
+<div data-role="page"  id="trappedNo">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Fire Emergency</h1>
+       <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">
+        <h3 style="color:#800000;text-align: center">If You Are Not Trapped</h3><hr><br>
+        <li style="text-align: center">Is the alarm sounding?</li>
+        <a href="#alarmYes" data-role="button">Yes</a>  
+        <a href="#alarmNo" data-role="button">No</a>     
+    </div>
+    
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+</div>  
+        
+<!----------------------->    
+<!------ALARM YES-------->
+<!----------------------->
+<div data-role="page"  id="alarmYes">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Fire Emergency</h1>
+        <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">
+        <h3 style="color:#800000;text-align: center">If Alarm is Sounding</h3><hr><br>
+        <li style="text-align: center">Can you safely get to an exit?</li>
+        <a href="#exitYes" data-role="button">Yes</a>    
+        <a href="#exitNo" data-role="button">No</a>    
+    </div>
+        
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+
+</div>
+        
+<!----------------------->    
+<!-------ALARM NO-------->
+<!----------------------->
+ <div data-role="page"  id="alarmNo">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Fire Emergency</h1>
+        <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">
+        <h3 style="color:#800000;text-align: center">If Alarm is Not Sounding</h3><hr><br>
+        <li style="text-align: center">Find and activate alarm, located near exits.</li><br><br><hr><br>       
+        <li style="text-align: center">Can you safely exit the building?</li>
+        <a href="#exitYes" data-role="button">Yes</a> 
+        <a href="#exitNo" data-role="button">No</a> 
+                            
+     
+    </div>
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+
+</div>      
+
+<!----------------------->    
+<!------EXIT YES-------->
+<!----------------------->
+<div data-role="page"  id="exitYes">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Fire Emergency</h1>
+       <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">
+        <h3 style="color:#800000;text-align: center">If You Can Safely Exit</h3><hr><br>
+        <li style="text-align: center">Safely exit the building and call 911:</li>
+        <a href="#callPopup1" data-rel="popup" data-role="button">Call 911</a>    
+        <br><hr><br>
+        <li style="text-align: center">Notify emergency personnel of any persons trapped in the building.</li>     
+    </div>
+        
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+    
+    <!------CALL 911 POPUP------->   
+    <div data-role="popup" id="callPopup1">    
+
+        <div data-role="content">
+            <p style="text-align:center">    Call 911:    </p><br>
+            <a href="#" data-role="button" data-inline="true">Yes</a>
+            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+        </div>
+    </div>
+
+</div>
+        
+<!----------------------->    
+<!------EXIT NO-------->
+<!----------------------->
+    <div data-role="page"  id="exitNo">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Fire Emergency</h1>
+        <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">
+        <h3 style="color:#800000;text-align: center">If You Cannot Safely Exit</h3><hr><br>
+        <li style="text-align: center">Call 911 and await instructions.</li>
+         <a href="#callPopup2" data-rel="popup" data-role="button">Call 911</a><br><hr><br>
+        <li style="text-align: center;font-weight:strong">NOTE: If smoke is present stay near the ground, hold your breath as much as possible, breath through your nose and use a filter such as a shirt or towel.</li>     
+    </div>    
+        
+   <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+        
+    <!------CALL 911 POPUP------->   
+    <div data-role="popup" id="callPopup2">    
+
+        <div data-role="content">
+            <p style="text-align:center">    Call 911:    </p><br>
+            <a href="#" data-role="button" data-inline="true">Yes</a>
+            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+        </div>
+    </div>
+
+    </div>
+    </body>
+</html>

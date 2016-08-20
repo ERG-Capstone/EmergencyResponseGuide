@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>ASU Emergency Response</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+
+   <!-- the following script tag brings in the Google Maps API functions -->
+   <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+   
+<script>
+
+function initialize(){
+
+	//alert("init");
+
+	var opts = {zoom:16, mapTypeId: google.maps.MapTypeId.ROADMAP};
+	map = new google.maps.Map(document.getElementById("map_canvas"), opts);
+
+   if (navigator.geolocation){
+
+          var gps = navigator.geolocation;
+          gps.getCurrentPosition(function(position){
+                  var latLng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+
+				  map.setCenter(latLng);
+
+                  you = new google.maps.Marker({
+                          position: latLng,
+                          map: map
+                  });
+
+          });
+       document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+   }
+   else
+      alert("Your browser doesn't support geolocation.");
+
+}//end initialize
+
+function setDowntown(){
+
+	var downtownLatLng = new google.maps.LatLng(33.452665, -112.073814);
+	map.setCenter(downtownLatLng);
+	map.setZoom(16);
+	you = new google.maps.Marker({
+				position: downtownLatLng,
+	            map: map
+    });
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+}
+function setTempe(){
+
+	var tempeLatLng = new google.maps.LatLng(33.421945, -111.939799);
+	map.setCenter(tempeLatLng);
+	map.setZoom(16);
+	you = new google.maps.Marker({
+				position: tempeLatLng,
+	            map: map
+    });
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+}
+function setPoly(){
+
+	var polyLatLng = new google.maps.LatLng(33.307054, -111.684674);
+	map.setCenter(polyLatLng);
+	map.setZoom(16);
+	you = new google.maps.Marker({
+				position: polyLatLng,
+	            map: map
+    });
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+}
+function setWest(){
+
+	var westLatLng = new google.maps.LatLng(33.610746, -112.159990);
+	map.setCenter(westLatLng);
+	map.setZoom(16);
+	you = new google.maps.Marker({
+				position: westLatLng,
+	            map: map
+    });
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+}
+   </script>
+   </head>
+
+    <body>
+
+<!------------------------>
+<!--------MAP PAGE-------->
+<!------------------------>
+<div data-role="page">
+
+    <!--header-->
+	<div data-role="header"  >
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Map</h1>
+       <a href="index.html">Home</a>
+    </div>
+
+    <div data-role="content">
+        <h3 style="color:#800000;text-align:center">ASU Map</h3>
+		
+	<div>
+		<div id="map_canvas" style="width:100%; height:380px; float: left; border: 1px solid black; background: transparent url(ajax-loader.gif) no-repeat center center;"></div>
+	</div>
+	
+	<script>
+		//alert("Calling init() - mapPage");
+		initialize();
+	</script>
+	
+	<div data-role="content">
+		<p style="text-align:center">Select campus:</p>
+   		<input type="button" value="Tempe" onclick="setTempe();">
+        <input type="button" value="Downtown" onclick="setDowntown();">
+        <input type="button" value="Polytechnic" onclick="setPoly();">
+        <input type="button" value="West" onclick="setWest();"><br><hr><br>
+        <input type="button" value="My Location" onclick="initialize();">
+   </div>
+
+<!--footer-->
+	<div data-role="footer" >
+	   <div data-role="navbar">
+		<ul>
+		  <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+    </div>   
+</div>
+
+	</body>
+
+</html>

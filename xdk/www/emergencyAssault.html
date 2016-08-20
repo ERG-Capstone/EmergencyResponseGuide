@@ -1,0 +1,466 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+	<title>ASU Emergency Response</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>  
+    </head> 
+    
+    <body>
+        
+<!-------------------------->    
+<!----EMERGENCY ASSAULT----->
+<!-------------------------->
+    <div data-role="page"  id="emergencyAssault">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Assault Emergency</h1>
+        <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">
+    <h3 style="color:#800000;text-align: center">Personal Threat</h3><hr><br>
+        <li style="text-align: center">Are you being stalked?</li>
+        <a href="#stalkYes" data-role="button">Yes</a>
+        <a href="#stalkNo" data-role="button">No</a>         
+    </div>
+        
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+
+</div>
+        
+<!------------------------->    
+<!------stalk YES-------->
+<!------------------------->
+    <div data-role="page"  id="stalkYes">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Personal Threat</h1>
+       <a href="index.html">Home</a>
+    </div>    
+    
+    
+    <div data-role="content">
+        <h3 style="color:#800000;text-align: center">You Are Being Stalked</h3>
+        <hr><br>
+        <ul>
+            <li>Call 911:</li>
+        </ul>
+        <a href="#callPopup" data-rel="popup" data-role="button" >Call 911</a><br>
+        <hr style="margin-left:20px"><br>
+        <ul>
+        <li>Seek safety of others.</li><br> 
+		<li>Don't confront stalker.</li><br>  
+		<li>Take note of identifying features to report to police.</li><br>  		
+        </ul>            
+    </div>
+        
+  <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+    
+    <!------CALL 911 POPUP------->   
+    <div data-role="popup" id="callPopup">    
+
+        <div data-role="content">
+            <p style="text-align:center">    Call 911:    </p><br>
+            <a href="#" data-role="button" data-inline="true">Yes</a>
+            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+        </div>
+    </div>
+    
+
+</div>
+        
+<!------------------------->    
+<!-------stalk NO-------->
+<!------------------------->
+<div data-role="page"  id="stalkNo">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Personal Threat</h1>
+       <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">
+    <h3 style="color:#800000;text-align: center">Personal Threat</h3><hr><br>
+        <li style="text-align: center">Are you/someone else being assaulted?</li>
+        <a href="#assaultYes" data-role="button" data-ajax="false">Yes</a>
+        <a href="#assaultNo" data-role="button" data-ajax="false">No</a>         
+    </div>
+    
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+</div>  
+        
+<!----------------------->    
+<!----assault YES-------->
+<!----------------------->
+<div data-role="page"  id="assaultYes">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Personal Threat</h1>
+        <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">
+        <h3 style="color:#800000;text-align: center">Assault is taking place</h3>
+        <hr><br>
+        <ul>
+            <li>Call 911:</li>
+        </ul>
+        <a href="#callPopup" data-rel="popup" data-role="button" >Call 911</a><br>
+        <hr style="margin-left:20px"><br>
+        <ul>
+			<li>Remain with victim until help arrives.</li> 
+		</ul>		
+    </div>
+        
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+
+</div>
+        
+<!----------------------->    
+<!-------assault NO-------->
+<!----------------------->
+ <div data-role="page"  id="assaultNo">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Personal Threat</h1>
+        <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">
+    <h3 style="color:#800000;text-align: center">Personal Threat</h3><hr><br>
+        <li style="text-align: center">Are you/someone else experiening relationship violence?</li>
+        <a href="#relationYes" data-role="button">Yes</a>
+        <a href="#relationNo" data-role="button">No</a>         
+    </div>
+	
+	<!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+
+</div>      
+
+<!----------------------->    
+<!------relation YES----->
+<!----------------------->
+<div data-role="page"  id="relationYes">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Personal Threat</h1>
+       <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">
+        <h3 style="color:#800000;text-align: center">Experiencing Relationship Violence</h3><hr><br>
+        <li style="text-align: center">Call 911 for medical emergencies or immediate threats:</li>
+        <a href="#callPopup" data-rel="popup" data-role="button">Call 911</a>    
+        <br><hr><br>
+        <li style="text-align: center">Get support. Contact Counseling Services:</li>
+                <div data-role="collapsible">
+                	<h3>Students</h3>
+                	<p>Select campus:</p>
+                	<a href="#tempeStudents" data-rel="popup" data-role="button">Tempe</a>
+					<a href="#polyStudents" data-rel="popup" data-role="button">Polytechnic</a>
+                	<a href="#downtownStudents" data-rel="popup" data-role="button">West</a>
+                	<a href="#westStudents" data-rel="popup" data-role="button">Downtown</a>
+            	</div>
+            	<div data-role="collapsible">
+                	<h3>Employees</h3>
+                	<p>Call Employee Assistance Office:
+            		<a href="#empPopup" data-rel="popup" data-role="button">Call</a>
+            	</div>
+            		
+    </div>
+        
+   <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+    
+    <!------CALL 911 POPUP------->   
+    <div data-role="popup" id="callPopup">    
+
+        <div data-role="content">
+            <p style="text-align:center">    Call 911:    </p><br>
+            <a href="#" data-role="button" data-inline="true">Yes</a>
+            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+        </div>
+    </div>
+    
+    <!------Tempe STUDENT POPUP------->
+    <div data-role="popup" id="tempeStudents">
+
+        <div data-role="content">
+            <p style="text-align:center;font-weight:bold">    Call Student Counsiling:    </p>
+            <p style="text-align:center">(480) 965-6146</p>
+            <div style="text-align:center">
+            <a href="#" data-role="button" data-inline="true">Yes</a>
+            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+            </div>
+        </div>
+    </div>
+    <!------West STUDENT POPUP------->
+	    <div data-role="popup" id="westStudents">
+
+	        <div data-role="content">
+	            <p style="text-align:center;font-weight:bold">    Call Student Counsiling:    </p>
+	            <p style="text-align:center">(602) 543-8125</p>
+                <div style="text-align:center">
+	            <a href="#" data-role="button" data-inline="true">Yes</a>
+	            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+                </div>
+	        </div>
+    </div>
+    <!------ Poly STUDENT POPUP------->
+	    <div data-role="popup" id="polyStudents">
+
+	        <div data-role="content">
+	            <p style="text-align:center;font-weight:bold">    Call Student Counsiling:    </p>
+	            <p style="text-align:center">(480) 727-1255</p>
+                <div style="text-align:center">
+	            <a href="#" data-role="button" data-inline="true">Yes</a>
+	            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+                </div>
+	        </div>
+    </div>
+    <!------Downtown STUDENT POPUP------->
+	    <div data-role="popup" id="downtownStudents">
+
+	        <div data-role="content">
+	            <p style="text-align:center;font-weight:bold">    Call Student Counsiling:    </p>
+	            <p style="text-align:center">(602) 496-1155</p>
+                <div style="text-align:center">
+	            <a href="#" data-role="button" data-inline="true">Yes</a>
+	            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+                </div>
+	        </div>
+    </div>
+     <!------EMP POPUP------->
+    <div data-role="popup" id="empPopup">
+
+        <div data-role="content">
+            <p style="text-align:center;font-weight:bold">    Call Employee Counsiling:    </p>
+            <p style="text-align:center">(480) 965-2271</p>
+            <div style="text-align:center">
+            <a href="#" data-role="button" data-inline="true">Yes</a>
+            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+            </div>
+        </div>
+    </div>
+    <!------EMP POPUP------->
+    <div data-role="popup" id="empPopup">
+
+        <div data-role="content">
+            <p style="text-align:center;font-weight:bold">    Call Employee Counsiling:    </p>
+            <p style="text-align:center">(480) 965-2271</p>
+            <div style="text-align:center">
+            <a href="#" data-role="button" data-inline="true">Yes</a>
+            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+            </div>
+        </div>
+    </div>
+	
+	<!------CRISIS POPUP------->
+    <div data-role="popup" id="crisisPopup">
+
+        <div data-role="content">
+            <p style="text-align:center;font-weight:bold">    Call Crisis Line:    </p>
+            <p style="text-align:center">(480) 921-1006</p>
+            <div style="text-align:center">
+            <a href="#" data-role="button" data-inline="true">Yes</a>
+            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!----------------------->    
+<!----relation NO-------->
+<!----------------------->
+ <div data-role="page"  id="relationNo">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Personal Threat</h1>
+        <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">
+    <h3 style="color:#800000;text-align: center">Personal Threat</h3><hr><br>
+        <li style="text-align: center">Are you/someone else experiening a civil disturbance?</li>
+        <a href="#civilYes" data-role="button">Yes</a>
+        <a href="#civilNo" data-role="button">No</a>         
+    </div>
+	
+	<!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+
+</div> 
+        
+<!----------------------->    
+<!------CIVIL YES-------->
+<!----------------------->
+    <div data-role="page"  id="civilYes">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Personal Threat</h1>
+        <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">
+        <h3 style="color:#800000;text-align: center">Witness Civil Desturbance</h3><hr><br>
+        <ul>
+             <li>Call 911.</li>
+            </ul>
+        
+            <a href="#callPopup" data-rel="popup" data-role="button">Call 911</a><br>
+        <ul>
+            <li>Avoid provoking or obstructing demonstrators.</li><br/>
+            <li>Secure your area (lock doors, safes, files, vital records, etc.)</li><br/>
+            <li>Avoid area of disturbance.</li><br/>
+            <li>Continue with normal routines if possible.</li><br/>
+            <li>If the disturbance is outside, stay away from doors/windows. <b>STAY INSIDE!</b></li><br/>
+            <li>Prepare for evacuation or relocation. See <a href="evacuationGuide.html">Evacuation</a> Guide:</li><br/>
+        </ul>
+           
+
+            
+    </div>    
+        
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+        
+        <!------CALL 911 POPUP------->   
+    <div data-role="popup" id="callPopup">    
+
+        <div data-role="content">
+            <p style="text-align:center">    Call 911:    </p><br>
+            <a href="#" data-role="button" data-inline="true">Yes</a>
+            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+        </div>
+    </div>
+    </div>
+
+<!--------------------->    
+<!-----CIVIL NO-------->
+<!--------------------->
+ <div data-role="page"  id="civilNo">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Personal Threat</h1>
+        <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">
+    <h3 style="color:#800000;text-align: center">Personal Threat</h3><hr><br>
+        <li style="text-align: center">For all emergency situations call 911:</li><br>
+        <a href="#" data-role="button">Call 911</a>                 
+    </div>
+	
+	<!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+
+</div> 
+    </body>
+</html>

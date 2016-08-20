@@ -1,0 +1,165 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+	<title>ASU Emergency Response</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>  
+    </head> 
+    
+    <body>
+        
+<!-------------------------->    
+<!----EMERGENCY FLOOD----->
+<!-------------------------->
+    <div data-role="page"  id="">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Flood Emergency</h1>
+        <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">
+    <h3 style="color:#800000;text-align: center">Flood Emergency</h3><hr><br>
+        
+        <li style="text-align: center">Are you experiencing <span style="font-weight: bold;">Minor</span> or <span style="font-weight: bold;">Major</span> flooding?<br></li><br>
+        
+        <p>Choose one:</p>
+        <a href="#minor" data-role="button">Minor</a>
+        <a href="#major" data-role="button">Major</a>         
+    </div>
+        
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+
+</div>
+        
+<!------------------------->    
+<!------minor flooding----->
+<!------------------------->
+    <div data-role="page"  id="minor">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Flood Emergency</h1>
+       <a href="index.html">Home</a>
+    </div>    
+    
+    
+    <div data-role="content">
+        <h3 style="color:#800000;text-align: center">Minor Flooding</h3><hr><br>
+        <h3 style="text-align:center"><span style="font-weight: bold;">Do the following:</span></h3>
+        <ul>
+        <li>Secure vial equipment, records, chemicals, etc.</li><br>
+        <li>Move to higher, safer ground</li><br>
+		<li>Shut off electrical equipment</li><br>
+		<li>Secure laboratory experiments</li><br>  
+        <li>Assist those with special needs</li><br>  
+        </ul>
+        <a href="#minor2" data-role="button">Next</a>        
+    </div>
+        
+  <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>   
+
+</div>
+        
+<!------------------------->    
+<!-------major flood------->
+<!------------------------->
+<div data-role="page"  id="major">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Flood Emergency</h1>
+       <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">
+    <h3 style="color:#800000;text-align: center">Major Flooding</h3><hr><br>
+        <ul>
+        <li>ASU will be reposibe for notifying emergency personnel of major floods</li><br>
+        <li>Evacuate from campus immediately, as directed by Police & Fire officials.</li><br>
+        <li>Follow instructions from ASU emergency personnel and take immediate action.</li><br>
+        <li>Use extreme caution around appliances or outlets.</li>
+       
+        </ul>
+         <a href="#minor2" data-role="button">Next</a>
+    </div>
+    
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+</div>  
+        
+<!-------------------->    
+<!------minor2-------->
+<!-------------------->
+<div data-role="page"  id="minor2">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Personal Threat</h1>
+        <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">
+        <h3 style="color:#800000;text-align: center">Flood Emergency</h3>
+        <hr><br>
+        <ul>
+            <li>Notify emergency personnel if others are still inside building</li><br>
+            <li>Await instructions from ASU Police Department</li><br>
+            <li>DO NOT return to your building unless instructed to do so.</li>
+		</ul>
+        <a href="contactPage.html" data-role="button">Emergency Contacts</a> 
+    </div>
+        
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+
+
+   
+</div> 
+    </body>
+</html>

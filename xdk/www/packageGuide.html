@@ -1,0 +1,112 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+	<title>ASU Emergency Response</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+   
+    </head> 
+<body>
+
+<!-------------------------->
+<!--------Suspicious package-->
+<!-------------------------->
+<div data-role="page" id="packageGuide">
+     <!--header-->
+	<div data-role="header" data-position="fixed" >
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Suspicious Package</h1>
+        <a href="index.html">Home</a>
+    </div>
+
+    <div data-role="content">
+        <h3 style="color:#800000;text-align:center">Suspicious Package</h3>
+        
+        <!--- Sub-sections (Collapsible set)------>
+        <div data-role="collapsible-set" data-inset="true">
+       
+            <div data-role="collapsible">
+                <h3>General</h3>
+                <ul>
+                <li>If you receive or discover a suspicious package or foreign device, do not touch it, tamper with it, or move it!</li><br/>
+                <li><b>Immediately dial 911</b> to report it to Emergency Dispatch Center (ASU Police except Downtown Campus - Phoenix police)</li><br/>
+                
+                </ul> 
+                </div>
+            
+            <div data-role="collapsible">
+                        <h3>Package Recognition Checklist</h3>
+                        
+                        <br><b>Inspection of Packages<br>Look For:</b><br>
+                        <ul>
+                            <li>Foreign mail, air mail, and special deliveries</li><br>
+                            <li>Restrictive markings such as "confidential" or "personal"</li><br>
+                            <li>Excessive postage</li><br>
+                            <li>Handwritten or poorly typed address</li><br>
+                            <li>Incorrect titles</li><br>
+                            <li>Misspellings of common words</li><br>
+                            <li>Oily stains or discolorations on package</li><br>
+                            <li>Excessive weight</li><br>
+                            <li>Rigid, lopsided, or uneven envelopes</li><br>
+                            <li>Protruding wires or tinfoil</li><br>
+                            <li>Excessive tape or string</li><br>
+                            <li>Visual distractions</li><br>
+                            <li>No return address</li><br>
+                            <hr>
+                        </ul>
+                        
+                        <br><b>Handling Suspicious Packages:</b><br> 
+                        <ul>
+                            <li>Do not open or shake it</li><br>
+                            <li>Do not carry or show to others</li><br>
+                            <li>Do not sniff, touch, taste</li><br>
+                            <li>Do place on stable surface, preferable a Bio-Safety Cabinet.</li><br>
+                            <li>Do alert others in the area</li><br>
+                            <li>Leave the area, close doors and prevent others from entering by using signs or guarding</li><br>
+                            <li>Wash hands with soap and water</li><br>
+                            <li>Create a list of persons in the room where the package was received</li><br>
+                        </ul>
+                                                  
+                </div>
+                       
+             <!---Contact--->
+                <div data-role="collapsible">
+                    <h3>Emergency Contacts</h3>
+                    <div>                   
+                        <li style="font-weight:bold">ASU Police by campus</li>
+                        <p>Tempe <a href="tel:1(480) 965-3456">480.965.3456</a> | Poly <a href="tel:1(480) 727-3456">480.727.3456</a> or <a href="tel:1(480) 727-3456">480.727.3456</a> after hours | West <a href="tel:1(602) 543-3456">602.543.3456</a> | Downtown <a href="tel:1(602) 496-3456">602.496.3456</a></p>
+                       
+                    </div>
+                </div>
+
+                <!---Quiz--->
+                <div data-role="collapsible">
+                    <h3>Suspicious Package Safety Quiz</h3>
+                    <div>
+                        <p>Take suspicious package safety quiz:</p>
+                        <a data-ajax = "false" href="suspiciousPackageQuiz.html" data-role="button">Take Quiz</a>
+                    </div>
+                </div>
+            
+                
+        </div>
+        </div> 
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+            
+        </div>
+    
+	
+    </body>
+    </html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+	<title>ASU Emergency Response</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script> 
+   
+    </head> 
+<body>
+
+<!-------------------------->
+<!--------Medical Emergency-------->
+<!-------------------------->
+<div data-role="page" id="medicalGuide">
+     <!--header-->
+	<div data-role="header" data-position="fixed" >
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Medical Emergency</h1>
+        <a href="index.html">Home</a>
+    </div>
+
+    <div data-role="content">
+        <h3 style="color:#800000;text-align:center">Medical Emergency</h3>
+        
+        <ul>
+            <li>Call 911 before proceeding with following emergency reponses.</li><br/>
+            <li>The guidelines below are for Adult rescue. For individuals under the age of 8, follow the dispatcher's instructions.</li><br />
+        </ul>
+        <!--- Sub-sections (Collapsible set)------>
+        <div data-role="collapsible-set" data-inset="true">
+       
+            <div data-role="collapsible">
+                <h3>Victim is not breathing</h3>
+                
+                    <b>Start Rescue Breaths:</b>
+                    <hr>
+                <ul>
+                    <li>Tilt the victim's head back, lift the chin, pinch the nose shut.</li><br/>
+                    <li>Give 2 short 1 second breaths (Breathe into victim until chest gently rises).</li><br/>
+                    <li>Check for circulation, breathing, coughing and/or movement</li><br/>
+                </ul>
+                <b>If there are signs of circulation but not breathing</b>
+                <hr>
+                <ul>
+                                <li>Give one slow breath every 5 seconds.</li><br />
+                                <li>Re-check for circulation and breathing every minute. Keep rescue breathing until victim is breathing or medical assistance arrives.</li><br/>
+                </ul>
+                                   
+                <b>If no signs of circulation and still not breathing</b>
+                <hr>
+                    <ul>
+                        <li>Initiate Cardio Pulmonary Resuscitation (CPR)</li><br/>
+                        
+                    </ul>
+                </div>
+            <div data-role="collapsible">
+                        <h3>Start CPR</h3>
+                        <ul>
+                            <li>Find the notch where lower ribs meet the breastbone. Place the heel of your hand on the breastbone. Place your other hand on top of the first.</li><br/>
+                            <li>Position shoulders over hands. Compress chest 30 times (1-1/2 to 2 inches) using a smooth, even rhythm.</li><br/>
+                            <li>Give 2 short 1 second breaths.</li><br/>
+                            <li>Do five (5) more sets of (30) compressions and (2) breaths (approximately 100 compressions per minute).</li><br/>
+                            <li>Check for signs of circulation.</li><br/>
+                            <li>If there are signs of circulation, but victim is still NOT BREATHING, give one slow breath every 5 seconds (10 to 12 times per minute)</li><br/>
+                            <li>If there are no signs of circulation and victim is not breathing, continue CPR.</li><br/>
+                        </ul>
+                </div>
+                       
+                    <div data-role="collapsible">
+                        <h3>If AED available</h3>
+                        <p>AED Locations:</p>
+                        <a data-ajax = "false" href="AED.html" data-role="button">AED Locations</a>
+                        <ul>
+                            <li>Retrieve the closest AED unit.</li><br/>
+                            <li>If lay responder is trained with the use of an AED, proceed with using unit.</li><br/>
+                            <li>If lay responder is not trained, follow the dispatcher's instructions.</li><br/>
+                            <li>DO NOT use the AED on a patient laying in water or on any electrically conductive surface.</li><br/>
+                            <li>DO NOT operate the AED in a potentially explosive environment.</li><br/>
+                            <li><b>NOTE:</b> The use of an AED is necessary to revive a victim of cardiac arrest. The unit is automated and will only shock when necessary.</li><br/>
+                            <li>If an AED was used, contact ASU Environmental Health and Safety (See <a href="contactPage.html">Emergency Contacts</a> section.</li><br/>
+                        </ul>
+                    </div>
+            
+            <div data-role="collapsible">
+                        <h3>Choking (Abdominal Thrusts)</h3>
+                        <ul>
+                            <li>Call 911.</li><br/>
+                            <li>Get behind victim; wrap your arms around the persons waist, just above their navel.</li><br/>
+                            <li>Clasp your hands together in a double fist. PRESS IN AND UP IN QUICK THRUSTS.</li><br/>
+                            <li>Be careful not to exert pressure against victim’s rib cage with forearms.</li><br/>
+                            <li>Repeat procedure until choking stops.</li><br/>
+                            <li>Report incident to supervisor. Supervisor is responsible for notifying ASU EH&S.</li><br/>
+                        </ul>
+                </div>
+             <!---Contact--->
+                <div data-role="collapsible">
+                    <h3>Emergency Contacts</h3>
+                     <div>
+                        <li style="font-weight:bold">ASU Police by campus</li>
+                        <p>Tempe <a href="tel:1(480) 965-3456">480.965.3456</a> | Poly <a href="tel:1(480) 727-3456">480.727.3456</a> or <a href="tel:1(480) 727-3456">480.727.3456</a> after hours | West <a href="tel:1(602) 543-3456">602.543.3456</a> | Downtown <a href="tel:1(602) 496-3456">602.496.3456</a></p>
+                       
+                        <li style="font-weight:bold">Campus Health by campus</li>                      
+                        <p>Tempe <a href="tel:1(480) 965-3349">480.965.3349</a> | Poly <a href="tel:1(480) 727-1500">480.727.1500</a> | West <a href="tel:1(602) 543-8019">602.543.8019</a> | Downtown <a href="tel:1(602) 496-0721">602.496.0721</a> M-F 9am-4:30pm</p>          
+                        
+                        <li style="font-weight:bold">ASU Environmental Health & Safety</li>
+                        <p><a href="tel:1(480) 965-1823">480.965.1823</a> Mon-Fri, 8am-5pm. Nights and weekends call the ASU Police.</p>  
+                        <p>Also see <a href="contactPage.html">Emergency Contacts</a> page.</p>
+                    </div>
+                </div>
+
+                <!---Quiz--->
+                <div data-role="collapsible">
+                    <h3>Medical Emergency Quiz</h3>
+                    <div>
+                        <p>Take medical emergency safety quiz:</p>
+                        <a  data-ajax = "false" href="MedicalEmergencyQuiz.html" data-role="button">Take Quiz</a>
+                    </div>
+                </div>
+            
+            <!---Training--->
+                <div data-role="collapsible">                    
+                    <h3>Medical Emergency Training</h3>
+                    <div>  
+                        <p>Register for Medical Emergency Training:</p>
+                        <a href="trainingPage.html" data-role="button">Training Page</a>
+                    </div> 
+                </div> 
+            
+                
+        </div>
+        </div>   
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+            
+        </div><!---End Medical Emergency sub-sections--->
+    
+    </body>
+    </html>

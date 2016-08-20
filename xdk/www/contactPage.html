@@ -1,0 +1,350 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+	<title>ASU Emergency Response</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script> 
+
+    </head>
+<body>
+
+<!------------------------->
+<!-----CONTACTS PAGE------->
+<!------------------------->
+<div data-role="page"  id="contactPage">
+    <!--header-->
+	<div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Contacts</h1>
+        <a href="index.html">Home</a>
+    </div><!-- /header -->
+
+    <div data-role="content">
+        <h3 style="color:#800000;text-align:center">ASU Emergency Contacts</h3>
+        <hr><br>
+
+        <div data-role="collapsible-set" data-inset="true">
+            <div data-role="collapsible">
+                <h3>ASU Police Department</h3>
+                <p >Choose campus:</p>
+                <a href="#tempePolice" data-rel="popup" data-role="button">Tempe</a>
+                <a href="#polyPolice" data-rel="popup" data-role="button">Polytechnic</a>
+                <a href="#westPolice" data-rel="popup" data-role="button">West</a>
+				<a href="#dwtnPolice" data-rel="popup" data-role="button">Downtown</a>
+            </div>
+            <div data-role="collapsible">
+			    <h3>Facilities Management</h3>
+			    <p >Choose Campus:</p>
+			    <a href="#facmanTempe" data-rel="popup" data-role="button">Tempe</a>
+			    <a href="#facmanPoly" data-rel="popup" data-role="button">Polytechnic</a>
+			    <a href="#facmanDwtn" data-rel="popup" data-role="button">West</a>
+			    <a href="#facmanWest" data-rel="popup" data-role="button">Downtown</a>
+            </div>
+            <div data-role="collapsible">
+				<h3>Campus Health Services</h3>
+				<p >Choose Campus:</p>
+				<a href="#tempeHealth" data-rel="popup" data-role="button">Tempe</a>
+				<a href="#polyHealth" data-rel="popup" data-role="button">Polytechnic</a>
+				<a href="#westHealth" data-rel="popup" data-role="button">West</a>
+				<a href="#dwtnHealth" data-rel="popup" data-role="button">Downtown</a>
+            </div>
+            <div data-role="collapsible">
+                <h3>Environmental Health & Safety</h3>
+                <p >Call Environmental Health & Safety:</p>
+                <a href="#EHSPopup" data-rel="popup" data-role="button">Call</a>
+            </div>
+            <div data-role="collapsible">
+                <h3>Insurance Services</h3>
+                <p >Call ASU Insurance Services:</p>
+                <a href="#insurancePopup" data-rel="popup" data-role="button">Call</a>
+            </div>
+            <div data-role="collapsible">
+			    <h3>Human Resources</h3>
+			    <p >Call Human Resources:</p>
+			    <a href="#HRPopup" data-rel="popup" data-role="button">Call</a>
+            </div>
+            <div data-role="collapsible">
+                <h3>Counseling Services</h3>
+                <p >Call ASU Counceling Services:</p>
+                <div data-role="collapsible">
+                	<h3>Students</h3>
+                	<p>Choose campus:</p>
+                	<a href="#tempeStudents" data-rel="popup" data-role="button">Tempe</a>
+					<a href="#polyStudents" data-rel="popup" data-role="button">Polytechnic</a>
+                	<a href="#downtownStudents" data-rel="popup" data-role="button">West</a>
+                	<a href="#westStudents" data-rel="popup" data-role="button">Downtown</a>
+            	</div>
+            	<div data-role="collapsible">
+                	<h3>Employees</h3>
+                	<p>Call Employee Assistance Office:
+            		<a href="#empPopup" data-rel="popup" data-role="button">Call</a>
+            	</div>
+            </div>
+            <div data-role="collapsible">
+                <h3>24-Hour Crisis Line</h3>
+                <p >Call ASU Crisis Line:</p>
+                <a href="#crisisPopup" data-rel="popup" data-role="button">Call</a>
+            </div>
+        </div>
+    </div>
+
+   <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+
+    <!------TEMPE Police------->
+    <div data-role="popup" id="tempePolice">
+
+        <div data-role="content">
+            <p style="text-align:center;font-weight:bold">    Call ASU Tempe Police:    </p>
+            <p style="text-align:center">(480) 965-3456</p>
+            <div style="text-align:center">
+            <a href="tel:1(480) 965-3456" data-role="button" data-inline="true">Yes</a>
+            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+            </div>
+        </div>
+    </div>
+     <!------POLY Police------->
+    <div data-role="popup" id="polyPolice">
+
+        <div data-role="content">
+            <p style="text-align:center;font-weight:bold">    Call ASU Poly Police:    </p>
+            <p style="text-align:center">(480) 727-3456</p>
+            <div style="text-align:center">
+            <a href="tel:1(480) 727-3456" data-role="button" data-inline="true">Yes</a>
+            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+            </div>
+        </div>
+    </div>
+     <!------WEST Police------->
+    <div data-role="popup" id="westPolice">
+        <div data-role="content">
+            <p style="text-align:center;font-weight:bold">    Call ASU West Police:    </p>
+            <p style="text-align:center">(602) 543-3456</p>
+            <div style="text-align:center">
+            <a href="tel:1(602) 543-3456" data-role="button" data-inline="true">Yes</a>
+            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+            </div>
+        </div>
+    </div>
+     <!------Downtown Police------->
+	    <div data-role="popup" id="dwtnPolice">
+	        <div data-role="content">
+	            <p style="text-align:center;font-weight:bold">    Call ASU Dwtn Police:    </p>
+	            <p style="text-align:center">(602) 543-3456</p>
+                <div style="text-align:center">
+	            <a href="tel:1(602) 543-3456" data-role="button" data-inline="true">Yes</a>
+	            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+                </div>
+	        </div>
+    </div>
+    <!------FACMAN Dwntn------->
+	    <div data-role="popup" id="facmanDwtn">
+	        <div data-role="content">
+	            <p style="text-align:center;font-weight:bold">      Call FACMAN:      </p>
+	            <p style="text-align:center">(602) 496-2500</p>
+                <div style="text-align:center">
+	            <a href="tel:1(602) 496-2500" data-role="button" data-inline="true">Yes</a>
+	            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+                </div>
+	        </div>
+    </div>
+    <!------FACMAN Poly------->
+		    <div data-role="popup" id="facmanPoly">
+		        <div data-role="content">
+		            <p style="text-align:center;font-weight:bold">      Call FACMAN:      </p>
+		            <p style="text-align:center">(480) 727-1110</p>
+                    <div style="text-align:center">
+		            <a href="tel:1(480) 727-1110" data-role="button" data-inline="true">Yes</a>
+		            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+                    </div>
+		        </div>
+    </div>
+    <!------FACMAN Tempe------->
+		    <div data-role="popup" id="facmanTempe">
+		        <div data-role="content">
+		            <p style="text-align:center;font-weight:bold">      Call FACMAN:      </p>
+		            <p style="text-align:center">(480) 965-3633</p>
+                    <div style="text-align:center">
+		            <a href="tel:1(480) 965-3633" data-role="button" data-inline="true">Yes</a>
+		            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+                    </div>
+		        </div>
+    </div>
+    <!------FACMAN West------->
+		    <div data-role="popup" id="facmanWest">
+		        <div data-role="content">
+		            <p style="text-align:center;font-weight:bold">      Call FACMAN:      </p>
+		            <p style="text-align:center">(602) 543-3200</p>
+                    <div style="text-align:center">
+		            <a href="tel:1(602) 543-3200" data-role="button" data-inline="true">Yes</a>
+		            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+                    </div>
+		        </div>
+    </div>
+     <!------EH&S POPUP------->
+    <div data-role="popup" id="EHSPopup">
+        <div data-role="content">
+            <p style="text-align:center;font-weight:bold">      Call EH&S:      </p>
+            <p style="text-align:center">(480) 965-1823</p>
+            <div style="text-align:center">
+            <a href="tel:1(480) 965-1823" data-role="button" data-inline="true">Yes</a>
+            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+            </div>
+        </div>
+    </div>
+    <!------Campus Health Poly POPUP------->
+		    <div data-role="popup" id="polyHealth">
+		        <div data-role="content">
+		            <p style="text-align:center;font-weight:bold">      Call Campus Health:      </p>
+		            <p style="text-align:center">(480) 727-1500</p>
+                    <div style="text-align:center">
+		            <a href="tel:1(480) 727-1500" data-role="button" data-inline="true">Yes</a>
+		            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+                    </div>
+		        </div>
+    </div>
+     <!------Campus Health Tempe POPUP------->
+	    <div data-role="popup" id="tempeHealth">
+	        <div data-role="content">
+	            <p style="text-align:center;font-weight:bold">      Call Campus Health:      </p>
+	            <p style="text-align:center">(480) 965-3349</p>
+                <div style="text-align:center">
+	            <a href="tel:1(480) 965-3349" data-role="button" data-inline="true">Yes</a>
+	            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+                </div>
+	        </div>
+    </div>
+     <!------Campus Health Dwtn POPUP------->
+	    <div data-role="popup" id="dwtnHealth">
+	        <div data-role="content">
+	            <p style="text-align:center;font-weight:bold">      Call Campus Health:      </p>
+	            <p style="text-align:center">(602) 496-0721</p>
+                <div style="text-align:center">
+	            <a href="tel:1(602) 496-0721" data-role="button" data-inline="true">Yes</a> <!------tel:+link---->
+	            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+                </div>
+	        </div>
+    </div>
+     <!------Campus Health West POPUP------->
+	    <div data-role="popup" id="westHealth">
+	        <div data-role="content">
+	            <p style="text-align:center;font-weight:bold">      Call Campus Health:      </p>
+	            <p style="text-align:center">(602) 543-8019</p>
+                <div style="text-align:center">
+	            <a href="tel:1(602) 543-8019" data-role="button" data-inline="true">Yes</a>
+	            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+                </div>
+	        </div>
+    </div>
+     <!------Tempe STUDENT POPUP------->
+    <div data-role="popup" id="tempeStudents">
+
+        <div data-role="content">
+            <p style="text-align:center;font-weight:bold">    Call Student Counsiling:    </p>
+            <p style="text-align:center">(480) 965-6146</p>
+            <div style="text-align:center">
+            <a href="#" data-role="button" data-inline="true">Yes</a>
+            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+            </div>
+        </div>
+    </div>
+    <!------West STUDENT POPUP------->
+	    <div data-role="popup" id="westStudents">
+
+	        <div data-role="content">
+	            <p style="text-align:center;font-weight:bold">    Call Student Counsiling:    </p>
+	            <p style="text-align:center">(602) 543-8125</p>
+                <div style="text-align:center">
+	            <a href="tel:1(602) 543-8125" data-role="button" data-inline="true">Yes</a>
+	            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+                </div>
+	        </div>
+    </div>
+    <!------ Poly STUDENT POPUP------->
+	    <div data-role="popup" id="polyStudents">
+
+	        <div data-role="content">
+	            <p style="text-align:center;font-weight:bold">    Call Student Counsiling:    </p>
+	            <p style="text-align:center">(480) 727-1255</p>
+                <div style="text-align:center">
+	            <a href="tel:1(480) 727-1255" data-role="button" data-inline="true">Yes</a>
+	            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+                </div>
+	        </div>
+    </div>
+    <!------Downtown STUDENT POPUP------->
+	    <div data-role="popup" id="downtownStudents">
+
+	        <div data-role="content">
+	            <p style="text-align:center;font-weight:bold">    Call Student Counsiling:    </p>
+	            <p style="text-align:center">(602) 496-1155</p>
+                <div style="text-align:center">
+	            <a href="tel:1(602) 496-1155" data-role="button" data-inline="true">Yes</a>
+	            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+                </div>
+	        </div>
+    </div>
+     <!------EMP POPUP------->
+    <div data-role="popup" id="empPopup">
+
+        <div data-role="content">
+            <p style="text-align:center;font-weight:bold">    Call Employee Counsiling:    </p>
+            <p style="text-align:center">(480) 965-2271</p>
+            <div style="text-align:center">
+            <a href="tel:1(480) 965-2271" data-role="button" data-inline="true">Yes</a>
+            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+            </div>
+        </div>
+    </div>
+     <!------INSURANCE POPUP------->
+    <div data-role="popup" id="insurancePopup">
+
+        <div data-role="content">
+            <p style="text-align:center;font-weight:bold">    Call ASU Insurance:    </p>
+            <p style="text-align:center">(480) 965-1851</p>
+            <a href="tel:1(480) 965-1851" data-role="button" data-inline="true">Yes</a>
+            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+        </div>
+    </div>
+     <!------CRISIS POPUP------->
+    <div data-role="popup" id="crisisPopup">
+
+        <div data-role="content">
+            <p style="text-align:center;font-weight:bold">    Call Crisis Line:    </p>
+            <p style="text-align:center">(480) 921-1006</p>
+            <div style="text-align:center">
+            <a href="tel:1(480) 921-1006" data-role="button" data-inline="true">Yes</a>
+            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+            </div>
+        </div>
+    </div>
+    <!------HR POPUP------->
+	    <div data-role="popup" id="HRPopup">
+
+	        <div data-role="content">
+	            <p style="text-align:center;font-weight:bold">    Call Human Resources:    </p>
+	            <p style="text-align:center">(480) 965-2701</p>
+                <div style="text-align:center">
+	            <a href="tel:1(480) 965-2701" data-role="button" data-inline="true">Yes</a>
+	            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+                </div>
+	        </div>
+    </div>
+    
+
+
+
+</div>
+    </body>
+    </html>

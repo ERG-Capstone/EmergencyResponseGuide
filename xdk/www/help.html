@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+	<title>ASU Emergency Response</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script> 	
+    <script src='intelxdk.js'></script>
+    <script src='cordova.js'></script>
+        
+    
+
+    </head> 
+    <body>
+    
+<!-------------------------->    
+<!---------HELP PAGE-------->
+<!-------------------------->
+    <div data-role="page"  id="helpPage">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Emergency Response Guide</h1>
+        <a href="index.html">Home</a>
+        
+    </div><br>   
+    <h3 style="color:#800000;text-align: center">ERG Help</h3>
+	
+	<!-----Help content------>
+    <div data-role="content">
+        
+        <hr><h3>About the Emergency Response Guide</h3>
+        <p>Information about the Emergency Response Guide can be found in the <a href="aboutPage.html">About</a> section of the guide.</p>      
+        <hr><h3>Emergency</h3>
+        <p>In the event of an emergency, select the <a href="emergencyPage.html">Emergency</a> link found on the home page. This section will guide you through the proper steps to follow in the event of a given emergency situation</p>
+        <hr><h3>Read Guide</h3>
+        <p>The <a href="readGuide.html">Read Guide</a> link provided on the home page will provide information that will help you prepare and know the proper steps to follow in the event of an emergency situation.</p>
+        <hr><h3>Tools</h3>
+        <p>The <a href="toolsMenu.html">Tools</a> section found on the home page provides links to ERG resources such as Campus Maps, Emergency Contacts, Alerts and Trainings.</p><hr>
+    </div><br>
+
+    <!--footer-->
+    <div data-role="footer" data-position="fixed">		
+	   <div data-role="navbar">
+        <ul>
+	      <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+	   </ul>
+	 </div>
+    </div>
+
+    </div> 
+</body>
+</html>

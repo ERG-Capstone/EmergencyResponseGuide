@@ -1,0 +1,109 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+	<title>ASU Emergency Response</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>   
+    </head> 
+    
+    <body>
+
+<!-------------------------->
+<!-----------FLOOD---------->
+<!-------------------------->    
+<div data-role="page"  id="floodGuide">
+
+    <!--header-->
+	<div data-role="header" data-position="fixed" >
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Flooding</h1>
+       <a href="index.html">Home</a>
+    </div>
+
+    <div data-role="content">
+        <h3 style="color:#800000;text-align:center">Flood Emergency</h3>
+
+           <!---Flooding sub-sections (Collapsible set)------>
+            <!--General-->
+            <div data-role="collapsible-set" data-inset="true">
+                <div data-role="collapsible">
+                    <h3>General Information</h3>
+                    <div>
+                        <ul>
+                            <li>Secure vital equipment, records, and chemicals (move to higher, safer ground).</li><br/>
+                            
+                            <li>Shut off all electrical equipment. Secure all laboratory experiments.</li><br/>
+                            
+                            <li>Wait for instructions from the ASU Police Department for immediate action. Do not return to your building unless you have been instructed to do so by someone from incident command or the ASU Police Department.</li><br/>
+                        </ul>
+                    </div>
+                </div>
+                <!---Major Imminent Flooding--->
+                <div data-role="collapsible">
+                    <h3>Major Imminent Flooding</h3>
+                    <div>
+                        <ul>
+                            <li>ASU will be responsible for notifying all appropriate departments and emergency services.</li><br/>
+                            
+                            <li>Evacuate from campus immediately, as directed by Police & Fire officials</li><br/>
+                            
+                            <li>Follow instructions from ASU Police for immediate action.</li><br/>
+                            <li>Use extreme caution around appliances or outlets near the leak and/or water.</li><br/>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div data-role="collapsible">
+                    <h3>Minor Imminent Flooding</h3>
+                        <ul>
+                            <li>Secure vital equipment, records, and chemicals (move to higher, safer ground). Shut off all electrical equipment. Secure all laboratory experiments.</li><br/>
+                            <li>If able, assist people with special needs.</li><br/>
+                            <li>Notify emergency personnel if others are still inside the building.</li><br/>
+                            <li>Wait for instructions from the ASU Police Department for immediate action. Do not return to your building unless you have been instructed to do so by someone from incident command or the ASU Police Department.</li><br/>
+                        </ul>
+
+                </div>
+               
+
+                <!---Contact--->
+                <div data-role="collapsible">
+                    <h3>Emergency Contacts</h3>
+                    <div>                        
+                        <li style="font-weight:bold">Facilities Management</li>
+                        <p>Tempe <a href="tel:1(480) 965-3633">480.965.3633</a> |Poly <a href="tel:1(480) 727-1110">480.727.1110</a> or <a href="tel:1(480) 727-3456">480.727.3456</a> after hours | West <a href="tel:1(602) 543-3200">602.543.3200</a> | Downtown <a href="tel:1(602) 496-2500">602.496.2500</a> or <a href="tel:1(602) 496-1502)">602.496.1502</a> for Mercado</p>               
+                    
+                        <li style="font-weight:bold">ASU Police by campus:</li>
+                        <p>Tempe <a href="tel:1(480) 965-3456">480.965.3456</a> | Poly <a href="tel:1(480) 727-3456">480.727.3456</a> or <a href="tel:1(480) 727-3456">480.727.3456</a> after hours | West <a href="tel:1(602) 543-3456">602.543.3456</a> | Downtown <a href="tel:1(602) 496-3456">602.496.3456</a></p> 
+                        <p>Also see <a href="contactPage.html">Emergency Contacts</a> page.</p>
+                    </div>
+                </div>
+
+                <!---Quiz--->
+                <div data-role="collapsible">
+                    <h3>Flooding Safety Quiz</h3>
+                    <div>
+                        <p>Take flooding safety quiz:</p>
+                        <a data-ajax = "false" href="FloodingQuiz.html" data-role="button">Take Quiz</a>
+                    </div>
+                </div>
+
+            </div> <!---End flood sub-sections--->
+        </div>
+
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+
+    </div>
+    </body>
+</html>

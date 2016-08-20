@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+	<title>ASU Emergency Response</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+   
+    </head> 
+<body>
+<!--------------------->    
+<!-------QUIZZES------->
+<!--------------------->
+    <div data-role="page"  id="quizPage">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Quizzes</h1>
+        <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">    
+        <h3 style="color:#800000;text-align: center">ERG Quizzes</h3><hr>
+        
+        <p style="margin-left:10px">Quiz categories:</p>
+        <ul data-role="listview" data-inset="true">           
+            <li><a data-ajax="false" href="FireQuiz.html" >Fire</a></li>
+            <li><a data-ajax="false" href="FloodingQuiz.html" >Flooding</a></li>
+            <li><a data-ajax="false" href="PowerOutageQuiz.html" >Power Outage</a></li>
+            <li><a data-ajax="false" href="PersonalInjuryQuiz.html" >Personal Injury</a></li>
+            <li><a data-ajax="false" href="MedicalEmergencyQuiz.html" >Medical Emergency</a></li>
+            <li><a data-ajax="false" href="MajorAccidentQuiz.html" >Major Accident</a></li>
+            <li><a data-ajax="false" href="HazardousMaterialsQuiz.html" >Hazardous Materials</a></li>
+            <li><a data-ajax="false" href="PersonalThreatQuiz.html" >Personal Threat, Assault, Civil Disturbance</a></li>
+            <li><a data-ajax="false" href="EvacuationQuiz.html" >Evacuation</a></li>
+            <li><a data-ajax="false" href="activeShooterQuiz.html" >Active Shooter</a></li>
+            <li><a data-ajax="false" href="NaturalWeatherDisasterQuiz.html" >Natural/Weather Disaster</a></li>
+            <li><a data-ajax="false" href="radiationSpillQuiz.html" >Radiation/Biological Spills</a></li>
+            <li><a data-ajax="false" href="BombThreatQuiz.html" >Bomb Threat</a></li>            
+            <li><a data-ajax="false" href="suspiciousPackageQuiz.html" >Suspicious Package</a></li>        
+        </ul>
+    </div>
+        
+   <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+</div>
+    </body>
+    </html>

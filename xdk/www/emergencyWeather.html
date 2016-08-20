@@ -1,0 +1,393 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+	<title>ASU Emergency Response</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script> 
+    </head> 
+    
+    <body>
+ <!---------------------------->    
+<!------weather emergency------>
+<!----------------------------->
+    <div data-role="page"  id="">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Weather Emergency</h1>
+       <a href="index.html">Home</a>
+    </div>    
+        
+    <div data-role="content">        
+    <h3 style="color:#800000;text-align: center">Natural/Weather Emergency</h3><hr><br>
+        <li style="text-align: center">What type of natural/weather emergency are you experiencing?</li><br>
+        <a href="#earthquake" data-role="button">Earthquake</a>
+        <a href="#tornado" data-role="button">Tornado/Thunderstorm</a> 
+        <a href="#hail" data-role="button">Hail Storm</a>
+        <a href="#lightning" data-role="button">Lightning</a><br><br><hr><br>
+        <li style="text-align: center">For all other emergencies dial 911.</li><br>
+        <a href="#911popup" data-role="button">Call 911</a>        
+    </div>
+        
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>   
+        </div>
+<!------------------------------>    
+<!-----earthquake(in/out)------->
+<!------------------------------>
+    <div data-role="page"  id="earthquake">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Weather Emergency</h1>
+        <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">
+        
+        <h3 style="color:#800000;text-align: center">Earthquake Emergency</h3><hr><br>
+        <li style="text-align: center">Are you <b>indoors</b> or <b>outdoors</b>?</li><br>
+        <li style="text-align: center">Select one:</li><br>
+        <a href="#earthquakein" data-role="button">Indoors</a>
+        <a href="#earthquakeout" data-role="button">Outdoors</a>
+    </div>
+        
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+
+</div>
+<!-------------------------->    
+<!------tornado(in/out)----->
+<!-------------------------->
+    <div data-role="page"  id="tornado">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Weather Emergency</h1>
+        <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">
+        
+        <h3 style="color:#800000;text-align: center">Tornado Emergency</h3><hr><br>
+        <li style="text-align: center">Are you <b>indoors</b> or <b>outdoors</b>?</li><br>
+        <li style="text-align: center">Select one:</li><br>
+        <a href="#tornadoin" data-role="button">Indoors</a>
+        <a href="#tornadoout" data-role="button">Outdoors</a>
+    </div>
+        
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+
+</div>
+        
+
+<!----------------------->    
+<!------earthquakein----->
+<!----------------------->
+    <div data-role="page"  id="earthquakein">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Weather Emergency</h1>
+       <a href="index.html">Home</a>
+    </div>    
+        
+    <div data-role="content">
+    <h3 style="color:#800000;text-align: center">Indoors During Earthquake</h3><hr><br>
+        <ul>
+        <li>Stay indoors, do not exit building or use elevators.</li><br>
+        <li>Take cover under table, desk or doorway, if possible.</li><br>
+        <li>Stay away from all windows and large glass objects.</li><br>
+        <li>Avoid heavy objects such as lights, wall hangings, etc. which may fall.</li><br>
+        <li>Help direct people with special needs to a safe place.</li><br>
+        <li>Wheelchair bound individuals should lock brakes.</li><br><br>
+        </ul>
+       <h3 style="color:#800000;text-align: center">After shaking stops:</h3><hr> 
+        <ul>
+            <li>Click <b>Next:</b></li>
+        </ul>
+        <a href="#earthquakenext" data-role="button">Next</a><br>         
+    </div>
+        
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+        </div>
+<!--------------------->    
+<!------tornadoin------->
+<!--------------------->
+    <div data-role="page"  id="tornadoin">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Weather Emergency</h1>
+       <a href="index.html">Home</a>
+    </div>    
+        
+    <div data-role="content">
+    <h3 style="color:#800000;text-align: center">Indoors During Tornado or Thunderstorm</h3><hr><br>
+        <ul>
+        <li>Stay indoors, do not exit building or use elevators.</li><br>
+        <li>Locate an interior room.</li><br>
+        <li>Go to an eclosed, windowless area in the center of the building (Corners or building support columns are best).</li><br>
+        <li>Avoid middle of exterior walls.</li><br>
+        <li>Stay away from all windows and large glass objects.</li><br>
+        <li>Crouch down and cover your head.</li><br>
+        <li>Interior stairwells provide shelter and excape.</li><br>
+        <li>Avoid heavy objects such as lights, wall hangings, etc. which may fall.</li><br>
+        <li>Remain inside until tornado/storm has passed or cleared to leave.</li><br>
+        <li>DO NOT use matches or lighter, in case of leaking natural gas or fuel tanks nearby.</li><br>
+        <li>Help direct people with special needs to a safe place.</li><br>
+        <li>If instructed to evacuate, (See <a href="evacuationGuide.html">Evacuation</a> section of Guide).</li><br>
+        </ul>
+    </div>
+        
+    </div>
+        
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+        </div>
+<!----------------->    
+<!------hail------->
+<!----------------->
+    <div data-role="page"  id="hail">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Weather Emergency</h1>
+       <a href="index.html">Home</a>
+    </div>    
+        
+    <div data-role="content">
+    <h3 style="color:#800000;text-align: center">Hail Weather Emergency</h3><hr><br>
+        <ul>
+        <li>Seek protective shelter immediately.</li><br>
+        <li>Remain indoors or under protective shelter until hail has stopped, (usually 5 - 10 minutes).</li><br> 
+        </ul>
+    </div>
+        
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+        </div>
+<!--------------------->    
+<!------lightning------->
+<!--------------------->
+    <div data-role="page"  id="lightning">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Weather Emergency</h1>
+       <a href="index.html">Home</a>
+    </div>    
+        
+    <div data-role="content">
+    <h3 style="color:#800000;text-align: center">Lightning Weather Emergency</h3><hr><br>
+        <ul>
+        <li>Seek protective shelter immediately.</li><br>
+        <li>If outdoors, DO NOT stand underneath tall, isolated objects.</li><br>
+        <li>Avoid projecting above the surrounding landscape.</li><br>
+        <li>Seek shelter in a low area under a thick growth of small trees or areas such as a ravine or valley.</li><br>
+        <li>Get off or away from open water as well as metal equipment or small metal vehicles other than automobiles.</li><br>
+        <li>Stay away from wire fences, clotheslines, metal pipes and rail.</li><br>
+        <li>If in a group in the open, spread out, keeping people several yards apart.</li><br>
+        <li>Lightning may strike miles from the parent storm coulds.</li><br>
+        <li>If you feel your hair stand on end, lightning may be about to strike you.</li><br>
+        <li>Drop to your knees and bend forward, putting your hands on your knees.</li><br>
+        <li>DO NOT lie flat on the ground.</li><br>    
+        </ul>
+    </div>
+        
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>     
+        </div>
+                
+<!---------------------->    
+<!----earthquakeout----->
+<!---------------------->
+    <div data-role="page"  id="earthquakeout">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Weather Emergency</h1>
+       <a href="index.html">Home</a>
+    </div>    
+        
+    <div data-role="content">
+    <h3 style="color:#800000;text-align: center">Outdoors During an Earthquake</h3><hr><br>
+        <ul>
+        <li>Move to an area away from trees, buildings, walls and power lines.</li><br>
+        <li>Drop to knees, get into a fetal position.</li><br>
+        <li>Close your eyes and cross your arms over the back of your neck for protection.</li><br>
+        <li>Remain in position until shaking has stopped.</li><br><br>
+        </ul>
+        <h3 style="color:#800000;text-align: center">After shaking stops:</h3><hr> 
+        <ul>
+        <li>Click <b>Next:</b></li>
+        </ul>
+        <a href="#earthquakenext" data-role="button">Next</a><br>        
+    </div>
+        
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+        </div>
+        
+<!------------------->    
+<!----tornadoout----->
+<!------------------->
+    <div data-role="page"  id="tornadoout">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Weather Emergency</h1>
+       <a href="index.html">Home</a>
+    </div>    
+        
+    <div data-role="content">
+    <h3 style="color:#800000;text-align: center">Outdoors During a Tornado</h3><hr><br>
+        <ul>
+        <li>Move to an area away from trees, buildings, walls and power lines.</li><br>
+        <li>Seek lowest possible ground, i.e. ditch, small trench.</li><br>
+        <li>Stay away from power lines and puddles with wires in them.</li><br>
+        <li>DO NOT use matches or lighters, in case of leaking gas pipes or fuel tanks.</li><br>
+        <li>Remain in position until high winds have stopped.</li><br>
+        <li>DO NOT enter any building that deemed or looks unsafe.</li><br>      
+        </ul>
+    </div>
+        
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+        </div>
+        
+<!---------------------->    
+<!----earthquakenext---->
+<!---------------------->
+    <div data-role="page"  id="earthquakenext">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Weather Emergency</h1>
+       <a href="index.html">Home</a>
+    </div>    
+        
+    <div data-role="content">
+    <h3 style="color:#800000;text-align: center">After Shaking Stops</h3><hr><br>
+        <ul>
+        <li>DO NOT use cell phones, except to report serious injuries.</li><br>
+        <li>Assist in evacuation of people with special needs, if safe.</li><br>
+        <li>Tune radios to an emergency broadcast or local radio stations for new updates/instructions.</li><br>
+        <li>Be prepared to evacuate.</li><br>
+        <li>Police Department will provide instructions for immediate actions by means of door-to-door alerting, police vehicle loud speakers, fire alarms or bull-horns.</li><br>
+        <li>If instructed to evacuate, (See <a href="evacuationGuide.html">Evacuation</a> section of Guide).</li><br>
+        <li>DO NOT enter any building that is deemed/looks unsafe.</li><br>
+        </ul>
+    </div>
+        
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>   
+
+</div>
+        
+    </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+	<title>ASU Emergency Response</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+   
+    </head> 
+<body>
+
+<!-------------------------->
+<!--------Medical Emergency-------->
+<!-------------------------->
+<div data-role="page" >
+     <!--header-->
+	<div data-role="header" data-position="fixed" >
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Bomb Threat</h1>
+        <a href="index.html">Home</a>
+    </div>
+
+    <div data-role="content">
+        <h3 style="color:#800000;text-align:center">Bomb Threat</h3>
+        
+        <!--- Sub-sections (Collapsible set)------>
+        <div data-role="collapsible-set" data-inset="true">
+       
+            <div data-role="collapsible">
+                <h3>General</h3>
+                <ul>
+                <li>DO NOT HANG UP!</li><br/>
+                <li>Remain Calm.</li><br/>
+                <li>Take the caller seriously.</li><br/>
+                <li>Have another person call 911 on another line or call 911 yourself immediately after hanging up.</li><br/>
+                <li>Ask a lot of questions. Use the checklist as a guide.</li><br/>    
+                </ul> 
+                </div>
+            
+            <div data-role="collapsible">
+                        <h3>Bomb Threat Checklist</h3>
+                        <ul>
+                            <li>When is the bomb going to explode?</li><br/>
+                            <li>Where is it right now?</li><br/>
+                            <li>What does it look like?</li><br/>
+                            <li>What kind of bomb is it?</li><br/>
+                            <li>What will cause it to explode?</li><br/>
+                            <li>Did you place the bomb? Why?</li><br/>
+                            <li>What is your address? </li><br/>
+                            <li>What is your name?</li><br/>
+                            <li>Exact wording of threats?</li><br/>
+                            <hr><br/>
+                            <li>Name of caller</li><br/>
+                            <li>Number from which call originated</li><br/>
+                            <li>Male/Female</li><br/>
+                            <li>Race</li><br/>
+                            <li>Approx. Age</li><br/>
+                            <li>Number at which call was received</li><br/>
+                            <li>Time</li><br/>
+                            <li>Date</li><br/>
+
+                            </ul>
+                            <div data-role="collapsible" data-inset="true">
+                            <h3>Caller's Voice:</h3>
+                                	Calm, Nasal, Slow, Raspy, Loud, Angry, Stutter, Excited Rapid, Deep, Soft, Clearing Throat, Laughter, Normal, Disguised, Distinct, Deep Breathing, Crying, Accent, Slurred, Lisp, Ragged, Cracked, Familiar
+
+                            </div>
+                                 
+                             <div data-role="collapsible" data-inset="true">
+                            <h3>Background Sounds:</h3>
+Street Noises, Factory Machinery, Animal Noises, Other Voices, PA System, Static, Music, Long Distance, House, Motor, Office Machinery
+
+                            </div>
+                        
+                </div>
+                       
+             <!---Contact--->
+                <div data-role="collapsible">
+                    <h3>Emergency Contacts</h3>
+                    <div>                   
+                        
+                        <li style="font-weight:bold">ASU Police by campus</li>
+                        <p>Tempe <a href="tel:1(480) 965-3456">480.965.3456</a> | Poly <a href="tel:1(480) 727-3456">480.727.3456</a> or <a href="tel:1(480) 727-3456">480.727.3456</a> after hours | West <a href="tel:1(602) 543-3456">602.543.3456</a> | Downtown <a href="tel:1(602) 496-3456">602.496.3456</a></p>                               
+                        
+                    </div>
+                </div>
+
+                <!---Quiz--->
+                <div data-role="collapsible">
+                    <h3>Bomb Threat Safety Quiz</h3>
+                    <div>
+                        <p>Take bomb threat safety quiz:</p>
+                        <a data-ajax = "false" href="BombThreatQuiz.html" data-role="button">Take Quiz</a>
+                    </div>
+                </div>               
+        </div>
+    </div> 
+    
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+            
+</div>       
+	
+    </body>
+    </html>

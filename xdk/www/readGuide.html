@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+	   <title>ASU Emergency Response</title> 
+	   <meta name="viewport" content="width=device-width, initial-scale=1"> 	
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+	   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	   <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script> 
+    </head> 
+    <body>
+
+<!-------------------------->    
+<!-------READ GUIDE--------->
+<!-------------------------->
+<div data-role="page"  id="readGuide">       
+     
+    <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1 style="text-indent:20px;">ERG</h1>
+        <a href="index.html">Home</a>
+    </div>
+    
+    <div data-role="content">
+    <h3 style="color:#800000;text-align:center">Emergency Response Guide</h3>    	        
+	   <ul data-role="listview" data-inset="true">   
+			<li><a href="aboutPage.html" data-ajax="false">About</a></li> 	   
+            <li><a href="fireGuide.html" data-ajax="false">Fire</a></li>           
+            <li><a href="floodGuide.html" data-ajax="false">Flooding</a></li>
+            <li><a href="powerGuide.html" data-ajax="false">Power Outage</a></li>
+            <li><a href="injuryGuide.html" data-ajax="false">Personal Injury</a></li>
+            <li><a href="medicalGuide.html" data-ajax="false">Medical Emergency</a></li>
+            <li><a href="accidentGuide.html" data-ajax="false">Major Accident</a></li>
+            <li><a href="hazardGuide.html" data-ajax="false">Hazardous Materials</a></li>
+            <li><a href="threatGuide.html" data-ajax="false">Personal Threat, Assault, Civil Disturbance</a></li>
+            <li><a href="evacuationGuide.html" data-ajax="false">Evacuation</a></li>
+            <li><a href="shooterGuide.html" data-ajax="false">Active Shooter</a></li>
+            <li><a href="disasterGuide.html" data-ajax="false">Natural/Weather Disaster</a></li>
+           <li><a href="radiationGuide.html" data-ajax="false">Radiation Spills</a></li>
+            <li><a href="bioGuide.html" data-ajax="false">Biological Spills</a></li>
+            <li><a href="bombGuide.html" data-ajax="false">Bomb Threat</a></li>            
+            <li><a href="packageGuide.html" data-ajax="false">Suspicious Package</a></li>        
+        </ul>		
+    </div>   
+
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+
+    </div>
+    </body>
+</html>

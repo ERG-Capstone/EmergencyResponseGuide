@@ -1,0 +1,109 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+	<title>ASU Emergency Response</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+   <script src="cordova.js"></script>
+    <script src='intelxdk.js'></script>    
+    
+    </head> 
+<body>
+    <script>
+        function openExternal(elem) {
+            window.open(elem.href, "_system");
+            return false; // Prevent execution of the default onClick handler 
+        }
+    </script>
+    
+<!----------------------->    
+<!-------Training-------->
+<!----------------------->
+<div data-role="page"  id="trainingPage">
+    <!--header-->
+	<div data-role="header" data-position="fixed">        
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Training</h1>
+        <a href="index.html">Home</a>
+    </div><!-- /header -->
+
+    <div data-role="content">
+        <h3 style="color:#800000;text-align:center">ASU Emergency Training</h3>
+        <hr><br> 
+		
+		<ul>
+		
+		<li>Some trainings provided through ASU Police Department, others offered through ASU EH&S.<br><br> Please refer to the website links for more information.</li><br>
+		<li>For assistance with training please contact ASU EH&S or ASU Police Department (see <a href='contactPage.html'>Contacts</a> page).</li>
+		</ul><br>        
+        <div data-role="collapsible-set" data-inset="true">    
+            
+            <div data-role="collapsible">                    
+                <h3>Fire Safety Training</h3>
+                <p style="text-align:center">Register for Fire Saftery training course:</p>
+                <a href="http://safe.engineering.asu.edu/training" onClick="javascript:return openExternal(this)" data-role="button">Go to Website</a><br>        
+            </div>   
+            
+            <div data-role="collapsible">                    
+                <h3>CPR Training</h3>
+                <p style="text-align:center">Register for CPR training course:</p>                
+                <a href="https://fitness.asu.edu/programs/aquatics-safety/cpr-firstaid" onClick="javascript:return openExternal(this)" data-role="button">Go to Website</a><br>
+            </div>
+            
+            <div data-role="collapsible">                    
+                <h3>AED Training</h3>
+                <p style="text-align:center">Register for AED training course:</p>                
+                <a href="https://fitness.asu.edu/programs/aquatics-safety/cpr-firstaid" onClick="javascript:return openExternal(this)" data-role="button">Go to Website</a><br>
+            </div>
+            
+            <div data-role="collapsible">                    
+                <h3>First Aid Training</h3>
+                <p style="text-align:center">Register for First Aid training course:</p>               
+                <a href="https://fitness.asu.edu/programs/aquatics-safety/cpr-firstaid" onClick="javascript:return openExternal(this)" data-role="button">Go to Website</a><br>
+            </div>
+            
+			<div data-role="collapsible">                    
+                <h3>Personal Safety Training</h3>
+                <p style="text-align:center">Register for Personal Safety training course:</p>                
+                <a href="https://cfo.asu.edu/police-training.html" onClick="javascript:return openExternal(this)" data-role="button">Go to Website</a><br>
+            </div> 
+            <div data-role="collapsible">                    
+                <h3>Crime Prevention Training</h3>
+                <p style="text-align:center">Register for Crime Prevention training course:</p>                
+                <a href="http://safe.engineering.asu.edu/training" onClick="javascript:return openExternal(this)" data-role="button">Go to Website</a><br>
+            </div>  
+			<div data-role="collapsible">                    
+                <h3>Active Shooter Training</h3>
+                <p style="text-align:center">Register for Active Shooter training course:</p>                
+                <a href="http://safe.engineering.asu.edu/training" onClick="javascript:return openExternal(this)" data-role="button">Go to Website</a><br>
+            </div> 
+            <div data-role="collapsible">                    
+                <h3>Laboratory Chemical Saftey Training</h3>
+                <p style="text-align:center">Register for Lab Chemical Safety training course:</p>                
+                <a href="http://safe.engineering.asu.edu/training" onClick="javascript:return openExternal(this)" data-role="button">Go to Website</a><br>
+            </div>
+            <div data-role="collapsible">                    
+                <h3>Hazardous Waste Management Training</h3>
+                <p style="text-align:center">Register for Hazardous Waste Management training course:</p>               
+                <a href="http://safe.engineering.asu.edu/training" onClick="javascript:return openExternal(this)" data-role="button">Go to Website</a><br>
+            </div>
+        </div>
+    </div>
+    
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+  <!DOCTYPE html> 
+<html> 
+    <head> 
+	<title>ASU Emergency Response</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script> 
+	
+    <script src='intelxdk.js'></script>
+    <script src='cordova.js'></script>
+        
+    <script>
+        function openExternal(elem) {
+            window.open(elem.href, "_system");
+            return false; 
+        }
+    </script>
+
+    </head> 
+    <body>
+      
+<!-------------------------->    
+<!--------TOOLS PAGE-------->
+<!-------------------------->
+    <div data-role="page"  id="toolsPage">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Tools</h1>
+        <a href="index.html">Home</a>
+    </div>    
+    
+    
+	
+	<!-----Tools menu------>
+    <div data-role="content">
+        
+         <ul data-role="listview" data-inset="true">   
+             <h3 style="color:#800000;text-align: center">ASU Emergency Response Tools</h3>
+             <li><a href="alertPage.html" data-ajax="false">Campus Alerts</a></li>
+             <li><a href="trainingPage.html" data-ajax="false">Emergency Training</a></li>
+             <li><a href="contactPage.html"data-ajax="false">Emergency Contacts</a></li>
+             <li><a href="mapPage.html" data-ajax="false">Campus Maps</a></li>
+             <li><a href="quizPage.html" data-ajax="false">Emergency Quizzes</a></li>           
+             <li><a href="AED.html" data-ajax="false">AED Locations</a></li>
+        </ul>
+   </div>  	
+
+    <!--footer-->
+    <div data-role="footer" data-position="fixed">		
+	   <div data-role="navbar">
+        <ul>
+	      <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+	   </ul>
+	 </div>
+    </div>
+
+</div> 
+    </body>
+</html>

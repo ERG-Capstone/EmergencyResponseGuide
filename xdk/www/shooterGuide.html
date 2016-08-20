@@ -1,0 +1,126 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+	<title>ASU Emergency Response</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+   
+    </head> 
+<body>
+<!---------------------------->
+<!-------active shooter------->
+<!---------------------------->
+<div data-role="page" id="shooterGuide">
+     <!--header-->
+	<div data-role="header" data-position="fixed" >
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Active Shooter</h1>
+        <a href="index.html">Home</a>
+    </div>
+
+    <div data-role="content">
+        <h3 style="color:#800000;text-align:center">Active Shooter</h3>
+        <!--- Sub-sections (Collapsible set)------>
+        <div data-role="collapsible-set" data-inset="true">
+       
+            <div data-role="collapsible">
+                <h3>General</h3>
+                <ul>
+                    <li>An active shooter is defined as an individual who is actively engaged in killing or attempting to kill people.</li><br> 
+                    <li>In most cases active shooters use a firearm(s) but in some cases weapons other than a firearm, including explosive devices may be used.</li><br/>
+                    <li>When an active shooter is in your vicinity: <b>run</b>, <b>hide</b>, and/or <b>fight</b>!  </li><br/>
+                </ul>    
+            </div>
+            
+            <div data-role="collapsible">
+                <h3>Run</h3>
+                <ul>
+                    <li>If there is an escape path, attempt to evacuate.</li><br>
+                    <li>Evacuate whether others agree to or not</li><br>
+                    <li>Leave your belongings behind</li><br>
+
+                </ul>
+            </div>
+            
+            <div data-role="collapsible">
+                <h3>Hide</h3>
+                <ul>
+                <li>Lock and/or block the door.</li><br>
+                <li>Silence your cell phone.</li><br>
+                <li>Remain quiet.</li><br>
+                <li>Hiding place should:<br><br>
+                    <ul>
+                    <li>Be out of the shooter's view.</li><br>
+                    <li>Provide protection if shots are fired in your direction.</li><br>
+                    <li>Do not trap or restrict your options for movement.</li><br>
+                    </ul>
+                    </li> <br>
+                </ul>
+               
+            </div>    
+                
+            <div data-role="collapsible">
+                <h3>Fight</h3>
+                <div>
+                    <ul>
+                        <li>Incapacitate the shooter by any means possible.</li><br/>
+                        <li>Act with physical aggression.</li><br/>
+                        <li>Improvise weapons.</li><br>
+                        <li>Commit to your actions.</li><br>
+                    </ul>
+                </div>
+            </div>
+            
+            <div data-role="collapsible">
+                <h3>When Law Enforcement Arrives</h3>
+                <ul>
+<li>Follow instructions.</li><br>
+<li>Keep your hands visible at all times.</li><br>
+<li>Avoid pointing or yelling.</li><br>
+<li>Know that help for the injured is on the way.</li><br>
+
+                </ul>
+            </div>
+
+                <!---Contact--->
+            <div data-role="collapsible">
+                <h3>Emergency Contacts</h3>
+                 <div>
+                        <li style="font-weight:bold">ASU Police by campus</li>
+                        <p>Tempe <a href="tel:1(480) 965-3456">480.965.3456</a> | Poly <a href="tel:1(480) 727-3456">480.727.3456</a> or <a href="tel:1(480) 727-3456">480.727.3456</a> after hours | West <a href="tel:1(602) 543-3456">602.543.3456</a> | Downtown <a href="tel:1(602) 496-3456">602.496.3456</a></p>
+                       
+                        <li style="font-weight:bold">ASU Environmental Health & Safety</li>
+                        <p><a href="tel:1(480) 965-1823">480.965.1823</a> Mon-Fri, 8am-5pm. Nights and weekends call the ASU Police.</p>  
+                        <p>Also see <a href="contactPage.html">Emergency Contacts</a> page.</p>
+                    </div>
+            </div>
+
+                <!---Quiz--->
+            <div data-role="collapsible">
+                <h3>Active Shooter Quiz</h3>
+                <div>
+                    <p>Take active shooter quiz:</p>
+                    <a data-ajax = "false" href="activeShooterQuiz.html" data-role="button">Take Quiz</a>
+                </div>
+            </div>
+
+            </div> <!---End personal threat sub-sections--->
+        </div>
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+
+</div>
+    </body>
+    </html>
+    

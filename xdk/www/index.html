@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+	<title>ASU Emergency Response</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script> 
+	
+    <script src='intelxdk.js'></script>
+    <script src='cordova.js'></script>
+        
+    <script>
+        function openExternal(elem) {
+            window.open(elem.href, "_system");
+            return false; 
+        }
+    </script>
+
+    </head> 
+    <body>
+    
+<!-------------------------->    
+<!---------HOME PAGE-------->
+<!-------------------------->
+    <div data-role="page"  id="homePage">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="help.html">Help</a>
+        <h1></h1>
+        
+    </div>    
+    
+    <img src="asulogo.jpg" style="width: 100%"/>
+    <br><h3 style="color:#800000;text-align: center">ASU Emergency Response</h3>
+	
+	<!-----Home menu------>
+    <div id="homePageContent" data-role="content">
+        <a style="color:#800000" href="emergencyPage.html" data-role="button" data-ajax="false">Emergency</a>
+        <a href="readGuide.html" data-role="button">Read Guide</a>
+        <a href="toolsMenu.html" data-role="button" data-ajax="false">ERG Tools</a>        
+    </div>   
+
+    <!--footer-->
+    <div data-role="footer" data-position="fixed">		
+	   <div data-role="navbar">
+        <ul>
+	      <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+	   </ul>
+	 </div>
+    </div>
+
+</div> <!--end homePage-->
+    
+	</body>
+    </html>

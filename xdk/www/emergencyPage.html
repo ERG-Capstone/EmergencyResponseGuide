@@ -1,0 +1,129 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+	<title>ASU Emergency Response</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script> 
+	</head> 
+    
+    <body>
+    
+<!---------------------------->    
+<!-----Emergency Start-------->
+<!---------------------------->
+    <div data-role="page"  id="emergencyPage">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Emergency</h1>
+        <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">
+        <h3 style="color:#800000;text-align: center">Do You Have An Emergency?</h3><hr><br>        
+                 
+        <a href="#emergencyYes" data-role="button">Yes</a>
+        <a href="#emergencyNo" data-role="button">No</a>        
+        <div>
+            <ul>
+                <li>If you are NOT experiencing an emergency refer to <b>READ GUIDE</b> section on previous page or select <b>No</b>.</li>
+            </ul>
+        </div>
+    </div>
+        
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+
+    </div>       
+    
+<!--- --------------------->    
+<!------EMERGENCY-NO------->
+<!------------------------->
+    <div data-role="page"  id="emergencyNo">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Emergency</h1>
+        <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">
+        <h3 style="color:#800000;text-align: center">You Don't Have an Emergency</h3><hr><br>             
+        <li style=text-align:center>Please refer to the Read Guide section.</li>        
+        <a href="homePage.html" data-role="button">Back</a>
+    </div>
+        
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+    </div>
+            
+<!-------------------------->    
+<!-------Emergency Yes------>
+<!-------------------------->
+    <div data-role="page"  id="emergencyYes">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Emergency</h1>
+       <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">    
+        <h3 style="color:#800000;text-align: center">What Type of Emergency?</h3> 
+        
+        <ul data-role="listview" data-inset="true">           
+            <li><a href="emergencyFire.html" data-ajax="false">Fire</a></li>
+            <li><a href="emergencyFlood.html" data-ajax="false">Flooding</a></li>
+            <li><a href="emergencyPower.html" data-ajax="false" >Power Outage</a></li>
+            <li><a href="emergencyInjury.html" data-ajax="false">Personal Injury</a></li>
+            <li><a href="emergencyMedical.html" data-ajax="false">Medical Emergency</a></li>
+            <li><a href="emergencyAccident.html" data-ajax="false">Major Accident</a></li>
+            <li><a href="emergencyHazMat.html" data-ajax="false">Hazardous Materials</a></li>
+            <li><a href="emergencyAssault.html" data-ajax="false">Personal Threat, Assault, Civil Disturbance</a></li>
+            <li><a href="emergencyEvac.html" data-ajax="false">Evacuation</a></li>
+            <li><a href="emergencyShooter.html" data-ajax="false">Active Shooter</a></li>
+            <li><a href="emergencyWeather.html" data-ajax="false">Natural/Weather Disaster</a></li>
+            <li><a href="emergencySpill.html" data-ajax="false">Radiation/Biological Spills</a></li>
+            <li><a href="emergencyBomb.html" data-ajax="false">Bomb Threat</a></li>            
+            <li><a href="emergencyPackage.html" data-ajax="dalse">Suspicious Package</a></li>        
+        </ul>
+    </div>
+        
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+    </div>
+        
+    </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+	<title>ASU Emergency Response</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>  
+    </head> 
+    
+    <body>
+        
+<!----------------------->    
+<!-----spill/fumes------->
+<!----------------------->
+    <div data-role="page"  id="earthquake">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Bio/Rad Spill Emergency</h1>
+        <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">
+        
+        <h3 style="color:#800000;text-align: center">Bio/Rad Spill Emergency</h3><hr><br>
+        <li style="text-align: center">Are you experiencing a <b>spill</b> or <b>fumes/vapor</b> emergency?</li><br>
+        <li style="text-align: center">Select one:</li><br>
+        <a href="#spill" data-role="button">Spill</a>
+        <a href="#fumes" data-role="button">Fumes/Vapor</a>
+    </div>
+        
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+
+</div>
+
+<!-------------->    
+<!----spill----->
+<!-------------->
+    <div data-role="page"  id="spill">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Spill Emergency</h1>
+        <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">
+    <h3 style="color:#800000;text-align: center">Spill Emergency</h3><hr><br>        
+        <Ul>  
+            <li>Notify all persons in the room</li><br>
+            <li>Confine spill immediately</li><br>
+            <li>Liquid spills - Wear protective gloves and place absorbant paper on spill</li><br>   
+            <li>Dry spills - Wear protective gloves and place absorbant paper on spill</li><br>
+            <li>Spill on skin - Flush thoroughly with water</li><br>
+            <li>Spill on clothing - Discard clothing at once</li><br>
+        </Ul><br>
+        <a href="#injury" data-role="button">Next</a>
+    </div>
+        
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+
+</div>
+        
+<!-------------->    
+<!----fumes----->
+<!-------------->
+    <div data-role="page"  id="fumes">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Fumes/Vapor Emergency</h1>
+        <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">
+    <h3 style="color:#800000;text-align: center">Fumes/Vapor Emergency</h3><hr><br>
+        
+        <Ul>  
+            <li>Notify all personnel to vacaqte the room immediately.</li><br>
+            <li>Hold breath, close all windows and escape valves and switch off circulating air.</li><br>
+            <li>Vacate the room.</li><br>   
+            <li>Notify the Office of Radiation Safety (M-F 8am-5pm, <a href="tel:1(480) 965-3633">480.965.6140</a>) immediately following the incident.</li><br>
+            <li>Assure all doors with access to the room are closed and locked.</li><br>
+            <li>If necessary, post guards to prevent accidental opening of doors.</li><br>
+        </Ul>  
+        <a href="#injury" data-role="button">Next</a>
+    </div>
+        
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+
+</div>
+        
+<!--------------->    
+<!----injury----->
+<!--------------->
+    <div data-role="page"  id="injury">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Rad/Bio Spill Emergency</h1>
+        <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">   
+        <h3 style="color:#800000;text-align: center">Injuries</h3><hr><br>
+        <Ul>  
+            <li>Wash minor wounds immediately under running water.</li><br>
+            <li>Report all radiation accidents (wounds, over exposure, injestion or inhalation) to ORS (M-F 8am-5pm, <a href="tel:1(480) 965-3633">480.965.6140</a>) immediately.</li><br>
+            <li>Obtain medical attention at Campus Heath by campus (see <a href="contactPage.html">Emergency Contacts</a> for campus).</li><br>   
+            <li>DO NOT permit personnel involved in injury to return to work or leave premises without approval of RSO or physician.</li><br>            
+        </Ul>        
+    </div>
+        
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+
+</div>
+  </body>
+</html>

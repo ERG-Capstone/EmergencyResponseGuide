@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+	<title>ASU Emergency Response</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>  
+    </head> 
+    
+    <body>
+ 
+<!-------------------->    
+<!----bomb threat----->
+<!-------------------->
+    <div data-role="page"  id="">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Bomb Threat Emergency</h1>
+        <a href="index.html">Home</a>
+    </div>    
+    
+    <div data-role="content">
+    <h3 style="color:#800000;text-align: center">Bomb Threat Emergency</h3><hr><br>        
+        <ul>
+            <li>DO NOT hang up!</li><br/>
+            <li>Remain Calm.</li><br/>
+            <li>Take the caller seriously.</li><br/>
+            <li>Have another person call 911 on another line, or call 911 yourself immediately after hanging up.</li><br/>
+            
+            <li>Ask a lot of questions. Use the <b>Bomb Threat Checklist</b> as a guide:</li><br/>    
+        </ul>
+         <a href="#callPopup" data-rel="popup" data-role="button" >Call 911</a><br>
+        <ul>
+            <li>Refer to the <b>Bomb Threat Checklist</b> for further instructions:</li>
+        </ul><br>
+         <div data-role="collapsible">
+            <h3>Bomb Threat Checklist</h3>
+            <ul>
+                <li>When is the bomb going to explode?</li><br/>
+                <li>Where is it right now?</li><br/>
+                <li>What does it look like?</li><br/>
+                <li>What kind of bomb is it?</li><br/>
+                <li>What will cause it to explode?</li><br/>
+                <li>Did you place the bomb? Why?</li><br/>
+                <li>What is your address? </li><br/>
+                <li>What is your name?</li><br/>
+                <li>Exact wording of threats?</li><br/>
+                <hr><br/>
+                <li>Name of caller</li><br/>
+                <li>Number from which call originated</li><br/>
+                <li>Male/Female</li><br/>
+                <li>Race</li><br/>
+                <li>Approx. Age</li><br/>
+                <li>Number at which call was received</li><br/>
+                <li>Time</li><br/>
+                <li>Date</li><br/>
+             </ul>
+        </div><br>
+    </div>
+
+ 
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+
+</div>
+        
+         <!------CALL 911 POPUP------->   
+    <div data-role="popup" id="callPopup">    
+
+        <div data-role="content">
+            <p style="text-align:center">    Call 911:    </p><br>
+            <a href="#" data-role="button" data-inline="true">Yes</a>
+            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+        </div>
+    </div>
+        
+  </body>
+</html>

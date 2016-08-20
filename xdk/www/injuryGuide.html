@@ -1,0 +1,128 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+	<title>ASU Emergency Response</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>  
+    <script>
+        function openExternal(elem) {
+            window.open(elem.href, "_system");
+            return false; // Prevent execution of the default onClick handler 
+        }
+    </script>
+    </head> 
+    
+    <body>
+        
+<!-------------------------->
+<!-----Personal Injury------>
+<!-------------------------->    
+<div data-role="page"  id="injuryGuide">
+
+    <!--header-->
+	<div data-role="header" data-position="fixed" >
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Personal Injury</h1>
+        <a href="index.html">Home</a>
+    </div>
+
+    <div data-role="content">
+        <h3 style="color:#800000;text-align:center">Personal Injury Emergency</h3>
+        
+        <ul>        
+            <li>In all <b>serious cases</b> call 911 for emergency treatment.</li><br>        
+        </ul>
+            
+        
+           <!--- Sub-sections (Collapsible set)------>
+            <div data-role="collapsible-set" data-inset="true">
+
+                <div data-role="collapsible">
+                   <h3>General</h3>
+                   <ul>
+                       <li>Learn and know where location of First Aid Kit, nearest safety shower, nearest safety eyewash, and nearest telephone</li><br/>
+                       <li>Forcibly hold eye open to ensure effective wash behind eyelids.</li><br/>
+                       <li>Obtain medical attention at the Campus Health by campus.</li><br/>
+                       <li>Report incident to supervisor. Supervisor is responsible for notifying ASU EH&S</li><br/>
+                   </ul>
+                </div>
+                
+                <div data-role="collapsible">
+                    <h3>Heart Related Illnesses</h3>
+                    <div>
+                        <ul>
+                            <li>Get victim to a cool place.</li><br/>
+                            <li>Loosen tight clothing.</li><br/>
+                            <li>Apply cool, wet cloths to the skin.</li><br/>
+                            <li>Fan the victim.</li><br/>
+                            <li>If victim is conscious, give cool (not cold) water to drink.</li><br/>
+                            <li>Obtain medical attention at the Campus Health by campus</li><br/>
+                            <li>Call 911 for an ambulance, if victim refuses water, vomits, or loses consciousness</li><br/>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Minor Cuts & Punctures</h3>
+                        <ul>
+                            <li>Vigorously wash injury with soap and water for several minutes.</li><br/>
+                            <li>Obtain medical attention at the Campus Health by campus</li><br/>
+                            <li>If impaled by a foreign object DO NOT remove the object. Seek medical attention immediately.</li><br/>
+                                                   
+                        </ul>
+
+                </div>
+               <div data-role="collapsible">
+                   <h3>Material Splashed in Eye</h3>
+                   <ul>
+                       <li>Immediately rinse eye and inner surface of eyelid with water continuously for 15 minutes.</li><br/>
+                       <li>Forcibly hold eye open to ensure effective wash behind eyelids.</li><br/>
+                       <li>Obtain medical attention at the Campus Health by campus.</li><br/>
+                       
+                   </ul>
+            </div>
+                <!---Contact--->
+                <div data-role="collapsible">
+                    <h3>Emergency Contacts</h3>
+                    <div>
+                        <li style="font-weight:bold">ASU Police by campus</li>
+                        <p>Tempe <a href="tel:1(480) 965-3456">480.965.3456</a> | Poly <a href="tel:1(480) 727-3456">480.727.3456</a> or <a href="tel:1(480) 727-3456">480.727.3456</a> after hours | West <a href="tel:1(602) 543-3456">602.543.3456</a> | Downtown <a href="tel:1(602) 496-3456">602.496.3456</a></p>
+                       
+                        <li style="font-weight:bold">Campus Health by campus</li>                      
+                        <p>Tempe <a href="tel:1(480) 965-3349">480.965.3349</a> | Poly <a href="tel:1(480) 727-1500">480.727.1500</a> | West <a href="tel:1(602) 543-8019">602.543.8019</a> | Downtown <a href="tel:1(602) 496-0721">602.496.0721</a> M-F 9am-4:30pm</p>          
+                        
+                        <li style="font-weight:bold">ASU Environmental Health & Safety</li>
+                        <p><a href="tel:1(480) 965-1823">480.965.1823</a> Mon-Fri, 8am-5pm. Nights and weekends call the ASU Police.</p>  
+                        <p>Also see <a href="contactPage.html">Emergency Contacts</a> page.</p>
+                    </div>
+                </div>
+
+                <!---Quiz--->
+                <div data-role="collapsible">
+                    <h3>Personal Injury Safety Quiz</h3>
+                    <div>
+                        <p>Take personal injury safety quiz:</p>
+                        <a data-ajax = "false" href="PersonalInjuryQuiz.html" data-role="button">Take Quiz</a>
+                    </div>
+                </div>
+
+            </div> <!---End flood sub-sections--->
+        </div>
+
+ <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+
+    </div>   
+    </body>
+</html>

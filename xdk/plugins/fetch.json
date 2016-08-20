@@ -1,0 +1,110 @@
+{
+    "org.apache.cordova.battery-status": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\Dan\\AppData\\Local\\Intel\\XDK\\xdk\\components\\server\\cordova-plugins\\org.apache.cordova.battery-status"
+        }
+    },
+    "org.apache.cordova.camera": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\Dan\\AppData\\Local\\Intel\\XDK\\xdk\\components\\server\\cordova-plugins\\org.apache.cordova.camera"
+        }
+    },
+    "org.apache.cordova.contacts": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\Dan\\AppData\\Local\\Intel\\XDK\\xdk\\components\\server\\cordova-plugins\\org.apache.cordova.contacts"
+        }
+    },
+    "org.apache.cordova.device": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\Dan\\AppData\\Local\\Intel\\XDK\\xdk\\components\\server\\cordova-plugins\\org.apache.cordova.device"
+        }
+    },
+    "org.apache.cordova.device-motion": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\Dan\\AppData\\Local\\Intel\\XDK\\xdk\\components\\server\\cordova-plugins\\org.apache.cordova.device-motion"
+        }
+    },
+    "org.apache.cordova.device-orientation": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\Dan\\AppData\\Local\\Intel\\XDK\\xdk\\components\\server\\cordova-plugins\\org.apache.cordova.device-orientation"
+        }
+    },
+    "org.apache.cordova.dialogs": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\Dan\\AppData\\Local\\Intel\\XDK\\xdk\\components\\server\\cordova-plugins\\org.apache.cordova.dialogs"
+        }
+    },
+    "org.apache.cordova.file": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\Dan\\AppData\\Local\\Intel\\XDK\\xdk\\components\\server\\cordova-plugins\\org.apache.cordova.file"
+        }
+    },
+    "org.apache.cordova.file-transfer": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\Dan\\AppData\\Local\\Intel\\XDK\\xdk\\components\\server\\cordova-plugins\\org.apache.cordova.file-transfer"
+        }
+    },
+    "org.apache.cordova.geolocation": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\Dan\\AppData\\Local\\Intel\\XDK\\xdk\\components\\server\\cordova-plugins\\org.apache.cordova.geolocation"
+        }
+    },
+    "org.apache.cordova.globalization": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\Dan\\AppData\\Local\\Intel\\XDK\\xdk\\components\\server\\cordova-plugins\\org.apache.cordova.globalization"
+        }
+    },
+    "org.apache.cordova.inappbrowser": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\Dan\\AppData\\Local\\Intel\\XDK\\xdk\\components\\server\\cordova-plugins\\org.apache.cordova.inappbrowser"
+        }
+    },
+    "org.apache.cordova.media": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\Dan\\AppData\\Local\\Intel\\XDK\\xdk\\components\\server\\cordova-plugins\\org.apache.cordova.media"
+        }
+    },
+    "org.apache.cordova.media-capture": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\Dan\\AppData\\Local\\Intel\\XDK\\xdk\\components\\server\\cordova-plugins\\org.apache.cordova.media-capture"
+        }
+    },
+    "org.apache.cordova.network-information": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\Dan\\AppData\\Local\\Intel\\XDK\\xdk\\components\\server\\cordova-plugins\\org.apache.cordova.network-information"
+        }
+    },
+    "org.apache.cordova.splashscreen": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\Dan\\AppData\\Local\\Intel\\XDK\\xdk\\components\\server\\cordova-plugins\\org.apache.cordova.splashscreen"
+        }
+    },
+    "org.apache.cordova.statusbar": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\Dan\\AppData\\Local\\Intel\\XDK\\xdk\\components\\server\\cordova-plugins\\org.apache.cordova.statusbar"
+        }
+    },
+    "org.apache.cordova.vibration": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\Dan\\AppData\\Local\\Intel\\XDK\\xdk\\components\\server\\cordova-plugins\\org.apache.cordova.vibration"
+        }
+    }
+}

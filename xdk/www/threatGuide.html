@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+	<title>ASU Emergency Response</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script> 
+    <script>
+        function openExternal(elem) {
+            window.open(elem.href, "_system");
+            return false; // Prevent execution of the default onClick handler 
+        }
+    </script>
+   
+    </head> 
+<body>
+ 
+<!-------------------------->
+<!------PERSONAL THREAT----->
+<!-------------------------->
+<div data-role="page" id="threatGuide">
+     <!--header-->
+	<div data-role="header" data-position="fixed" >
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Personal Threat</h1>
+        <a href="index.html">Home</a>
+    </div>
+
+    <div data-role="content">
+        <h3 style="color:#800000;text-align:center">Personal Threat</h3>
+        <!--- Sub-sections (Collapsible set)------>
+        <div data-role="collapsible-set" data-inset="true">
+       
+            <div data-role="collapsible">
+                <h3>Stalking</h3>
+                <ul>
+                    <li>Call 911 and seek the safety of others.</li><br/>
+                    <li>Do not confront alleged stalker.</li><br/>
+                    <li>Take note of any identifying features to report later to police.</li><br/>
+                </ul>
+            </div>
+               
+            <div data-role="collapsible">
+                <h3>Assault</h3>
+                <div>
+                    <ul>
+                        <li>Call 911.</li><br/>
+                        <li>Remain with victim until help arrives.</li><br/>
+                    </ul>
+                </div>
+            </div>
+            
+            <div data-role="collapsible">
+                <h3>Relationship Violence</h3>
+                <ul>
+                    <li>Call 911 for medical emergencies or immediate threats.</li><br/>
+                    <b>Support Resource Information</b><br/> <br/>
+                        <li>ASU students at <a href="https://eoss.asu.edu/counseling" onClick="javascript:return openExternal(this)">ASU Counseling Services</a>.</li>
+                    <br/>
+                    <li>ASU Employees at <a href="https://cfo.asu.edu/hr-eao" onClick="javascript:return openExternal(this)">ASU Employee Assistance Office</a>.</li>
+                    <br/>
+                    <li>The ASU 24 hour dedicated crisis line: EMPACT 480.921.1006</li>
+                    <br/>
+                </ul>
+            </div>
+            
+            <div data-role="collapsible">
+                <h3>Civil Disturbance</h3>
+                <ul>
+                    <li>Civil disturbances include riots, demonstrations, threatening individuals, crimes in progress, or assemblies that have become significantly disruptive.</li><br/>
+                    <li>Call 911.</li><br/>
+                    <li>Avoid provoking or obstructing demonstrators.</li><br/>
+                    <li>Secure your area (lock doors, safes, files, vital records, etc.).</li><br/>
+                    <li>Avoid area of disturbance.</li><br/>
+                    <li>Continue with normal routines if possible.</li><br/>
+                    <li>If the disturbance is outside, stay away from doors/windows. <b>STAY INSIDE!</b></li><br/>
+                    <li>Prepare for evacuation or relocation.</li><br/>
+<br/>
+                </ul>
+            </div>
+                <!---Contact--->
+            <div data-role="collapsible">
+                <h3>Emergency Contacts</h3>
+                 <div>
+                        <li style="font-weight:bold">ASU Police by campus</li>
+                        <p>Tempe <a href="tel:1(480) 965-3456">480.965.3456</a> | Poly <a href="tel:1(480) 727-3456">480.727.3456</a> or <a href="tel:1(480) 727-3456">480.727.3456</a> after hours | West <a href="tel:1(602) 543-3456">602.543.3456</a> | Downtown <a href="tel:1(602) 496-3456">602.496.3456</a></p>
+                         
+                        <p>Also see <a href="contactPage.html">Emergency Contacts</a> page.</p>
+                    </div>
+            </div>
+
+                <!---Quiz--->
+            <div data-role="collapsible">
+                <h3>Threat/Assault Quiz</h3>
+                <div>
+                    <p>Take personal threat safety quiz:</p>
+                    <a data-ajax = "false" href="PersonalThreatQuiz.html" data-role="button">Take Quiz</a>
+                </div>
+            </div>
+
+            </div> <!---End personal threat sub-sections--->
+        </div>
+  <!--footer-->
+	<div data-role="footer" data-position="fixed">
+	   <div data-role="navbar">
+		<ul>
+            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+            <li><a href="readGuide.html">Guide</a></li>
+			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
+            <li><a href="contactPage.html">Contacts</a></li>
+        </ul>
+        </div>
+    </div>
+</div>
+    </body>
+    </html>
