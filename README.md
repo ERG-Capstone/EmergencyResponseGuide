@@ -1,9 +1,14 @@
 # EmergencyResponseGuide
-ASU Emergency Response Guide App for 2016 CS Capstone
+ASU Emergency Response Guide App for 2016 CS Capstone.
 
+# Set up
 WIP
 
-## Creators
-[Spencer Bywater](https://github.com/spencerbyw)
+# IMPORTANT: Dev Instructions
+WIP
 
-(et al)
+## Contributors
+[Spencer Bywater](https://github.com/spencerbyw)
+[Dominique Fajardo](https://github.com/dnfajard)
+[Garett Winkler](https://github.com/garettwinkler)
+Garrett Decker
