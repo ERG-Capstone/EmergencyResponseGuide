@@ -9,9 +9,11 @@ template = env.get_template('base.html')
 
 working_directory = os.getcwd() + '/src'
 
+# Create stage directory if it does not exist
 if 'stage' not in os.listdir(os.getcwd()):
     os.mkdir('stage')
 
+# Template-ize each html in src and copy it to stage
 for i in os.listdir(working_directory):
     if i.endswith('.html'):
         with open('src/' + i, 'r') as content_file:
