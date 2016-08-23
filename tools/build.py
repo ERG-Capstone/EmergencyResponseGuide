@@ -1,19 +1,28 @@
-from jinja2 import Environment, FileSystemLoader
+import os
+
 from BeautifulSoup import BeautifulSoup as bs
+from jinja2 import Environment, FileSystemLoader
 
 env = Environment(loader=FileSystemLoader('templates'),
                   extensions=['jinja2.ext.with_'])
 template = env.get_template('base.html')
 
-with open('src/test.html', 'r') as content_file:
-    file_contents = content_file.read()
+working_directory = os.getcwd() + '/src'
 
-output_from_parsed_template = template.render(content=file_contents)
-new_template = env.from_string(output_from_parsed_template)
-final_output = new_template.render()
+if 'stage' not in os.listdir(os.getcwd()):
+    os.mkdir('stage')
 
-soup = bs(final_output)
-pretty_final_output = soup.prettify().encode('utf-8')
+for i in os.listdir(working_directory):
+    if i.endswith('.html'):
+        with open('src/' + i, 'r') as content_file:
+            file_contents = content_file.read()
 
-with open('stage/new.html', 'wb') as fh:
-    fh.write(pretty_final_output)
+        output_from_parsed_template = template.render(content=file_contents)
+        new_template = env.from_string(output_from_parsed_template)
+        final_output = new_template.render()
+
+        soup = bs(final_output)
+        pretty_final_output = soup.prettify().encode('utf-8')
+
+        with open('stage/' + i, 'wb') as fh:
+            fh.write(pretty_final_output)
