@@ -2,6 +2,9 @@ _site
 .sass-cache
 .jekyll-metadata
 stage
+xdk/www/*
+!xdk/www/plugins
+!xdk/www/xdk
 
 # Compiled source #
 ###################

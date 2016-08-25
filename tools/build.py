@@ -1,3 +1,6 @@
+# This file is responsible for building all the files in
+# the src directory and replacing the old ones in stage.
+
 import os
 import shutil
 
