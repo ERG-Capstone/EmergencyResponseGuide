@@ -24,17 +24,17 @@ else:
 for i in os.listdir(working_directory):
     srci = 'src/' + i
     dsti = 'stage/' + i
+
     if i.endswith('.html'):
         with open(srci, 'r') as content_file:
             file_contents = content_file.read()
 
-        # file_contents.encode('utf-8')
+        # Render can fail occasionally, log filename and exception if it does
         try:
             output_from_parsed_template = template.render(content=file_contents)
         except Exception as e:
-            print i
-            print e
-            print file_contents
+            print('Problem with file: %s' % i)
+            print(e)
             exit()
 
         new_template = env.from_string(output_from_parsed_template)
@@ -46,10 +46,11 @@ for i in os.listdir(working_directory):
         with open(dsti, 'wb') as fh:
             fh.write(pretty_final_output)
     else:
+        # Copy the rest of the files and directories
         if '.' not in i:
             try:
-                shutil.copytree(srci, dsti)
+                shutil.copytree(srci, dsti)  # Is directory without "." in name
             except Exception:
-                shutil.copy2(srci, dsti)
+                shutil.copy2(srci, dsti)  # Is actually a file
         else:
-            shutil.copy2(srci, dsti)
+            shutil.copy2(srci, dsti)  # Is a directory with "." in name
