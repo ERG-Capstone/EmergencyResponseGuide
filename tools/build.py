@@ -28,7 +28,15 @@ for i in os.listdir(working_directory):
         with open(srci, 'r') as content_file:
             file_contents = content_file.read()
 
-        output_from_parsed_template = template.render(content=file_contents)
+        # file_contents.encode('utf-8')
+        try:
+            output_from_parsed_template = template.render(content=file_contents)
+        except Exception as e:
+            print i
+            print e
+            print file_contents
+            exit()
+
         new_template = env.from_string(output_from_parsed_template)
         final_output = new_template.render()
 
