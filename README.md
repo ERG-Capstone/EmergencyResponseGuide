@@ -8,7 +8,7 @@ WIP
 WIP
 
 ## Contributors
-[Spencer Bywater](https://github.com/spencerbyw)
-[Dominique Fajardo](https://github.com/dnfajard)
-[Garett Winkler](https://github.com/garettwinkler)
-Garrett Decker
+- [Spencer Bywater](https://github.com/spencerbyw)
+- [Dominique Fajardo](https://github.com/dnfajard)
+- [Garett Winkler](https://github.com/garettwinkler)
+- Garrett Decker
