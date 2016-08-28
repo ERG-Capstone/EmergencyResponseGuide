@@ -1,22 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>ASU Emergency Response</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
-</head>
-<body>
-
 <div data-role="page"  id="aedPage">
 
     <!--header-->
-	<div data-role="header" data-position="fixed" >
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>AED</h1>
-       <a href="index.html">Home</a>
-    </div>
+		{% with page_title='AED'%}
+    {% include 'includes/headerBar.html' %}
+    {% endwith %}
 
     <div data-role="content">
         <h3 style="color:#800000;text-align:center">AED Locations</h3>
@@ -89,14 +76,14 @@
 	<li><a href="soccer.html">Soccer Stadium</a></li>
 	<li><a href="socialSciences.html">Social Sciences</a></li>
     <li><a href="sonoraCenter.html">Sonora Center Hall</a></li>
-	<li><a href="sonoraAnnex.html">Sonora Annex</a></li>	
+	<li><a href="sonoraAnnex.html">Sonora Annex</a></li>
 	<li><a href="stuAthCent.html">Student Athlete Center</a></li>
 	<li><a href="healthServices.html">Student Health Services</a></li>
 	<li><a href="ssv.html">Student Services Bldg</a></li>
 	<li><a href="sunAngelClub.html">Sun Angel Clubhouse</a></li>
 	<li><a href="sunAngelStadium.html">Sun Angel Stadium</a></li>
 	<li><a href="sunDevSportPerf.html">Sun Devil Sports Performance</a></li>
-	<li><a href="sunDevSuites.html">Sun Devil Stadium Suites</a></li>	
+	<li><a href="sunDevSuites.html">Sun Devil Stadium Suites</a></li>
 	<li><a href="univCentA.html">University Center A</a></li>
 	<li><a href="univerCentB.html">University Center B</a></li>
 	<li><a href="undergradAcadSVC.html">Undergrad ASVC</a></li>
@@ -117,19 +104,5 @@
 
   </div> <!--contnent-->
     <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	   <div data-role="navbar">
-		<ul>
-            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-        </ul>
-        </div>
-    </div>
+	{% include 'includes/footerBar.html' %}
 </div> <!--page-->
-
-
-
-</body>
-</html>
