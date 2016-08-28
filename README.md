@@ -56,7 +56,7 @@ I made a quick guide to hopefully give you a preview of the best way to work on 
 2. Whenever you make changes to something in the `src` directory, **make sure to run `make build` afterward so that the changes show up in XDK.** (I am planning on eventually adding a watcher to automatically run the build if changes are detected.)
 
 ## Contributors
-- [Spencer Bywater](https://github.com/spencerbyw)
+- [Spencer Bywater](https://github.com/spencerbyw) _[(website)](http://spencerbywater.com)_
 - [Dominique Fajardo](https://github.com/dnfajard)
 - [Garett Winkler](https://github.com/garettwinkler)
 - Garrett Decker
