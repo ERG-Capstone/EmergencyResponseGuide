@@ -6,6 +6,7 @@ import shutil
 
 from BeautifulSoup import BeautifulSoup as bs
 from jinja2 import Environment, FileSystemLoader
+from sys import stdout
 
 env = Environment(loader=FileSystemLoader('templates'),
                   extensions=['jinja2.ext.with_'])
@@ -21,9 +22,12 @@ else:
     os.mkdir('stage')
 
 # Template-ize each html in src and copy it to stage
-for i in os.listdir(working_directory):
+dir_list = os.listdir(working_directory)
+for index, i in enumerate(dir_list):
     srci = 'src/' + i
     dsti = 'stage/' + i
+    stdout.write('\r\033[92mProcessing %d of %d items...\033[0m' % (index + 1, len(dir_list)))
+    stdout.flush()
 
     if i.endswith('.html'):
         with open(srci, 'r') as content_file:
@@ -33,7 +37,7 @@ for i in os.listdir(working_directory):
         try:
             output_from_parsed_template = template.render(content=file_contents)
         except Exception as e:
-            print('Problem with file: %s' % i)
+            print('\nProblem with file: %s' % i)
             print(e)
             exit()
 
@@ -54,3 +58,5 @@ for i in os.listdir(working_directory):
                 shutil.copy2(srci, dsti)  # Is actually a file
         else:
             shutil.copy2(srci, dsti)  # Is a directory with "." in name
+
+print('\n')  # Newline for cleanliness
