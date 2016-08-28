@@ -1,38 +1,21 @@
-<!DOCTYPE html> 
-<html> 
-    <head> 
-	<title>ASU Emergency Response</title> 
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
-   
-    </head> 
-<body>
-
-
- 
-    
 <!-------------------------->
 <!----Major Accident-------->
-<!-------------------------->    
+<!-------------------------->
 <div data-role="page"  id="accidentGuide">
 
     <!--header-->
-	<div data-role="header" data-position="fixed" >
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Major Accident</h1>
-        <a href="index.html">Home</a>
-    </div>
+    {% with page_title='Major Accident'%}
+    {% include 'includes/headerBar.html' %}
+    {% endwith %}
 
     <div data-role="content">
         <h3 style="color:#800000;text-align:center">Major Accident</h3>
-        
-            
-        
+
+
+
            <!--- Sub-sections (Collapsible set)------>
             <div data-role="collapsible-set" data-inset="true">
-       
+
                 <div data-role="collapsible">
                    <h3>Motor Vehicle Accident</h3>
                    <ul>
@@ -41,10 +24,10 @@
                        <li>Advise the operator of the number of injured and their injuries.</li><br/>
                        <li>Look for hazards that could affect you or responding emergency personnel (fuel, chemicals, etc.) and report them to the 911 operator.</li><br/>
                        <li>DO NOT attempt to move the injured unless it is more dangerous to leave them where they are, i.e.: car fire.</li><br/>
-                       <li>Attempt to keep the victims calm and reassure them that assistance is on the way.</li><br/>                       
+                       <li>Attempt to keep the victims calm and reassure them that assistance is on the way.</li><br/>
                     </ul>
                 </div>
-               
+
                 <div data-role="collapsible">
                     <h3>Aircraft Accident</h3>
                     <div>
@@ -53,8 +36,6 @@
                             <li>No one will be permitted within a five hundred foot radius of the aircraft. </li><br/>
                             <li>Smoke from a burning aircraft is very toxic and should be avoided. </li><br/>
                             <li>If an aircraft incident occurs on the campus, evacuation procedures will begin in the surrounding area.</li><br/>
-                           
-                            
                         </ul>
                     </div>
                 </div>
@@ -65,9 +46,7 @@
                             <li>Notify the operator of the accident location, the number of casualties and if any campus structures are affected.</li><br/>
                             <li>If the crash scene is close to your building, notify your supervisor and evacuate if smoke from the crash scene moves in your direction.</li><br/>
                             <li>DO NOT approach a downed aircraft. </li><br/>
-                            
                         </ul>
-
                 </div>
 
                 <!---Contact--->
@@ -75,7 +54,7 @@
                     <h3>Emergency Contacts</h3>
                      <div>
                         <li style="font-weight:bold">ASU Police by campus</li>
-                        <p>Tempe <a href="tel:1(480) 965-3456">480.965.3456</a> | Poly <a href="tel:1(480) 727-3456">480.727.3456</a> or <a href="tel:1(480) 727-3456">480.727.3456</a> after hours | West <a href="tel:1(602) 543-3456">602.543.3456</a> | Downtown <a href="tel:1(602) 496-3456">602.496.3456</a></p>                        
+                        <p>Tempe <a href="tel:1(480) 965-3456">480.965.3456</a> | Poly <a href="tel:1(480) 727-3456">480.727.3456</a> or <a href="tel:1(480) 727-3456">480.727.3456</a> after hours | West <a href="tel:1(602) 543-3456">602.543.3456</a> | Downtown <a href="tel:1(602) 496-3456">602.496.3456</a></p>
                         <p>Also see <a href="contactPage.html">Emergency Contacts</a> page.</p>
                     </div>
                 </div>
@@ -93,16 +72,7 @@
         </div>
 
     <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	   <div data-role="navbar">
-		<ul>
-		  <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-        </ul>
-        </div>
-    </div>
+    {% include 'includes/footerBar.html' %}
 
 </div>
     </body>
