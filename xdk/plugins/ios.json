@@ -22,19 +22,45 @@
         "org.apache.cordova.camera": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
-        "org.apache.cordova.media-capture": {},
-        "org.apache.cordova.device-orientation": {},
-        "org.apache.cordova.network-information": {},
-        "org.apache.cordova.contacts": {},
-        "org.apache.cordova.battery-status": {},
-        "org.apache.cordova.file-transfer": {},
-        "org.apache.cordova.geolocation": {},
-        "org.apache.cordova.globalization": {},
-        "org.apache.cordova.media": {},
-        "org.apache.cordova.dialogs": {},
-        "org.apache.cordova.vibration": {},
-        "org.apache.cordova.statusbar": {},
-        "org.apache.cordova.inappbrowser": {}
+        "org.apache.cordova.media-capture": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "org.apache.cordova.device-orientation": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "org.apache.cordova.network-information": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "org.apache.cordova.contacts": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "org.apache.cordova.battery-status": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "org.apache.cordova.file-transfer": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "org.apache.cordova.geolocation": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "org.apache.cordova.globalization": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "org.apache.cordova.media": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "org.apache.cordova.dialogs": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "org.apache.cordova.vibration": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "org.apache.cordova.statusbar": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "org.apache.cordova.inappbrowser": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        }
     },
     "dependent_plugins": {
         "org.apache.cordova.battery-status": {
