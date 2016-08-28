@@ -48,6 +48,9 @@ The following steps will get your environment all ready for development.
 10. If that worked, you should be able to open `EmergencyResponseGuide/xdk/EmergencyResponseGuide.xdk` in Intel XDK to view it. Let me (Spencer) know if you run into any issues.
 
 # IMPORTANT: Dev Instructions
+### Watch this video
+I made a quick guide to hopefully give you a preview of the best way to work on this repo. Click the image below to view it:
+[![ERG Dev Intro](http://img.youtube.com/vi/pyjghxR9aCc/0.jpg)](https://www.youtube.com/watch?v=pyjghxR9aCc "ERG Dev Guide")
 ### The Basics
 1. All of the "source code" that we are editing is in the `src` directory, and occasionally in the `templates` directory. **Don't** make edits to html files in the `stage` folder or in the `xdk/www` folder.
 2. Whenever you make changes to something in the `src` directory, **make sure to run `make build` afterward so that the changes show up in XDK.** (I am planning on eventually adding a watcher to automatically run the build if changes are detected.)
