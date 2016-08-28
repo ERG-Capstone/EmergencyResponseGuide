@@ -7,11 +7,21 @@
         "files": {}
     },
     "installed_plugins": {
-        "org.apache.cordova.file": {},
-        "org.apache.cordova.device": {},
-        "org.apache.cordova.splashscreen": {},
-        "org.apache.cordova.device-motion": {},
-        "org.apache.cordova.camera": {},
+        "org.apache.cordova.file": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "org.apache.cordova.splashscreen": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "org.apache.cordova.device-motion": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "org.apache.cordova.camera": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
         "org.apache.cordova.media-capture": {},
         "org.apache.cordova.device-orientation": {},
         "org.apache.cordova.network-information": {},

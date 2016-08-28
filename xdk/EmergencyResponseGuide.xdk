@@ -6,7 +6,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "blankproject",
       "projectGuid": "f3e55f4e-e28f-4480-8bce-7bb830584025",
-      "lastModifiedDate": 1471551782697,
+      "lastModifiedDate": 1472310928993,
       "creationDate": 1417663282079
     },
     "sourceDirectory": "www",
@@ -50,7 +50,8 @@
         "dependedBy": [],
         "originType": "cordova.io",
         "origin": "org.apache.cordova.device",
-        "permissions": {}
+        "permissions": {},
+        "name": "Device"
       },
       {
         "id": "org.apache.cordova.splashscreen",
@@ -62,7 +63,8 @@
         "dependedBy": [],
         "originType": "cordova.io",
         "origin": "org.apache.cordova.splashscreen",
-        "permissions": {}
+        "permissions": {},
+        "name": "Splashscreen"
       },
       {
         "id": "org.apache.cordova.device-motion",
@@ -74,7 +76,8 @@
         "dependedBy": [],
         "originType": "cordova.io",
         "origin": "org.apache.cordova.device-motion",
-        "permissions": {}
+        "permissions": {},
+        "name": "Device Motion"
       },
       {
         "id": "org.apache.cordova.camera",
@@ -86,7 +89,8 @@
         "dependedBy": [],
         "originType": "cordova.io",
         "origin": "org.apache.cordova.camera",
-        "permissions": {}
+        "permissions": {},
+        "name": "Camera"
       },
       {
         "id": "org.apache.cordova.media-capture",
@@ -100,7 +104,8 @@
         "dependedBy": [],
         "originType": "cordova.io",
         "origin": "org.apache.cordova.media-capture",
-        "permissions": {}
+        "permissions": {},
+        "name": "Capture"
       },
       {
         "id": "org.apache.cordova.device-orientation",
@@ -112,7 +117,8 @@
         "dependedBy": [],
         "originType": "cordova.io",
         "origin": "org.apache.cordova.device-orientation",
-        "permissions": {}
+        "permissions": {},
+        "name": "Device Orientation"
       },
       {
         "id": "org.apache.cordova.network-information",
@@ -124,7 +130,8 @@
         "dependedBy": [],
         "originType": "cordova.io",
         "origin": "org.apache.cordova.network-information",
-        "permissions": {}
+        "permissions": {},
+        "name": "Network Information"
       },
       {
         "id": "org.apache.cordova.contacts",
@@ -136,7 +143,8 @@
         "dependedBy": [],
         "originType": "cordova.io",
         "origin": "org.apache.cordova.contacts",
-        "permissions": {}
+        "permissions": {},
+        "name": "Contacts"
       },
       {
         "id": "org.apache.cordova.battery-status",
@@ -148,7 +156,8 @@
         "dependedBy": [],
         "originType": "cordova.io",
         "origin": "org.apache.cordova.battery-status",
-        "permissions": {}
+        "permissions": {},
+        "name": "Battery"
       },
       {
         "id": "org.apache.cordova.file",
@@ -164,7 +173,8 @@
         ],
         "originType": "cordova.io",
         "origin": "org.apache.cordova.file",
-        "permissions": {}
+        "permissions": {},
+        "name": "File"
       },
       {
         "id": "org.apache.cordova.file-transfer",
@@ -178,7 +188,8 @@
         "dependedBy": [],
         "originType": "cordova.io",
         "origin": "org.apache.cordova.file-transfer",
-        "permissions": {}
+        "permissions": {},
+        "name": "File Transfer"
       },
       {
         "id": "org.apache.cordova.geolocation",
@@ -190,7 +201,8 @@
         "dependedBy": [],
         "originType": "cordova.io",
         "origin": "org.apache.cordova.geolocation",
-        "permissions": {}
+        "permissions": {},
+        "name": "Geolocation"
       },
       {
         "id": "org.apache.cordova.globalization",
@@ -202,7 +214,8 @@
         "dependedBy": [],
         "originType": "cordova.io",
         "origin": "org.apache.cordova.globalization",
-        "permissions": {}
+        "permissions": {},
+        "name": "Globalization"
       },
       {
         "id": "org.apache.cordova.media",
@@ -216,7 +229,8 @@
         "dependedBy": [],
         "originType": "cordova.io",
         "origin": "org.apache.cordova.media",
-        "permissions": {}
+        "permissions": {},
+        "name": "Media"
       },
       {
         "id": "org.apache.cordova.dialogs",
@@ -228,7 +242,8 @@
         "dependedBy": [],
         "originType": "cordova.io",
         "origin": "org.apache.cordova.dialogs",
-        "permissions": {}
+        "permissions": {},
+        "name": "Notification"
       },
       {
         "id": "org.apache.cordova.vibration",
@@ -240,7 +255,8 @@
         "dependedBy": [],
         "originType": "cordova.io",
         "origin": "org.apache.cordova.vibration",
-        "permissions": {}
+        "permissions": {},
+        "name": "Vibration"
       },
       {
         "id": "org.apache.cordova.statusbar",
@@ -252,7 +268,8 @@
         "dependedBy": [],
         "originType": "cordova.io",
         "origin": "org.apache.cordova.statusbar",
-        "permissions": {}
+        "permissions": {},
+        "name": "StatusBar"
       },
       {
         "id": "org.apache.cordova.inappbrowser",
@@ -264,7 +281,8 @@
         "dependedBy": [],
         "originType": "cordova.io",
         "origin": "org.apache.cordova.inappbrowser",
-        "permissions": {}
+        "permissions": {},
+        "name": "InAppBrowser"
       }
     ],
     "buildConfigurations": {
@@ -278,7 +296,6 @@
           "android-installLocation": "auto"
         },
         "isActive_": true,
-        "certificateId_": "",
         "appName_": "Tools-version",
         "appID_": "xdk.intel.blank.project",
         "appAccess_": {
@@ -291,12 +308,14 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
+        "certificateId_": "",
         "iosProvs_": [],
         "cordovaCLIVersion_": "4.1.2",
         "appVersion_": "0.0.1",
         "appDescription_": "Universal init code for Intel XDK and Cordova device ready detection, as well as within browser.",
         "appAuthor_": "",
-        "appVersionCode_": "1"
+        "appVersionCode_": "1",
+        "crosswalkVersion_": null
       },
       "iOS": {
         "platform_": "ios",
@@ -307,7 +326,6 @@
           "deployment-target": "5"
         },
         "isActive_": true,
-        "certificateId_": "",
         "appName_": "Tools-version",
         "appID_": "xdk.intel.blank.project",
         "appAccess_": {
@@ -320,6 +338,7 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
+        "certificateId_": "",
         "iosProvs_": [],
         "cordovaCLIVersion_": "3.5.0",
         "crosswalkVersion_": "stable",
@@ -335,7 +354,6 @@
           "windows-publisher-id": ""
         },
         "isActive_": true,
-        "certificateId_": "",
         "appName_": "Tools-version",
         "appID_": "xdk.intel.blank.project",
         "appAccess_": {
@@ -348,6 +366,7 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
+        "certificateId_": "",
         "iosProvs_": [],
         "cordovaCLIVersion_": "3.5.0",
         "crosswalkVersion_": "stable",
@@ -360,7 +379,6 @@
         "name_": "WebApp",
         "preferences_": {},
         "isActive_": false,
-        "certificateId_": "",
         "appName_": "Tools-version",
         "appID_": "not.yet.specified",
         "appAccess_": {
@@ -375,6 +393,7 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
+        "certificateId_": "",
         "appVersion_": "0.0.1"
       },
       "Firefox": {
@@ -383,7 +402,6 @@
         "name_": "Firefox",
         "preferences_": {},
         "isActive_": false,
-        "certificateId_": "",
         "appName_": "Tools-version",
         "appID_": "not.yet.specified",
         "appAccess_": {
@@ -398,6 +416,7 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
+        "certificateId_": "",
         "appVersion_": "0.0.1"
       },
       "Chrome": {
@@ -406,7 +425,6 @@
         "name_": "Chrome",
         "preferences_": {},
         "isActive_": false,
-        "certificateId_": "",
         "appName_": "Tools-version",
         "appID_": "not.yet.specified",
         "appAccess_": {
@@ -421,6 +439,7 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
+        "certificateId_": "",
         "appVersion_": "0.0.1"
       },
       "Facebook": {
@@ -429,7 +448,6 @@
         "name_": "Facebook",
         "preferences_": {},
         "isActive_": false,
-        "certificateId_": "",
         "appName_": "Tools-version",
         "appID_": "not.yet.specified",
         "appAccess_": {
@@ -444,6 +462,7 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
+        "certificateId_": "",
         "appVersion_": "0.0.1"
       },
       "WP81": {
@@ -452,7 +471,6 @@
         "name_": "WP81",
         "preferences_": {},
         "isActive_": true,
-        "certificateId_": "",
         "appName_": "Tools-version",
         "appID_": "not.yet.specified",
         "appAccess_": {
@@ -461,9 +479,11 @@
           "intents": [],
           "navigation": []
         },
-        "addlPermissions_": "",
         "icons_": [],
         "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "certificateId_": "",
         "appVersion_": "0.0.0.1",
         "cordovaCLIVersion_": "6.2.0"
       }

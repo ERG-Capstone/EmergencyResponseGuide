@@ -45,10 +45,12 @@ The following steps will get your environment all ready for development.
   make build
   ```
 
-10. If that worked, you should be able to open and view the project in Intel XDK. Let me (Spencer) know if you run into any issues.
+10. If that worked, you should be able to open `EmergencyResponseGuide/xdk/EmergencyResponseGuide.xdk` in Intel XDK to view it. Let me (Spencer) know if you run into any issues.
 
 # IMPORTANT: Dev Instructions
-WIP
+### The Basics
+1. All of the "source code" that we are editing is in the `src` directory, and occasionally in the `templates` directory. **Don't** make edits to html files in the `stage` folder or in the `xdk/www` folder.
+2. Whenever you make changes to something in the `src` directory, **make sure to run `make build` afterward so that the changes show up in XDK.** (I am planning on eventually adding a watcher to automatically run the build if changes are detected.)
 
 ## Contributors
 - [Spencer Bywater](https://github.com/spencerbyw)
