@@ -2,7 +2,7 @@
 ASU Emergency Response Guide App for 2016 CS Capstone.
 
 # Set up
-The following steps will get your environment all ready for development.
+The following steps will get your environment all ready for development. _You can copy the commands below normally, and then to paste them into babun, right-click._
 
 1. Install babun. You can download it [here](http://babun.github.io). _babun is a linux-looking terminal that will allow us to run useful commands that will work the same across all of our environments._
 2. Install the latest version of Intel XDK, download [here](https://software.intel.com/en-us/intel-xdk)
@@ -34,18 +34,23 @@ The following steps will get your environment all ready for development.
   pact install python
   ```
 
-8. Run the following command to install the required python libraries:
+8. And make sure pip is installed:
+  ```
+  wget https://bootstrap.pypa.io/get-pip.py && python get-pip.py && rm get-pip.py
+  ```
+
+9. Run the following command to install the required python libraries:
   ```
   make install_deps
   ```
   This installs all of the dependencies listed in the `requirements.txt` file.
 
-9. Test that all of the setup steps worked by running:
+10. Test that all of the setup steps worked by running:
   ```
   make build
   ```
 
-10. If that worked, you should be able to open `EmergencyResponseGuide/xdk/EmergencyResponseGuide.xdk` in Intel XDK to view it. Let me (Spencer) know if you run into any issues.
+11. If that worked, you should be able to open `EmergencyResponseGuide/xdk/EmergencyResponseGuide.xdk` in Intel XDK to view it. Let me (Spencer) know if you run into any issues.
 
 # IMPORTANT: Dev Instructions
 ### Watch this video
