@@ -5,6 +5,7 @@ stage
 xdk/www/*
 !xdk/www/plugins
 !xdk/www/xdk
+.idea
 
 # Compiled source #
 ###################
