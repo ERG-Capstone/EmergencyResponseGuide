@@ -6,11 +6,9 @@
     <div data-role="page"  id="">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Flood Emergency</h1>
-        <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Flood Emergency'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Flood Emergency</h3><hr><br>
@@ -42,11 +40,9 @@
     <div data-role="page"  id="minor">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Flood Emergency</h1>
-       <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Flood Emergency'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     
     <div data-role="content">
@@ -82,11 +78,9 @@
 <div data-role="page"  id="major">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Flood Emergency</h1>
-       <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Flood Emergency'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Major Flooding</h3><hr><br>
@@ -119,11 +113,9 @@
 <div data-role="page"  id="minor2">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Personal Threat</h1>
-        <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Personal Threat'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     <div data-role="content">
         <h3 style="color:#800000;text-align: center">Flood Emergency</h3>

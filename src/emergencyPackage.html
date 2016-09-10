@@ -6,11 +6,9 @@
     <div data-role="page"  id="">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Suspicious Package Emergency</h1>
-        <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Suspicious Package Emergency'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Suspicious Package Emergency</h3><hr><br>        

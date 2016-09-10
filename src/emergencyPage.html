@@ -6,11 +6,9 @@
     <div data-role="page"  id="emergencyPage">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Emergency</h1>
-        <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Emergency'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     <div data-role="content">
         <h3 style="color:#800000;text-align: center">Do You Have An Emergency?</h3><hr><br>        
@@ -44,11 +42,9 @@
     <div data-role="page"  id="emergencyNo">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Emergency</h1>
-        <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Emergency'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     <div data-role="content">
         <h3 style="color:#800000;text-align: center">You Don't Have an Emergency</h3><hr><br>             
@@ -75,11 +71,9 @@
     <div data-role="page"  id="emergencyYes">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Emergency</h1>
-       <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Emergency'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     <div data-role="content">    
         <h3 style="color:#800000;text-align: center">What Type of Emergency?</h3> 

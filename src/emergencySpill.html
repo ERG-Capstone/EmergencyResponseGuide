@@ -6,11 +6,9 @@
     <div data-role="page"  id="earthquake">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Bio/Rad Spill Emergency</h1>
-        <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Bio/Rad Spill Emergency'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     <div data-role="content">
         
@@ -41,11 +39,9 @@
     <div data-role="page"  id="spill">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Spill Emergency</h1>
-        <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Spill Emergency'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Spill Emergency</h3><hr><br>        
@@ -80,11 +76,9 @@
     <div data-role="page"  id="fumes">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Fumes/Vapor Emergency</h1>
-        <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Fumes/Vapor Emergency'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Fumes/Vapor Emergency</h3><hr><br>
@@ -120,11 +114,9 @@
     <div data-role="page"  id="injury">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Rad/Bio Spill Emergency</h1>
-        <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Rad/Bio Spill Emergency'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     <div data-role="content">   
         <h3 style="color:#800000;text-align: center">Injuries</h3><hr><br>

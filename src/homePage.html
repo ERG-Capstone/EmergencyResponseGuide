@@ -6,11 +6,9 @@
     <div data-role="page"  id="homePage">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Main Menu</h1>
-        <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Main Menu'%}
+    {% include 'includes/headerBar.html' %}
+    {% endwith %}
     
     <img src="asulogo.jpg" style="width: 100%"/>
     <br><h3 style="color:#800000;text-align: center">ASU Emergency Response</h3>
@@ -42,11 +40,9 @@
     <div data-role="page"  id="toolsPage">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Tools</h1>
-        <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Tools'%}
+    {% include 'includes/headerBar.html' %}
+    {% endwith %}
     
     <br><h3 style="color:#800000;text-align: center">ASU Emergency Response Tools</h3>
 	

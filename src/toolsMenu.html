@@ -13,11 +13,9 @@
     <div data-role="page"  id="toolsPage">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Tools</h1>
-        <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Tools'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     
 	

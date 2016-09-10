@@ -5,11 +5,9 @@
 <!------------------------->
 <div data-role="page"  id="contactPage">
     <!--header-->
-	<div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Contacts</h1>
-        <a href="index.html">Home</a>
-    </div><!-- /header -->
+	{% with page_title='Contacts'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}<!-- /header -->
 
     <div data-role="content">
         <h3 style="color:#800000;text-align:center">ASU Emergency Contacts</h3>

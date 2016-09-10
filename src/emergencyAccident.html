@@ -6,11 +6,9 @@
     <div data-role="page"  id="">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Accident Emergency</h1>
-        <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Accident Emergency'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Accident Emergency</h3><hr><br>
@@ -41,11 +39,9 @@
     <div data-role="page"  id="vehicle">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Accident Emergency</h1>
-       <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Accident Emergency'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     
     <div data-role="content">
@@ -82,11 +78,9 @@
     <div data-role="page"  id="aircraft">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Accident Emergency</h1>
-       <a href="index.html">Home</a>
-    </div>       
+    {% with page_title='Accident Emergency'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     <div data-role="content">
         <h3 style="color:#800000;text-align: center">Aircraft Accident</h3><hr><br>

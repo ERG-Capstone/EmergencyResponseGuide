@@ -10,11 +10,9 @@
 <!-------------------------->
 <div data-role="page" id="hazardGuide">
      <!--header-->
-	<div data-role="header" data-position="fixed" >
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Hazardous Materials Incident</h1>
-        <a href="index.html">Home</a>
-    </div>
+	{% with page_title='Hazardous Materials Incident'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
 
     <div data-role="content">
         <h3 style="color:#800000;text-align:center">Hazardous Materials Incident</h3>

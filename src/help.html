@@ -7,12 +7,9 @@
     <div data-role="page"  id="helpPage">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Emergency Response Guide</h1>
-        <a href="index.html">Home</a>
-        
-    </div><br>   
+    {% with page_title='Emergency Response Guide'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}<br>
     <h3 style="color:#800000;text-align: center">ERG Help</h3>
 	
 	<!-----Help content------>

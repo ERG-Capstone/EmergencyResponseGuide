@@ -87,11 +87,9 @@ function setWest(){
 <div data-role="page">
 
     <!--header-->
-	<div data-role="header"  >
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Map</h1>
-       <a href="index.html">Home</a>
-    </div>
+	{% with page_title='Map'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
 
     <div data-role="content">
         <h3 style="color:#800000;text-align:center">ASU Map</h3>

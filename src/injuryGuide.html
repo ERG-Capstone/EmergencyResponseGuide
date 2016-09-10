@@ -11,11 +11,9 @@
 <div data-role="page"  id="injuryGuide">
 
     <!--header-->
-	<div data-role="header" data-position="fixed" >
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Personal Injury</h1>
-        <a href="index.html">Home</a>
-    </div>
+	{% with page_title='Personal Injury'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
 
     <div data-role="content">
         <h3 style="color:#800000;text-align:center">Personal Injury Emergency</h3>

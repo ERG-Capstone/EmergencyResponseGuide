@@ -1,34 +1,22 @@
-<!DOCTYPE html> 
-<html> 
-    <head> 
-	<title>ASU Emergency Response</title> 
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
-   <script src="intelxdk.js"></script>      
+
+<script src="intelxdk.js"></script>
     <script src='cordova.js'></script>
-        
+
     <script>
         function openExternal(elem) {
             window.open(elem.href, "_system");
-            return false; 
+            return false;
         }
     </script>
-    </head> 
-    <body>
-        
 <!-------------------------->    
 <!-----------ABOUT---------->
 <!-------------------------->
 <div data-role="page"  id="aboutPage">   
 
     <!--header-->
-	<div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>About</h1>
-        <a href="index.html">Home</a>
-    </div> 
+    {% with page_title='About'%}
+    {% include 'includes/headerBar.html' %}
+    {% endwith %}
 
     <div data-role="content">
          <h3 style="color:#800000;text-align:center">About the ERG</h3>
@@ -62,11 +50,9 @@
 <div data-role="page"  id="preparednessPage">   
 
     <!--header-->
-	<div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Emergency Preparedness</h1>
-        <a href="index.html">Home</a>
-    </div>
+    {% with page_title='Emergency Preparedness'%}
+    {% include 'includes/headerBar.html' %}
+    {% endwith %}
 
     <div data-role="content">
         <h3 style="color:#800000;text-align:center">Emergency Preparedness at ASU</h3>
@@ -108,11 +94,9 @@
 <div data-role="page"  id="trainingPage">   
 
     <!--header-->
-	<div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Emergency Training</h1>
-        <a href="index.html">Home</a>
-    </div> 
+    {% with page_title='Emergency Training'%}
+    {% include 'includes/headerBar.html' %}
+    {% endwith %}
 
     <div data-role="content"> 
         <h3 style="color:#800000;text-align:center">Emergency Training at ASU</h3>
@@ -143,11 +127,9 @@
 <div data-role="page"  id="recoveryPage">   
 
     <!--header-->
-	<div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Emergency Recovery</h1>
-        <a href="#startPage">Home</a>
-    </div>  
+	{% with page_title='Emergency Recovery'%}
+    {% include 'includes/headerBar.html' %}
+    {% endwith %}
 
     <div data-role="content"> 
         <h3 style="color:#800000;text-align:center">Emergency Recovery at ASU</h3>
@@ -206,5 +188,3 @@
 	       </div><!-- /navbar -->
         </div>
     </div>
-    </body>
-</html>

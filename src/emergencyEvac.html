@@ -5,11 +5,9 @@
 <div data-role="page"  id="">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Evacuation Emergency</h1>
-        <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Evacuation Emergency'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Evacuation Emergency</h3><hr><br>
@@ -39,11 +37,9 @@
     <div data-role="page"  id="yes">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Evacuation Emergency</h1>
-        <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Evacuation Emergency'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">If SAFE to leave the building:</h3><hr><br>
@@ -79,11 +75,9 @@
     <div data-role="page"  id="no">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Evacuation Emergency</h1>
-        <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Evacuation Emergency'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">If NOT SAFE to leave the building:</h3><hr><br>
