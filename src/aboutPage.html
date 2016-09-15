@@ -8,10 +8,10 @@
             return false;
         }
     </script>
-<!-------------------------->    
+<!-------------------------->
 <!-----------ABOUT---------->
 <!-------------------------->
-<div data-role="page"  id="aboutPage">   
+<div data-role="page"  id="aboutPage">
 
     <!--header-->
     {% with page_title='About'%}
@@ -26,16 +26,16 @@
             <li style="text-align-:center">If you have questions concerning a unique situation not covered in this reference, or need additional emergency information,  please contact ASU Police or ASU Environmental Health and Safety (EH&S) see <a href="contactPage.html">Contacts</a> section.</li><br>
 			<li>For more information about ASU Emergency Preparedness view the <a href="https://cfo.asu.edu/emergency" onClick="javascript:return openExternal(this)">Emergency Website</a>.</li><br>
         </ul>
-        <a href="#preparednessPage" data-role="button">Emergency Preparedness</a> 
-        <a href="#trainingPage" data-role="button">Emergency Training</a> 
-        <a href="#recoveryPage" data-role="button">Emergency Recovery</a>      
-	</div> 
+        <a href="#preparednessPage" data-role="button">Emergency Preparedness</a>
+        <a href="trainingPage.html" data-role="button">Emergency Training</a>
+        <a href="#recoveryPage" data-role="button">Emergency Recovery</a>
+	</div>
 
     <!--footer-->
-	<div data-role="footer" data-position="fixed">		
+	<div data-role="footer" data-position="fixed">
 	       <div data-role="navbar">
 		      <ul>
-			<li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+			<li><a href="alertPage.html" data-ajax="false">Alerts</a></li>
             <li><a href="readGuide.html">Guide</a></li>
 			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
             <li><a href="contactPage.html">Contacts</a></li>
@@ -43,11 +43,11 @@
 	       </div><!-- /navbar -->
         </div>
 </div>
-    
-<!-------------------------->    
+
+<!-------------------------->
 <!--ABOUT (Preparedness)---->
 <!-------------------------->
-<div data-role="page"  id="preparednessPage">   
+<div data-role="page"  id="preparednessPage">
 
     <!--header-->
     {% with page_title='Emergency Preparedness'%}
@@ -59,128 +59,111 @@
         <hr><br>
         <div>
         <ul><!--Intro-->
-            <li>Emergencies can occur at any time</li><br>
+            <li><b>Please read this guide before an emergency occurs!</b></li><br>
+            <li>Emergencies, disasters, accidents, injuries and crimes can occur at any time</li><br>
             <li>Being physically and psychologically prepared is an individual/organizational responsibility</li><br>
-            <li>Become familiar with the information found in this guide</li><br>
-            <li>You will be better prepared to protect yourself and your co-workers.</li><br>
+            <li>Acquaint yourself with the contents within this guide. Preparedness is often defined by how well your respond to and recover from an incident.</li><br>
+            <li>Preload important phone numbers listed on the <a href="contactPage.html">Contacts</a> page into your mobile phone.</li><br>
+            <li>BE PREPARED!</li><br>
         </ul>
         </div>
         <!--Preparedness checklist-->
         <div data-role="collapsible">
             <h3>Preparedness Checklist</h3>
-                <p style="text-align:center"><b>Keep emergency supplies in your office</b></p><hr>
+                <p style="text-align:center"><b>Keep emergency supplies in your office</b></p><br>
+                <p style="text-align:center">Supplies to consider: </p>
+                  <ul>
+                    <li>Medications</li><br>
+                    <li>Flashlights</li><br>
+                    <li>Comfortable Shoes</li><br>
+                    <li>Bottled Water</li><br>
+                    <li>Batteries</li><br>
+                    <li>Portable Batteries</li><br>
+                  </ul>
+                <hr>
                 <p style="text-align:center">Post an Emergency Response Guide in a visible location in your office. Ensure all staff are made aware of its location.</p><hr>
-                <p style="text-align:center"><b>Become familiar with all exit routes from your building.</b></p><hr>
-                <p style="text-align:center">Locate the nearest fire extinguisher and pull station and register for a fire safety and fire extinguisher training course.</p><hr>
-                <p style="text-align:center"><b>Register for Cardiopulmonary Resuscitation (CPR), Automated External Defibrillator (AED), First Aid, Crime Prevention, or other safety training courses.</b></p>                   
+                <p style="text-align:center"><b>Become familiar with all exit routes and assembly points around your building.</b></p><hr>
+                <p style="text-align:center">Locate the nearest fire extinguisher and pull station.</p><hr>
+                <p style="text-align:center">Complete and remain current on annual fire safety training.</p><hr>
+                <p style="text-align:center"><b>Register for Cardiopulmonary Resuscitation (CPR), Automated External Defibrillator (AED), First Aid, Crime Prevention, or other safety training courses.</b></p>
             </div><br>
-    </div> 
-    <!--footer-->
-	<div data-role="footer" data-position="fixed">		
-	       <div data-role="navbar">
-		      <ul>
-			<li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-		      </ul>
-	       </div><!-- /navbar -->
-        </div>
-</div>
-    
-<!-------------------------->    
-<!-----ABOUT (Training)----->
-<!-------------------------->
-<div data-role="page"  id="trainingPage">   
-
-    <!--header-->
-    {% with page_title='Emergency Training'%}
-    {% include 'includes/headerBar.html' %}
-    {% endwith %}
-
-    <div data-role="content"> 
-        <h3 style="color:#800000;text-align:center">Emergency Training at ASU</h3>
-        <hr><br>            
-            <ul>
-				<li>Access to training information can be found here:</li>
-			</ul>
-       
-        <a href="trainingPage.html" data-role="button">Emergency Training</a>
     </div>
     <!--footer-->
-	<div data-role="footer" data-position="fixed">		
+	<div data-role="footer" data-position="fixed">
 	       <div data-role="navbar">
 		      <ul>
-			<li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+			<li><a href="alertPage.html" data-ajax="false">Alerts</a></li>
             <li><a href="readGuide.html">Guide</a></li>
 			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
             <li><a href="contactPage.html">Contacts</a></li>
 		      </ul>
 	       </div><!-- /navbar -->
         </div>
-    
 </div>
-    
-<!-------------------------->    
+
+
+</div>
+
+<!-------------------------->
 <!------ABOUT (Recovery)---->
 <!-------------------------->
-<div data-role="page"  id="recoveryPage">   
+<div data-role="page"  id="recoveryPage">
 
     <!--header-->
 	{% with page_title='Emergency Recovery'%}
     {% include 'includes/headerBar.html' %}
     {% endwith %}
 
-    <div data-role="content"> 
+    <div data-role="content">
         <h3 style="color:#800000;text-align:center">Emergency Recovery at ASU</h3>
         <hr><br>
-        <ul>                       
-            <li>After an emergency occurs, RECOVERY is the next step.</li><br> 
-            <li>ASU is insured for losses to University-owned property, as well as injury to non-employees and employees on-the-job.</li><br> 
+        <ul>
+            <li>After an emergency occurs, RECOVERY is the next step.</li><br>
+            <li>ASU is insured for losses to University-owned property, as well as injury to non-employees and employees on-the-job.</li><br>
             <li>A claim must be generated in order to make the loss known to appropriate ASU representatives, and ASU's self-insurance provider.</li><br>
         </ul>
-                    
+
         <!--Collapsible Set-->
-        <div data-role="collapsible-set">                       
-                        
+        <div data-role="collapsible-set">
+
             <!--Collapsible 1 (inside Collapsible set)-->
             <div data-role="collapsible">
-                <h3>Property and Liability Losses</h3>                
+                <h3>Property and Liability Losses</h3>
                 <ul>
-                    <li>Property claims that exceed $10,000 must be reported within 24-hours.</li><br> 
+                    <li>Property claims that exceed $10,000 must be reported within 24-hours.</li><br>
                     <li>Property claims of less than $10,000 must be reported within 90 days.</li><br>
                     <li>A death or serious injury must be reported within 24-hours to Insurance Services.</li><br>
                     <li>Information on filing and various claim forms are available on the <a href="https://cfo.asu.edu/ehs-insurance-forms" onClick="javascript:return openExternal(this)">Insurance Website</a>.</li>
                 </ul>
             </div>
-                    
+
             <!--Collapsible 2 (inside Collapsible set)-->
             <div data-role="collapsible">
                 <h3>Workers' Comp Losses</h3>
                 <ul>
-                    <li>Workers' compensation claims must be reported within 48-hours (See <a href="contactPage.html">Contacts</a> section).</li><br> 
-                    <li>Questions regarding workers' compensation should be directed to Human Resources (See <a href="contactPage.html">Contacts</a> section).</li><br> 
+                    <li>Workers' compensation claims must be reported within 48-hours (See <a href="contactPage.html">Contacts</a> section).</li><br>
+                    <li>Questions regarding workers' compensation should be directed to Human Resources (See <a href="contactPage.html">Contacts</a> section).</li><br>
                     <li>Information and forms for filing workers' compensation claims are available at <a href="https://cfo.asu.edu/hr-forms" onClick="javascript:return openExternal(this)">HR Forms Website</a>.</li>
                 </ul>
             </div>
-                    
+
             <!--Collapsible 3 (inside Collapsible set)-->
             <div data-role="collapsible">
                 <h3>Follow up on potential/sustained injuries</h3>
                 <ul>
                     <li>Report accidents and incidents involving injury to your supervisor and to the Environmental Health & Safety Loss Prevention Coordinator. (See <a href="contactPage.html">Contacts</a> section)</li>
-                    <br> 
-                    <li>Information and forms for filing an accident and incident report are available at <a href="https://cfo.asu.edu/ehs-forms" onClick="javascript:return openExternal(this)">EH&S Forms Website</a>. </li>                   
-                    
+                    <br>
+                    <li>Information and forms for filing an accident and incident report are available at <a href="https://cfo.asu.edu/ehs-forms" onClick="javascript:return openExternal(this)">EH&S Forms Website</a>. </li>
+
                 </ul>
             </div>
-        </div><!--end collapsible set-->    
+        </div><!--end collapsible set-->
     </div>
     <!--footer-->
-	<div data-role="footer" data-position="fixed">		
+	<div data-role="footer" data-position="fixed">
 	       <div data-role="navbar">
 		      <ul>
-			<li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
+			<li><a href="alertPage.html" data-ajax="false">Alerts</a></li>
             <li><a href="readGuide.html">Guide</a></li>
 			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
             <li><a href="contactPage.html">Contacts</a></li>
