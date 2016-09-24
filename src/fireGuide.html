@@ -1,26 +1,12 @@
-<!DOCTYPE html> 
-<html> 
-    <head> 
-	<title>ASU Emergency Response</title> 
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
-   
-    </head> 
-    <body>
-    
 <!-------------------------->    
 <!--------GUIDE FIRE-------->
 <!-------------------------->
 <div data-role="page"  id="fireGuide">   
 
     <!--header-->
-	<div data-role="header" data-position="fixed" >
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Fire</h1>
-       <a href="index.html">Home</a>
-    </div>
+    {% with page_title='Major Accident'%}
+    {% include 'includes/headerBar.html' %}
+    {% endwith %}
    
     <div data-role="content">        
         <h3 style="color:#800000;text-align:center">Fire Emergency</h3>
@@ -34,7 +20,7 @@
                     <div>  
                         <ul>
                             <li>If alarm is not sounding, pull fire alarm located near an exit.</li><br/> 
-                            <li>Immediately exit the building.</li><br/>
+                            <li>Immediately exit the building AND close all doors behind you.</li><br/>
                             <li>Call 911. Or activate an emergency blue light call box.</li><br/>                             
                         </ul>
                     </div>
@@ -81,7 +67,8 @@
                         <ul>
                             <li>Roll person around on floor to smother flame.</li><br/>                        
                             <li>Only drench with water if safety shower is immediately available.</li><br/>         
-                        <li>Obtain medical attention. Call 911.</li>
+                            <li>Obtain medical attention. Call 911.</li>
+                            <li>Report incident to supervisor.</li>
                         </ul>
                     </div> 
                 </div>
@@ -117,17 +104,7 @@
         </div>
     
     <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	   <div data-role="navbar">
-		<ul>
-            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-        </ul>
-        </div>
-    </div>
+    {% include 'includes/footerBar.html' %}
 
-    </div>
-    </body>
- </html>
+</div>
+
