@@ -1,30 +1,25 @@
-<!DOCTYPE html> 
-<html> 
-    <head> 
-	<title>ASU Emergency Response</title> 
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
-        
+<!--
+Not certain what this is for.
+Deleting it does not appear to have an effect in simulation.
+Saving it in a comment just in case.
+
     <script>
         function openExternal(elem) {
             window.open(elem.href, "_system");
             return false; // Prevent execution of the default onClick handler 
         }
-    </script>   
-    </head> 
-<body>
+    
+-->
+
 <!-------------------------->
 <!--------HAZARD MAT-------->
 <!-------------------------->
 <div data-role="page" id="hazardGuide">
+
      <!--header-->
-	<div data-role="header" data-position="fixed" >
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Hazardous Materials Incident</h1>
-        <a href="index.html">Home</a>
-    </div>
+    {% with page_title='Major Accident'%}
+    {% include 'includes/headerBar.html' %}
+    {% endwith %}
 
     <div data-role="content">
         <h3 style="color:#800000;text-align:center">Hazardous Materials Incident</h3>
@@ -123,16 +118,7 @@
             </div> <!---End collapsible set--->
         </div>
     <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	   <div data-role="navbar">
-		<ul>
-            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-        </ul>
-        </div>
-    </div>
+    {% include 'includes/footerBar.html' %}
 
 </div>
     
