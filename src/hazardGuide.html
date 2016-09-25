@@ -1,25 +1,13 @@
-<!--
-Not certain what this is for.
-Deleting it does not appear to have an effect in simulation.
-Saving it in a comment just in case.
-
-    <script>
-        function openExternal(elem) {
-            window.open(elem.href, "_system");
-            return false; // Prevent execution of the default onClick handler 
-        }
-    
--->
-
 <!-------------------------->
 <!--------HAZARD MAT-------->
 <!-------------------------->
 <div data-role="page" id="hazardGuide">
 
      <!--header-->
-    {% with page_title='Major Accident'%}
+	{% with page_title='Hazardous Materials Incident'%}
     {% include 'includes/headerBar.html' %}
     {% endwith %}
+
 
     <div data-role="content">
         <h3 style="color:#800000;text-align:center">Hazardous Materials Incident</h3>
@@ -118,7 +106,8 @@ Saving it in a comment just in case.
             </div> <!---End collapsible set--->
         </div>
     <!--footer-->
-    {% include 'includes/footerBar.html' %}
+	{% include 'includes/footerBar.html' %}
+
 
 </div>
     

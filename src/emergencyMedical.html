@@ -1,25 +1,13 @@
-<!DOCTYPE html> 
-<html> 
-    <head> 
-	<title>ASU Emergency Response</title> 
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>  
-    </head> 
-    
-    <body>
+
 <!-------------------------->    
 <!-----MEDICAL EMERGENCY---->
 <!-------------------------->
     <div data-role="page"  id="">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Medical Emergency</h1>
-        <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Medical Emergency'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Medical Emergency</h3><hr><br>
@@ -34,16 +22,7 @@
     </div>
         
     <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	   <div data-role="navbar">
-		<ul>
-            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-        </ul>
-        </div>
-    </div>
+	{% include 'includes/footerBar.html' %}
 
 </div>  
 
@@ -54,11 +33,9 @@
     <div data-role="page"  id="breathingno">       
     
     <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Medical Emergency</h1>
-       <a href="index.html">Home</a>
-    </div>       
+    {% with page_title='Medical Emergency'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     <div data-role="content">
         <h3 style="color:#800000;text-align: center">Victim NOT Breathing</h3><hr><br>
@@ -72,16 +49,7 @@
     </div>
         
   <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	   <div data-role="navbar">
-		<ul>
-            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-        </ul>
-        </div>
-    </div>   
+	{% include 'includes/footerBar.html' %}
 
 </div>
 <!-------------------->    
@@ -90,11 +58,9 @@
     <div data-role="page"  id="next2">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Medical Emergency</h1>
-        <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Medical Emergency'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Victim NOT Breathing</h3><hr><br>
@@ -106,16 +72,7 @@
     </div>
         
     <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	   <div data-role="navbar">
-		<ul>
-            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-        </ul>
-        </div>
-    </div>
+	{% include 'includes/footerBar.html' %}
 
 </div>
         
@@ -125,11 +82,9 @@
 <div data-role="page"  id="circyes">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Medical Emergency</h1>
-       <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Medical Emergency'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Signs of circulation, NOT breathing</h3><hr><br>
@@ -142,16 +97,7 @@
     </div>
     
     <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	   <div data-role="navbar">
-		<ul>
-            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-        </ul>
-        </div>
-    </div>
+	{% include 'includes/footerBar.html' %}
 </div>  
         
 <!-------------------->    
@@ -160,11 +106,9 @@
 <div data-role="page"  id="circno">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Medical Emergency</h1>
-        <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Medical Emergency'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     <div data-role="content">
         <h3 style="color:#800000;text-align: center">No Sign of Circulation, NOT Breathing</h3>
@@ -194,16 +138,7 @@
     </div>
         
     <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	   <div data-role="navbar">
-		<ul>
-            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-        </ul>
-        </div>
-    </div>  
+	{% include 'includes/footerBar.html' %}
 </div> 
     
 <!-------------------->    
@@ -212,11 +147,9 @@
 <div data-role="page"  id="next3">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Medical Emergency</h1>
-       <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Medical Emergency'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">There ARE Signs of Circulation</h3><hr><br>
@@ -233,16 +166,7 @@
     </div>
     
     <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	   <div data-role="navbar">
-		<ul>
-            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-        </ul>
-        </div>
-    </div>
+	{% include 'includes/footerBar.html' %}
 </div>
         
 <!----------------------->    
@@ -251,11 +175,9 @@
 <div data-role="page"  id="breathingyes">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Injury Emergency</h1>
-        <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Injury Emergency'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     <div data-role="content">
         <h3 style="color:#800000;text-align: center">Victim is Breathing</h3>
@@ -267,16 +189,7 @@
     </div>
         
     <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	   <div data-role="navbar">
-		<ul>
-            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-        </ul>
-        </div>
-    </div>  
+	{% include 'includes/footerBar.html' %}
 </div>
                 
 <!-------------------->    
@@ -285,11 +198,9 @@
 <div data-role="page"  id="chokeyes">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Medical Emergency</h1>
-        <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Medical Emergency'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     <div data-role="content">
         <h3 style="color:#800000;text-align: center">Victim is Choking</h3>
@@ -308,16 +219,7 @@
     </div>
         
     <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	   <div data-role="navbar">
-		<ul>
-            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-        </ul>
-        </div>
-    </div>  
+	{% include 'includes/footerBar.html' %}
 </div>
 <!-------------------->    
 <!------choking no---->
@@ -325,11 +227,9 @@
 <div data-role="page"  id="chokeno">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Injury Emergency</h1>
-        <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Injury Emergency'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
     
     <div data-role="content">
         <h3 style="color:#800000;text-align: center">Medical Emergency</h3>
@@ -342,16 +242,5 @@
     </div>
         
     <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	   <div data-role="navbar">
-		<ul>
-            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-        </ul>
-        </div>
-    </div>  
+	{% include 'includes/footerBar.html' %}
 </div>
-    </body>
-</html>

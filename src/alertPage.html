@@ -1,48 +1,32 @@
-<!DOCTYPE html> 
-<html> 
-    <head> 
-	<title>ASU Emergency Response</title> 
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>  
-	
-	
-	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-	<script>google.load("feeds", "1");</script>	
-	
-    </head>	
-<body>
-
 <!-------------------------->
 <!--------ALERTS PAGE------->
 <!-------------------------->
 <div data-role="page"  id="alertPage">
     <!--header-->
-	<div data-role="header" data-position="fixed">        
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Alerts</h1>
-        <a href="index.html">Home</a>
-    </div><!-- /header -->
+    {% with page_title='Alerts Page'%}
+    {% include 'includes/headerBar.html' %}
+    {% endwith %}<!-- /header -->
 
     <div data-role="content">
         <h3 style="color:#800000;text-align:center">Alerts at ASU</h3>
-        <hr><br>       
-   
-	
+        <hr><br>
+
+
 	<div id="feed"></div>
-    
+
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script>google.load("feeds", "1");</script>
 	<script type="text/javascript">
-      var feed = new google.feeds.Feed("http://rss.blackboardconnect.com/142166/asualert/feed.xml");	  
-      feed.load(function(result) {	  
+      var feed = new google.feeds.Feed("http://rss.blackboardconnect.com/142166/asualert/feed.xml");
+      feed.load(function(result) {
 		$('#feed')
         .append($('<div>')
         .attr({
 			'data-role': 'collapsible-set',
-            'id': 'primary',			
-		}));    
+            'id': 'primary',
+		}));
 		for (i = 0; i < result.feed.entries.length; i++) {
-			var entry = result.feed.entries[i];			
+			var entry = result.feed.entries[i];
 			($('<div>')
             .attr({
 				'data-role': 'collapsible',
@@ -52,21 +36,11 @@
             .html('<h4>' + entry.title + '</h4><p style="font-weight:bold">' + entry.publishedDate + '</p><p>' + entry.content + '</p>'))
             .appendTo('#primary');
 		}
-		$('#feed').collapsibleset().trigger('create');			
+		$('#feed').collapsibleset().trigger('create');
       });
     </script>
 	</div>
     <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	   <div data-role="navbar">
-		<ul>
-            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-        </ul>
-        </div>
-    </div> 
+	{% include 'includes/footerBar.html' %}
+
 </div>
-</body>
-</html>

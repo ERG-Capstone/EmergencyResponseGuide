@@ -1,10 +1,14 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 452755be367c77c5f597ce9c8501915aa374c69d
 <!-------------------------->
 <!--------radiation spill-------->
 <!-------------------------->
 <div data-role="page" id="radiationGuide">
 
      <!--header-->
-    {% with page_title='Major Accident'%}
+    {% with page_title='Radiation Spill'%}
     {% include 'includes/headerBar.html' %}
     {% endwith %}
 
@@ -114,16 +118,6 @@
             </div> <!---End personal threat sub-sections--->
         </div>
     <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	   <div data-role="navbar">
-		<ul>
-            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-        </ul>
-        </div>
-    </div>
+	{% include 'includes/footerBar.html' %}
 
 </div>
-    

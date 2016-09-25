@@ -1,25 +1,13 @@
-<!DOCTYPE html> 
-<html> 
-    <head> 
-	<title>ASU Emergency Response</title> 
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script> 
-    </head> 
-    
-    <body>
+
  <!---------------------------->    
 <!------weather emergency------>
 <!----------------------------->
     <div data-role="page"  id="">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Weather Emergency</h1>
-       <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Weather Emergency'%}
+    {% include 'includes/headerBar.html' %}
+    {% endwith %}
         
     <div data-role="content">        
     <h3 style="color:#800000;text-align: center">Natural/Weather Emergency</h3><hr><br>
@@ -33,16 +21,7 @@
     </div>
         
     <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	   <div data-role="navbar">
-		<ul>
-            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-        </ul>
-        </div>
-    </div>   
+	{% include 'includes/footerBar.html' %}
         </div>
 <!------------------------------>    
 <!-----earthquake(in/out)------->
@@ -50,11 +29,9 @@
     <div data-role="page"  id="earthquake">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Weather Emergency</h1>
-        <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Weather Emergency'%}
+    {% include 'includes/headerBar.html' %}
+    {% endwith %}
     
     <div data-role="content">
         
@@ -66,16 +43,7 @@
     </div>
         
     <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	   <div data-role="navbar">
-		<ul>
-            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-        </ul>
-        </div>
-    </div>
+	{% include 'includes/footerBar.html' %}
 
 </div>
 <!-------------------------->    
@@ -84,11 +52,9 @@
     <div data-role="page"  id="tornado">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Weather Emergency</h1>
-        <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Weather Emergency'%}
+    {% include 'includes/headerBar.html' %}
+    {% endwith %}
     
     <div data-role="content">
         
@@ -100,16 +66,7 @@
     </div>
         
     <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	   <div data-role="navbar">
-		<ul>
-            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-        </ul>
-        </div>
-    </div>
+	{% include 'includes/footerBar.html' %}
 
 </div>
         
@@ -120,11 +77,9 @@
     <div data-role="page"  id="earthquakein">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Weather Emergency</h1>
-       <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Weather Emergency'%}
+    {% include 'includes/headerBar.html' %}
+    {% endwith %}
         
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Indoors During Earthquake</h3><hr><br>
@@ -144,16 +99,7 @@
     </div>
         
     <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	   <div data-role="navbar">
-		<ul>
-            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-        </ul>
-        </div>
-    </div>
+	{% include 'includes/footerBar.html' %}
         </div>
 <!--------------------->    
 <!------tornadoin------->
@@ -161,11 +107,9 @@
     <div data-role="page"  id="tornadoin">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Weather Emergency</h1>
-       <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Weather Emergency'%}
+    {% include 'includes/headerBar.html' %}
+    {% endwith %}
         
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Indoors During Tornado or Thunderstorm</h3><hr><br>
@@ -188,16 +132,7 @@
     </div>
         
     <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	   <div data-role="navbar">
-		<ul>
-            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-        </ul>
-        </div>
-    </div>
+	{% include 'includes/footerBar.html' %}
         </div>
 <!----------------->    
 <!------hail------->
@@ -205,11 +140,9 @@
     <div data-role="page"  id="hail">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Weather Emergency</h1>
-       <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Weather Emergency'%}
+    {% include 'includes/headerBar.html' %}
+    {% endwith %}
         
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Hail Weather Emergency</h3><hr><br>
@@ -220,16 +153,7 @@
     </div>
         
     <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	   <div data-role="navbar">
-		<ul>
-            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-        </ul>
-        </div>
-    </div>
+	{% include 'includes/footerBar.html' %}
         </div>
 <!--------------------->    
 <!------lightning------->
@@ -237,11 +161,9 @@
     <div data-role="page"  id="lightning">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Weather Emergency</h1>
-       <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Weather Emergency'%}
+    {% include 'includes/headerBar.html' %}
+    {% endwith %}
         
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Lightning Weather Emergency</h3><hr><br>
@@ -261,16 +183,7 @@
     </div>
         
     <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	   <div data-role="navbar">
-		<ul>
-            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-        </ul>
-        </div>
-    </div>     
+	{% include 'includes/footerBar.html' %}
         </div>
                 
 <!---------------------->    
@@ -279,11 +192,9 @@
     <div data-role="page"  id="earthquakeout">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Weather Emergency</h1>
-       <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Weather Emergency'%}
+    {% include 'includes/headerBar.html' %}
+    {% endwith %}
         
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Outdoors During an Earthquake</h3><hr><br>
@@ -301,16 +212,7 @@
     </div>
         
     <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	   <div data-role="navbar">
-		<ul>
-            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-        </ul>
-        </div>
-    </div>
+	{% include 'includes/footerBar.html' %}
         </div>
         
 <!------------------->    
@@ -319,11 +221,9 @@
     <div data-role="page"  id="tornadoout">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Weather Emergency</h1>
-       <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Weather Emergency'%}
+    {% include 'includes/headerBar.html' %}
+    {% endwith %}
         
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Outdoors During a Tornado</h3><hr><br>
@@ -338,16 +238,7 @@
     </div>
         
     <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	   <div data-role="navbar">
-		<ul>
-            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-        </ul>
-        </div>
-    </div>
+	{% include 'includes/footerBar.html' %}
         </div>
         
 <!---------------------->    
@@ -356,11 +247,9 @@
     <div data-role="page"  id="earthquakenext">       
     
         <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="javascript:history.go(-1)">Back</a>
-        <h1>Weather Emergency</h1>
-       <a href="index.html">Home</a>
-    </div>    
+    {% with page_title='Weather Emergency'%}
+    {% include 'includes/headerBar.html' %}
+    {% endwith %}
         
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">After Shaking Stops</h3><hr><br>
@@ -376,18 +265,7 @@
     </div>
         
     <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	   <div data-role="navbar">
-		<ul>
-            <li><a href="alertPage.html" data-ajax="false">Alerts</a></li>			
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-        </ul>
-        </div>
-    </div>   
+	{% include 'includes/footerBar.html' %}
 
 </div>
         
-    </body>
-</html>
