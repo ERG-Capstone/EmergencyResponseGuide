@@ -29,4 +29,5 @@
 <preference name="windows-publisher-id"/>
 <preference name="windows-target-version" value="10.0"/>
 <preference name="windows-phone-target-version" value="10.0"/>
-<!--creationInfo:{"src":"blankproject","projectTypeName":"com.intel.xdk.projecttype.jsapp"}--></widget>
+<!--creationInfo:{"src":"blankproject","projectTypeName":"com.intel.xdk.projecttype.jsapp"}-->
+<preference name="debuggable" value="true"/></widget>
