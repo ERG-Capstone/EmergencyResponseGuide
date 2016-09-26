@@ -10,9 +10,10 @@
     <div data-role="content">
         <h3 style="color:#800000;text-align:center">Alerts at ASU</h3>
         <hr><br>
-
-
-	<div id="feed"></div>
+        <span>Take a look at the ASU Police twitter feed for up-to-date alerts and advisories.</span>
+        <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/ASUPolice">Tweets by ASUPolice</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <!-- This API used to be usable, but now we just use the ASUPolice twitter feed-->
+	<!-- <div id="feed"></div>
 
   <script type="text/javascript" src="https://www.google.com/jsapi"></script>
   <script>google.load("feeds", "1");</script>
@@ -38,7 +39,7 @@
 		}
 		$('#feed').collapsibleset().trigger('create');
       });
-    </script>
+    </script> -->
 	</div>
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
