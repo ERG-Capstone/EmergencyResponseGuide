@@ -6,7 +6,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "blankproject",
       "projectGuid": "f3e55f4e-e28f-4480-8bce-7bb830584025",
-      "lastModifiedDate": 1474864636162,
+      "lastModifiedDate": 1474864900138,
       "creationDate": 1417663282079
     },
     "sourceDirectory": "www",
@@ -296,6 +296,7 @@
           "android-installLocation": "auto"
         },
         "isActive_": true,
+        "certificateId_": "",
         "appName_": "EmergencyResponseGuide",
         "appID_": "xdk.intel.blank.project",
         "appAccess_": {
@@ -311,7 +312,6 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "",
         "iosProvs_": [],
         "cordovaCLIVersion_": "6.2.0",
         "appVersion_": "0.0.1",
@@ -329,6 +329,7 @@
           "deployment-target": "5"
         },
         "isActive_": true,
+        "certificateId_": "",
         "appName_": "Tools-version",
         "appID_": "xdk.intel.blank.project",
         "appAccess_": {
@@ -342,7 +343,6 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "",
         "iosProvs_": [],
         "cordovaCLIVersion_": "6.2.0",
         "crosswalkVersion_": "stable",
@@ -358,6 +358,7 @@
           "windows-publisher-id": ""
         },
         "isActive_": true,
+        "certificateId_": "",
         "appName_": "Tools-version",
         "appID_": "xdk.intel.blank.project",
         "appAccess_": {
@@ -371,7 +372,6 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "",
         "iosProvs_": [],
         "cordovaCLIVersion_": "6.2.0",
         "crosswalkVersion_": "stable",
@@ -384,6 +384,7 @@
         "name_": "WebApp",
         "preferences_": {},
         "isActive_": false,
+        "certificateId_": "",
         "appName_": "Tools-version",
         "appID_": "not.yet.specified",
         "appAccess_": {
@@ -398,7 +399,6 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "",
         "appVersion_": "0.0.1"
       },
       "Firefox": {
@@ -407,6 +407,7 @@
         "name_": "Firefox",
         "preferences_": {},
         "isActive_": false,
+        "certificateId_": "",
         "appName_": "Tools-version",
         "appID_": "not.yet.specified",
         "appAccess_": {
@@ -421,7 +422,6 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "",
         "appVersion_": "0.0.1"
       },
       "Chrome": {
@@ -430,6 +430,7 @@
         "name_": "Chrome",
         "preferences_": {},
         "isActive_": false,
+        "certificateId_": "",
         "appName_": "Tools-version",
         "appID_": "not.yet.specified",
         "appAccess_": {
@@ -444,7 +445,6 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "",
         "appVersion_": "0.0.1"
       },
       "Facebook": {
@@ -453,6 +453,7 @@
         "name_": "Facebook",
         "preferences_": {},
         "isActive_": false,
+        "certificateId_": "",
         "appName_": "Tools-version",
         "appID_": "not.yet.specified",
         "appAccess_": {
@@ -467,7 +468,6 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "",
         "appVersion_": "0.0.1"
       },
       "WP81": {
@@ -476,6 +476,7 @@
         "name_": "WP81",
         "preferences_": {},
         "isActive_": true,
+        "certificateId_": "",
         "appName_": "Tools-version",
         "appID_": "not.yet.specified",
         "appAccess_": {
@@ -488,14 +489,15 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "",
         "appVersion_": "0.0.0.1",
         "cordovaCLIVersion_": "6.2.0"
       }
     },
     "gameAssetDirectory": "asset",
     "gameMetadata": {},
-    "projectTags": [],
+    "projectTags": [
+      "XDK-disallow-legacy-whitelist"
+    ],
     "testDirectory": "test"
   }
 }
