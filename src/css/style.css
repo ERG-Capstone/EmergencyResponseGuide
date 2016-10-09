@@ -1,0 +1,34 @@
+
+.circle-container a {
+  text-decoration: none;
+  font-weight: inherit;
+}
+
+.home-rd-button {
+  border-radius: 50%;
+  color: white;
+  text-shadow: none;
+}
+
+.home-rd-button:active {
+  opacity: 0.8;
+}
+
+.big-button {
+  width: 13em;
+  height: 13em;
+  background-color: maroon;
+}
+
+.sm-button {
+  width: 6em;
+  height: 6em;
+}
+
+.big-button i {
+  font-size: 7em;
+}
+
+.sm-button i {
+  font-size: 2.75em;
+}

@@ -1,36 +1,67 @@
+<script src='intelxdk.js'></script>
+<script src='cordova.js'></script>
 
-    <script src='intelxdk.js'></script>
-    <script src='cordova.js'></script>
+<script>
+  function openExternal(elem) {
+    window.open(elem.href, "_system");
+    return false;
+  }
+</script>
+<div data-role="page"  id="homePage">
 
-    <script>
-        function openExternal(elem) {
-            window.open(elem.href, "_system");
-            return false;
-        }
-    </script>
-<!-------------------------->    
-<!---------HOME PAGE-------->
-<!-------------------------->
-    <div data-role="page"  id="homePage">       
-    
-        <!--header-->
-    <div data-role="header" data-position="fixed">
-        <a href="help.html">Help</a>
-        <h1></h1>
-        
-    </div>    
-    
-    <img src="asulogo.jpg" style="width: 100%"/>
-    <br><h3 style="color:#800000;text-align: center">ASU Emergency Response</h3>
-	
-	<!-----Home menu------>
-    <div id="homePageContent" data-role="content">
-        <a style="color:#800000" href="emergencyPage.html" data-role="button" data-ajax="false">Emergency</a>
-        <a href="readGuide.html" data-role="button">Read Guide</a>
-        <a href="toolsMenu.html" data-role="button" data-ajax="false">ERG Tools</a>        
-    </div>   
+  <div data-role="header" data-position="fixed">
+    <a href="help.html">Help</a>
+    <h1></h1> <!--This h1 tag needs to be here for some reason-->
+  </div>
 
-    <!--footer-->
-    {% include 'includes/footerBar.html' %}
+  <img src="asulogo.jpg" style="width: 100%"><br>
+  <h3 style="color:#800000;text-align: center">ASU Emergency Response</h3>
+  <div class="clearfix mxn2 circle-container">
+    <div class="col-10 px2 mx-auto">
+      <a href="emergencyPage.html" data-ajax="false">
+        <div class="mx-auto home-rd-button big-button center">
+          <div class="clearfix">
+            <i class="material-icons mt3">warning</i><br>
+          </div>
+          Emergency
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="clearfix circle-container">
+    <div class="col col-4 px1">
+      <a href="readGuide.html">
+        <div class="mx-auto home-rd-button sm-button center" style="background-color: #C17938">
+          <div class="clearfix">
+            <i class="material-icons mt2">book</i>
+          </div>
+          Guide
+        </div>
+      </a>
+    </div>
+    <div class="col col-4 px1 mt3">
+      <a href="toolsMenu.html" data-ajax="false">
+        <div class="mx-auto home-rd-button sm-button center" style="background-color: #115A61">
+          <div class="clearfix">
+            <i class="material-icons mt2">build</i>
+          </div>
+          Tools
+        </div>
+      </a>
+    </div>
+    <div class="col col-4 px1">
+      <a href="extras.html">
+        <div class="mx-auto home-rd-button sm-button center" style="background-color: #2C9639">
+          <div class="clearfix">
+            <i class="material-icons mt2 clear">videogame_asset</i>
+          </div>
+          Extras
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!--footer-->
+  {% include 'includes/footerBar.html' %}
 
 </div> <!--end homePage-->
