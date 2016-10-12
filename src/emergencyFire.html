@@ -3,54 +3,114 @@
 <!-------------------------->
 <!------EMERGENCY FIRE------>
 <!-------------------------->
-    <div data-role="page"  id="emergencyFire">
+<div data-role="page"  id="emergencyFire">
 
         <!--header-->
-    {% with page_title='Fire Emergency'%}
-{% include 'includes/headerBar.html' %}
-{% endwith %}
+  {% with page_title='Fire Emergency'%}
+  {% include 'includes/headerBar.html' %}
+  {% endwith %}
 
     <div data-role="content">
-    <h3 style="color:#800000;text-align: center">Fire Emergency</h3><hr><br>
-      <li style="text-align: center">Is the alarm sounding?</li>
-      <a href="#alarmYes" data-role="button">Yes</a>
-      <a href="#alarmNo" data-role="button">No</a>
+      <h3 style="color:#800000;text-align: center">Fire Emergency</h3><hr><br>
+
+      <li style="text-align: center">Are you trapped in a room?</li>
+
+      <a href="#trappedYes" data-role="button">Yes</a>
+      <a href="#trappedNo" data-role="button">No</a><br><br>
+
+      <hr>
+      <h4>*NOTE: If you discover a fire or a smoke, only use the fire extinguisher if the fire is very small and you have been trained to do so. Otherwise, leave immediately and make sure the building alarm is activated.</h3>
+
+      <h4 style="color:#800000;text-align: center">Click below for quick tips on how to use a fire extinguisher</h3><br>
+      <a href="#exTips" data-role="button">Learn more!</a><br><br>
+
+      <a href="#callPopup" data-rel="popup" data-role="button">Call 911</a>
     </div>
+
+
+<!------CALL 911 POPUP------->
+<div data-role="popup" id="callPopup">
+
+  <div data-role="content">
+      <p style="text-align:center">    Call 911:    </p><br>
+      <a href="#" data-role="button" data-inline="true">Yes</a>
+      <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+  </div>
+</div>
+
 
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
 
 </div>
+<!------EXTINGIUSHER TIPS------->
+
+<div data-role="page"  id="exTips">
+
+      <!--header-->
+  {% with page_title='Fire Emergency'%}
+  {% include 'includes/headerBar.html' %}
+  {% endwith %}
+
+
+  <div data-role="content">
+    <h3 style="color:#800000;text-align: center">Fire Extinguisher Quick Tips</h3><hr><br>
+    <h3 style="color:#800000;text-align: center"> Step 1</h3><br>
+
+    <h3 style="text-align: center">Pull the pin from the top of the fire extinguisher</h3><br><br>
+    <h3 style="color:#800000;text-align: center"> Step 2</h3><br>
+
+    <h3 style="text-align: center">Aim the nozzle at the fire</h3><br><br>
+    <h3 style="color:#800000;text-align: center"> Step 3</h3><br>
+
+    <h3 style="text-align: center">Squeeze the handle to discharge the agent on the fire</h3><br><br>
+    <h3 style="color:#800000;text-align: center"> Step 4</h3><br>
+
+    <h3 style="text-align: center">Sweep the nozzle left-to-right at the base of the fire and continue discharging a few seconds after all flames are gone.</h3><br><br>
+
+
+  </div>
+</div>
+
+  <!--footer-->
+{% include 'includes/footerBar.html' %}
+
 
 <!------------------------->
 <!------TRAPPED YES-------->
 <!------------------------->
-  <!--  <div data-role="page"  id="trappedYes">
+<div data-role="page"  id="trappedYes">
 
         <!--header-->
-  <!--  {% with page_title='Fire Emergency'%}
-{% include 'includes/headerBar.html' %}
-{% endwith %}
-
+  {% with page_title='Fire Emergency'%}
+  {% include 'includes/headerBar.html' %}
+  {% endwith %}
 
     <div data-role="content">
-        <h3 style="color:#800000;text-align: center">If You Are Trapped</h3>
-        <hr><br>
-        <ul>
 
-            <li>Call 911 and await instructions:</li>
-        </ul>
-        <a href="#callPopup" data-rel="popup" data-role="button" >Call 911</a><br><hr><br>
-        <ul>
-            <li>Call or signal for help.</li>
-        </ul>
+      <h3 style="color:#800000;text-align: center"> Step 1</h3>
+      <hr><br>
+      <h3 style="text-align: center">Check if the Alarm is sounding, if is it not, find and activate the alarm loacted near the exits</h3><br><br>
+      <h3 style="color:#800000;text-align: center"> Step 2</h3>
+      <hr><br>
+      <h3 style="text-align: center">Close as many doors as possible between you and the fire</h3><br><br>
+      <h3 style="color:#800000;text-align: center"> Step 3</h3>
+      <hr><br>
+      <h3 style="text-align: center">Wet and place a cloth material around or under the door to prevent smoke from enter in the room</h3><br><br>
+      <h3 style="color:#800000;text-align: center"> Step 4</h3>
+      <hr><br>
+      <h3 style="text-align: center">Call 911 for further instructions, then signal for help if the room has an outside window</h3><br><br>
+
+      <li style="text-align: center;font-weight:strong">NOTE: If smoke is present stay near the ground, hold your breath as much as possible, breath through your nose and use a filter such as a shirt or towel.</li>
+      <a href="#callPopup1" data-rel="popup" data-role="button" >Call 911</a><br><br>
+
     </div>
 
     <!--footer-->
-<!--	{% include 'includes/footerBar.html' %}
+	{% include 'includes/footerBar.html' %}
 
     <!------CALL 911 POPUP------->
-  <!--  <div data-role="popup" id="callPopup">
+   <div data-role="popup" id="callPopup1">
 
         <div data-role="content">
             <p style="text-align:center">    Call 911:    </p><br>
@@ -59,128 +119,33 @@
         </div>
     </div>
 
-
 </div>
+
 
 <!------------------------->
 <!-------TRAPPED NO-------->
 <!------------------------->
-<!--<div data-role="page"  id="trappedNo">
+<div data-role="page"  id="trappedNo">
 
         <!--header-->
-<!--    {% with page_title='Fire Emergency'%}
+{% with page_title='Fire Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
 
     <div data-role="content">
-        <h3 style="color:#800000;text-align: center">If You Are Not Trapped</h3><hr><br>
-        <li style="text-align: center">Is the alarm sounding?</li>
-        <a href="#alarmYes" data-role="button">Yes</a>
-        <a href="#alarmNo" data-role="button">No</a>
+        <h3 style="color:#800000;text-align: center">Step 1</h3><hr><br>
+        <h3 style="text-align: center">Locate the nearest Exit and safely leave the building, if you are unable to safely get to an exit, remain calm and call 911 and await for instructions</h3><br><br>
+        <h3 style="color:#800000;text-align: center">Step 2</h3><hr><br>
+        <h3 style="text-align: center">Once you have safetly exited, immediately notify emergency personnel of any persons trapped in the building</h3><br><br>
+
+
+        <a href="#callPopup2" data-rel="popup" data-role="button" >Call 911</a><br><br>
     </div>
 
     <!--footer-->
-	<!--{% include 'includes/footerBar.html' %}
-</div>
-
-<!----------------------->
-<!------ALARM YES-------->
-<!----------------------->
-<div data-role="page"  id="alarmYes">
-
-        <!--header-->
-    {% with page_title='Fire Emergency'%}
-{% include 'includes/headerBar.html' %}
-{% endwith %}
-
-    <div data-role="content">
-        <h3 style="color:#800000;text-align: center">If Alarm is Sounding</h3><hr><br>
-        <li style="text-align: center">Can you safely get to an exit?</li>
-        <a href="#exitYes" data-role="button">Yes</a>
-        <a href="#exitNo" data-role="button">No</a>
-    </div>
-
-    <!--footer-->
-	{% include 'includes/footerBar.html' %}
-
-</div>
-
-<!----------------------->
-<!-------ALARM NO-------->
-<!----------------------->
- <div data-role="page"  id="alarmNo">
-
-        <!--header-->
-    {% with page_title='Fire Emergency'%}
-{% include 'includes/headerBar.html' %}
-{% endwith %}
-
-    <div data-role="content">
-        <h3 style="color:#800000;text-align: center">If Alarm is Not Sounding</h3><hr><br>
-        <li style="text-align: center">Find and activate alarm, located near exits.</li><br><br><hr><br>
-        <li style="text-align: center">Can you safely exit the building?</li>
-        <a href="#exitYes" data-role="button">Yes</a>
-        <a href="#exitNo" data-role="button">No</a>
+    {% include 'includes/footerBar.html' %}
 
 
-    </div>
-    <!--footer-->
-	{% include 'includes/footerBar.html' %}
-
-</div>
-
-<!----------------------->
-<!------EXIT YES-------->
-<!----------------------->
-<div data-role="page"  id="exitYes">
-
-        <!--header-->
-    {% with page_title='Fire Emergency'%}
-{% include 'includes/headerBar.html' %}
-{% endwith %}
-
-    <div data-role="content">
-        <h3 style="color:#800000;text-align: center">If You Can Safely Exit</h3><hr><br>
-        <li style="text-align: center">Safely exit the building and call 911:</li>
-        <a href="#callPopup1" data-rel="popup" data-role="button">Call 911</a>
-        <br><hr><br>
-        <li style="text-align: center">Notify emergency personnel of any persons trapped in the building.</li>
-    </div>
-
-    <!--footer-->
-	{% include 'includes/footerBar.html' %}
-
-    <!------CALL 911 POPUP------->
-    <div data-role="popup" id="callPopup1">
-
-        <div data-role="content">
-            <p style="text-align:center">    Call 911:    </p><br>
-            <a href="#" data-role="button" data-inline="true">Yes</a>
-            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
-        </div>
-    </div>
-
-</div>
-
-<!----------------------->
-<!------EXIT NO-------->
-<!----------------------->
-    <div data-role="page"  id="exitNo">
-
-        <!--header-->
-    {% with page_title='Fire Emergency'%}
-{% include 'includes/headerBar.html' %}
-{% endwith %}
-
-    <div data-role="content">
-        <h3 style="color:#800000;text-align: center">If You Cannot Safely Exit</h3><hr><br>
-        <li style="text-align: center">Call 911 and await instructions.</li>
-         <a href="#callPopup2" data-rel="popup" data-role="button">Call 911</a><br><hr><br>
-        <li style="text-align: center;font-weight:strong">NOTE: If smoke is present stay near the ground, hold your breath as much as possible, breath through your nose and use a filter such as a shirt or towel.</li>
-    </div>
-
-   <!--footer-->
-	{% include 'includes/footerBar.html' %}
 
     <!------CALL 911 POPUP------->
     <div data-role="popup" id="callPopup2">
@@ -191,5 +156,4 @@
             <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
         </div>
     </div>
-
-    </div>
+  </div>
