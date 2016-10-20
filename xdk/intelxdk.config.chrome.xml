@@ -5,5 +5,4 @@
 <intelxdk:version value="1.1"/>
 <name>Tools-version</name>
 <content src="index.html"/>
-<!--creationInfo:{"src":"blankproject","projectTypeName":"com.intel.xdk.projecttype.jsapp"}-->
-<preference name="debuggable" value="true"/></widget>
+<!--creationInfo:{"src":"blankproject","projectTypeName":"com.intel.xdk.projecttype.jsapp"}--></widget>
