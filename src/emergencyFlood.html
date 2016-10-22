@@ -1,109 +1,83 @@
 
-        
-<!-------------------------->    
+
+<!-------------------------->
 <!----EMERGENCY FLOOD----->
 <!-------------------------->
-    <div data-role="page"  id="">       
-    
+    <div data-role="page"  id="">
+
         <!--header-->
     {% with page_title='Flood Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
+
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Flood Emergency</h3><hr><br>
-        
+
         <li style="text-align: center">Are you experiencing <span style="font-weight: bold;">Minor</span> or <span style="font-weight: bold;">Major</span> flooding?<br></li><br>
-        
+
         <p>Choose one:</p>
         <a href="#minor" data-role="button">Minor</a>
-        <a href="#major" data-role="button">Major</a>         
+        <a href="#major" data-role="button">Major</a>
     </div>
-        
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
 
 </div>
-        
-<!------------------------->    
+
+<!------------------------->
 <!------minor flooding----->
 <!------------------------->
-    <div data-role="page"  id="minor">       
-    
+    <div data-role="page"  id="minor">
+
         <!--header-->
     {% with page_title='Flood Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
-    
+
+
     <div data-role="content">
         <h3 style="color:#800000;text-align: center">Minor Flooding</h3><hr><br>
         <h3 style="text-align:center"><span style="font-weight: bold;">Do the following:</span></h3>
         <ul>
         <li>Secure vial equipment, records, chemicals, etc.</li><br>
         <li>Move to higher, safer ground</li><br>
-		<li>Shut off electrical equipment</li><br>
-		<li>Secure laboratory experiments</li><br>  
-        <li>Assist those with special needs</li><br>  
+    		<li>Shut off electrical equipment</li><br>
+    		<li>Secure laboratory experiments</li><br>
+        <li>Assist those with special needs</li><br>
         </ul>
-        <a href="#minor2" data-role="button">Next</a>        
+        <a href="contactPage.html" data-role="button">Emergency Contacts</a>
     </div>
-        
+
   <!--footer-->
 	{% include 'includes/footerBar.html' %}
 
 </div>
-        
-<!------------------------->    
+
+<!------------------------->
 <!-------major flood------->
 <!------------------------->
-<div data-role="page"  id="major">       
-    
+<div data-role="page"  id="major">
+
         <!--header-->
     {% with page_title='Flood Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
+
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Major Flooding</h3><hr><br>
         <ul>
-        <li>ASU will be reposibe for notifying emergency personnel of major floods</li><br>
-        <li>Evacuate from campus immediately, as directed by Police & Fire officials.</li><br>
-        <li>Follow instructions from ASU emergency personnel and take immediate action.</li><br>
-        <li>Use extreme caution around appliances or outlets.</li>
-       
+          <li>Notify emergency personnel if others are still inside building</li><br>
+          <li>Await instructions from ASU Police Department</li><br>
+          <li>Evacuate from campus immediately, as directed by Police & Fire officials.</li><br>
+          <li>DO NOT return to your building unless instructed to do so.</li>
+          <li>Follow instructions from ASU emergency personnel and take immediate action.</li><br>
+          <li>Use extreme caution around appliances or outlets.</li>
+
         </ul>
-         <a href="#minor2" data-role="button">Next</a>
+        <a href="contactPage.html" data-role="button">Emergency Contacts</a>
     </div>
-    
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
-</div>  
-        
-<!-------------------->    
-<!------minor2-------->
-<!-------------------->
-<div data-role="page"  id="minor2">       
-    
-        <!--header-->
-    {% with page_title='Personal Threat'%}
-{% include 'includes/headerBar.html' %}
-{% endwith %}
-    
-    <div data-role="content">
-        <h3 style="color:#800000;text-align: center">Flood Emergency</h3>
-        <hr><br>
-        <ul>
-            <li>Notify emergency personnel if others are still inside building</li><br>
-            <li>Await instructions from ASU Police Department</li><br>
-            <li>DO NOT return to your building unless instructed to do so.</li>
-		</ul>
-        <a href="contactPage.html" data-role="button">Emergency Contacts</a> 
-    </div>
-        
-    <!--footer-->
-	{% include 'includes/footerBar.html' %}
-
-
-   
-</div> 
+</div>
