@@ -1,85 +1,81 @@
 
-        
-<!-------------------------->    
+
+<!-------------------------->
 <!----EMERGENCY accident----->
 <!-------------------------->
-    <div data-role="page"  id="">       
-    
+    <div data-role="page"  id="">
+
         <!--header-->
     {% with page_title='Accident Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
+
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Accident Emergency</h3><hr><br>
-        
+
         <li style="text-align: center">Have you witnessed a <span style="font-weight: bold;">Vehicle</span> or <span style="font-weight: bold;">Aircraft</span> accident?<br><br> Choose one:</li><br>
-        
+
         <a href="#vehicle" data-role="button">Vehicle</a>
-        <a href="#aircraft" data-role="button">Aircraft</a>         
+        <a href="#aircraft" data-role="button">Aircraft</a><br><br>
+
+
+        <a href="#911popup" data-role="button">Call 911</a><br>
     </div>
-        
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
 
 </div>
-        
-<!------------------------->    
+
+<!------------------------->
 <!----vehicle accident----->
 <!------------------------->
-    <div data-role="page"  id="vehicle">       
-    
-        <!--header-->
-    {% with page_title='Accident Emergency'%}
+    <div data-role="page"  id="vehicle">
+
+<!--header-->
+{% with page_title='Accident Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
-    
+
+
     <div data-role="content">
         <h3 style="color:#800000;text-align: center">Vehicle Accident</h3><hr><br>
         <h3 style="text-align:center"><span style="font-weight: bold;">Do the following:</span></h3>
+
         <ul>
-            <li>Call 911</li>
+          <li>Remain on the scene until released by police.</li><br>
+      		<li>Advise operator of injuries and/or hazardous conditions.</li><br>
+      		<li>DO NOT attempt to move victims unless more dangerous to leave them.</li><br>
+          <li>Attempt to calm victims, let them know help is on the way.</li><br>
         </ul>
-        <a href="#911popup" data-role="button">Call 911</a><br>
-        <ul>
-        <li>Remain on the scene until released by police.</li><br>
-		<li>Advise operator of injuries and/or hazardous conditions.</li><br>
-		<li>DO NOT attempt to move victims unless more dangerous to leave them.</li><br>  
-        <li>Attempt to calm victims, let them know help is on the way.</li><br>  
-        </ul>               
     </div>
-        
+
   <!--footer-->
 	{% include 'includes/footerBar.html' %}
 
 </div>
-<!------------------------->    
+<!------------------------->
 <!----aircraft accident---->
 <!------------------------->
-    <div data-role="page"  id="aircraft">       
-    
+    <div data-role="page"  id="aircraft">
+
         <!--header-->
-    {% with page_title='Accident Emergency'%}
+{% with page_title='Accident Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
+
     <div data-role="content">
         <h3 style="color:#800000;text-align: center">Aircraft Accident</h3><hr><br>
         <h3 style="text-align:center"><span style="font-weight: bold;">Do the following:</span></h3>
-        <ul>
-            <li>Call 911</li>
-        </ul>
-        <a href="#911popup" data-role="button">Call 911</a><br>
-        <ul>
+      <ul>
         <li>Notify operator of accident location, nature of injuries and/or affected area.</li><br>
-		<li>If close to your building, notify supervisor and evacuate if you feel you are in danger.</li><br>
-		<li>DO NOT approach a downed aircraft.</li><br>  
+    		<li>If close to your building, notify supervisor and evacuate if you feel you are in danger.</li><br>
+    		<li>DO NOT approach a downed aircraft.</li><br>
         <li>Avoid smoke from wreckage as it is very toxic.</li><br>
-        <li>Attempt to calm victims, let them know help is on the way.</li><br>  
-        </ul>               
+        <li>Attempt to calm victims, let them know help is on the way.</li><br>
+      </ul>
     </div>
-        
+
   <!--footer-->
 	{% include 'includes/footerBar.html' %}
 

@@ -20,20 +20,33 @@
         <li>Open windows/doors for ventilation</li><br>
         <li>Unplug/turn off electronics</li><br>
         <li>Secure belongings</li><br>
-        <li>For evacuation guidlines see link below:</li>
         </ul>
 
         <hr>
 
         <h3><b>Quick tips:</b></h3>
         <ul>
-          <li>Walk,do not run</li>
+          <li>Walk, do not run</li>
           <li>Do NOT use elevators</li>
           <li>Gather outside at a designated staging area and wait for your supervisor to take roll</li>
           <li>Do NOT re-enter the building unless it is instructed from ASU police or other local law enforcement agency</li>
         </ul>
+        <br><br>
 
+        <a href="#callPopup" data-rel="popup" data-role="button">Call 911</a>
+      </div>
+
+
+  <!------CALL 911 POPUP------->
+  <div data-role="popup" id="callPopup">
+
+    <div data-role="content">
+        <p style="text-align:center">    Call 911:    </p><br>
+        <a href="tel:911" data-role="button" data-inline="true">Yes</a>
+        <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
     </div>
+
+  </div>
 
     <!--footer-->
 	{% include 'includes/footerBar.html' %}

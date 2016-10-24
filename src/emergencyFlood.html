@@ -18,6 +18,23 @@
         <p>Choose one:</p>
         <a href="#minor" data-role="button">Minor</a>
         <a href="#major" data-role="button">Major</a>
+
+        <br><br>
+
+        <a href="#callPopup" data-rel="popup" data-role="button">Call 911</a>
+      </div>
+
+
+    <!------CALL 911 POPUP------->
+    <div data-role="popup" id="callPopup">
+
+    <div data-role="content">
+        <p style="text-align:center">    Call 911:    </p><br>
+        <a href="tel:911" data-role="button" data-inline="true">Yes</a>
+        <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+    </div>
+
+
     </div>
 
     <!--footer-->
@@ -46,8 +63,22 @@
     		<li>Secure laboratory experiments</li><br>
         <li>Assist those with special needs</li><br>
         </ul>
-        <a href="contactPage.html" data-role="button">Emergency Contacts</a>
+        <a href="contactPage.html" data-role="button">Emergency Contacts</a><br><br>
+
+        <a href="#callPopup#1" data-rel="popup" data-role="button">Call 911</a>
+      </div>
+
+
+  <!------CALL 911 POPUP------->
+  <div data-role="popup" id="callPopup#1">
+
+    <div data-role="content">
+        <p style="text-align:center">    Call 911:    </p><br>
+        <a href="tel:911" data-role="button" data-inline="true">Yes</a>
+        <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
     </div>
+  </div>
+
 
   <!--footer-->
 	{% include 'includes/footerBar.html' %}
@@ -75,8 +106,21 @@
           <li>Use extreme caution around appliances or outlets.</li>
 
         </ul>
-        <a href="contactPage.html" data-role="button">Emergency Contacts</a>
+        <a href="contactPage.html" data-role="button">Emergency Contacts</a><br><br>
+
+        <a href="#callPopup#2" data-rel="popup" data-role="button">Call 911</a>
+      </div>
+
+
+  <!------CALL 911 POPUP------->
+  <div data-role="popup" id="callPopup#2">
+
+    <div data-role="content">
+        <p style="text-align:center">    Call 911:    </p><br>
+        <a href="tel:911" data-role="button" data-inline="true">Yes</a>
+        <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
     </div>
+  </div>
 
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
