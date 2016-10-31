@@ -1,86 +1,86 @@
 
- <!---------------------------->    
+ <!---------------------------->
 <!------weather emergency------>
 <!----------------------------->
-    <div data-role="page"  id="">       
-    
+    <div data-role="page"  id="">
+
         <!--header-->
     {% with page_title='Weather Emergency'%}
     {% include 'includes/headerBar.html' %}
     {% endwith %}
-        
-    <div data-role="content">        
+
+    <div data-role="content">
     <h3 style="color:#800000;text-align: center">Natural/Weather Emergency</h3><hr><br>
         <li style="text-align: center">What type of natural/weather emergency are you experiencing?</li><br>
         <a href="#earthquake" data-role="button">Earthquake</a>
-        <a href="#tornado" data-role="button">Tornado/Thunderstorm</a> 
+        <a href="#tornado" data-role="button">Tornado/Thunderstorm</a>
         <a href="#hail" data-role="button">Hail Storm</a>
         <a href="#lightning" data-role="button">Lightning</a><br><br><hr><br>
         <li style="text-align: center">For all other emergencies dial 911.</li><br>
-        <a href="#911popup" data-role="button">Call 911</a>        
+        <a href="tel:911" data-role="button">Call 911</a>        
     </div>
-        
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
         </div>
-<!------------------------------>    
+<!------------------------------>
 <!-----earthquake(in/out)------->
 <!------------------------------>
-    <div data-role="page"  id="earthquake">       
-    
+    <div data-role="page"  id="earthquake">
+
         <!--header-->
     {% with page_title='Weather Emergency'%}
     {% include 'includes/headerBar.html' %}
     {% endwith %}
-    
+
     <div data-role="content">
-        
+
         <h3 style="color:#800000;text-align: center">Earthquake Emergency</h3><hr><br>
         <li style="text-align: center">Are you <b>indoors</b> or <b>outdoors</b>?</li><br>
         <li style="text-align: center">Select one:</li><br>
         <a href="#earthquakein" data-role="button">Indoors</a>
         <a href="#earthquakeout" data-role="button">Outdoors</a>
     </div>
-        
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
 
 </div>
-<!-------------------------->    
+<!-------------------------->
 <!------tornado(in/out)----->
 <!-------------------------->
-    <div data-role="page"  id="tornado">       
-    
+    <div data-role="page"  id="tornado">
+
         <!--header-->
     {% with page_title='Weather Emergency'%}
     {% include 'includes/headerBar.html' %}
     {% endwith %}
-    
+
     <div data-role="content">
-        
+
         <h3 style="color:#800000;text-align: center">Tornado Emergency</h3><hr><br>
         <li style="text-align: center">Are you <b>indoors</b> or <b>outdoors</b>?</li><br>
         <li style="text-align: center">Select one:</li><br>
         <a href="#tornadoin" data-role="button">Indoors</a>
         <a href="#tornadoout" data-role="button">Outdoors</a>
     </div>
-        
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
 
 </div>
-        
 
-<!----------------------->    
+
+<!----------------------->
 <!------earthquakein----->
 <!----------------------->
-    <div data-role="page"  id="earthquakein">       
-    
+    <div data-role="page"  id="earthquakein">
+
         <!--header-->
     {% with page_title='Weather Emergency'%}
     {% include 'includes/headerBar.html' %}
     {% endwith %}
-        
+
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Indoors During Earthquake</h3><hr><br>
         <ul>
@@ -91,26 +91,26 @@
         <li>Help direct people with special needs to a safe place.</li><br>
         <li>Wheelchair bound individuals should lock brakes.</li><br><br>
         </ul>
-       <h3 style="color:#800000;text-align: center">After shaking stops:</h3><hr> 
+       <h3 style="color:#800000;text-align: center">After shaking stops:</h3><hr>
         <ul>
             <li>Click <b>Next:</b></li>
         </ul>
-        <a href="#earthquakenext" data-role="button">Next</a><br>         
+        <a href="#earthquakenext" data-role="button">Next</a><br>
     </div>
-        
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
         </div>
-<!--------------------->    
+<!--------------------->
 <!------tornadoin------->
 <!--------------------->
-    <div data-role="page"  id="tornadoin">       
-    
+    <div data-role="page"  id="tornadoin">
+
         <!--header-->
     {% with page_title='Weather Emergency'%}
     {% include 'includes/headerBar.html' %}
     {% endwith %}
-        
+
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Indoors During Tornado or Thunderstorm</h3><hr><br>
         <ul>
@@ -128,43 +128,43 @@
         <li>If instructed to evacuate, (See <a href="evacuationGuide.html">Evacuation</a> section of Guide).</li><br>
         </ul>
     </div>
-        
+
     </div>
-        
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
         </div>
-<!----------------->    
+<!----------------->
 <!------hail------->
 <!----------------->
-    <div data-role="page"  id="hail">       
-    
+    <div data-role="page"  id="hail">
+
         <!--header-->
     {% with page_title='Weather Emergency'%}
     {% include 'includes/headerBar.html' %}
     {% endwith %}
-        
+
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Hail Weather Emergency</h3><hr><br>
         <ul>
         <li>Seek protective shelter immediately.</li><br>
-        <li>Remain indoors or under protective shelter until hail has stopped, (usually 5 - 10 minutes).</li><br> 
+        <li>Remain indoors or under protective shelter until hail has stopped, (usually 5 - 10 minutes).</li><br>
         </ul>
     </div>
-        
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
         </div>
-<!--------------------->    
+<!--------------------->
 <!------lightning------->
 <!--------------------->
-    <div data-role="page"  id="lightning">       
-    
+    <div data-role="page"  id="lightning">
+
         <!--header-->
     {% with page_title='Weather Emergency'%}
     {% include 'includes/headerBar.html' %}
     {% endwith %}
-        
+
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Lightning Weather Emergency</h3><hr><br>
         <ul>
@@ -178,24 +178,24 @@
         <li>Lightning may strike miles from the parent storm coulds.</li><br>
         <li>If you feel your hair stand on end, lightning may be about to strike you.</li><br>
         <li>Drop to your knees and bend forward, putting your hands on your knees.</li><br>
-        <li>DO NOT lie flat on the ground.</li><br>    
+        <li>DO NOT lie flat on the ground.</li><br>
         </ul>
     </div>
-        
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
         </div>
-                
-<!---------------------->    
+
+<!---------------------->
 <!----earthquakeout----->
 <!---------------------->
-    <div data-role="page"  id="earthquakeout">       
-    
+    <div data-role="page"  id="earthquakeout">
+
         <!--header-->
     {% with page_title='Weather Emergency'%}
     {% include 'includes/headerBar.html' %}
     {% endwith %}
-        
+
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Outdoors During an Earthquake</h3><hr><br>
         <ul>
@@ -204,27 +204,27 @@
         <li>Close your eyes and cross your arms over the back of your neck for protection.</li><br>
         <li>Remain in position until shaking has stopped.</li><br><br>
         </ul>
-        <h3 style="color:#800000;text-align: center">After shaking stops:</h3><hr> 
+        <h3 style="color:#800000;text-align: center">After shaking stops:</h3><hr>
         <ul>
         <li>Click <b>Next:</b></li>
         </ul>
-        <a href="#earthquakenext" data-role="button">Next</a><br>        
+        <a href="#earthquakenext" data-role="button">Next</a><br>
     </div>
-        
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
         </div>
-        
-<!------------------->    
+
+<!------------------->
 <!----tornadoout----->
 <!------------------->
-    <div data-role="page"  id="tornadoout">       
-    
+    <div data-role="page"  id="tornadoout">
+
         <!--header-->
     {% with page_title='Weather Emergency'%}
     {% include 'includes/headerBar.html' %}
     {% endwith %}
-        
+
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Outdoors During a Tornado</h3><hr><br>
         <ul>
@@ -233,24 +233,24 @@
         <li>Stay away from power lines and puddles with wires in them.</li><br>
         <li>DO NOT use matches or lighters, in case of leaking gas pipes or fuel tanks.</li><br>
         <li>Remain in position until high winds have stopped.</li><br>
-        <li>DO NOT enter any building that deemed or looks unsafe.</li><br>      
+        <li>DO NOT enter any building that deemed or looks unsafe.</li><br>
         </ul>
     </div>
-        
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
         </div>
-        
-<!---------------------->    
+
+<!---------------------->
 <!----earthquakenext---->
 <!---------------------->
-    <div data-role="page"  id="earthquakenext">       
-    
+    <div data-role="page"  id="earthquakenext">
+
         <!--header-->
     {% with page_title='Weather Emergency'%}
     {% include 'includes/headerBar.html' %}
     {% endwith %}
-        
+
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">After Shaking Stops</h3><hr><br>
         <ul>
@@ -263,9 +263,8 @@
         <li>DO NOT enter any building that is deemed/looks unsafe.</li><br>
         </ul>
     </div>
-        
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
 
 </div>
-        

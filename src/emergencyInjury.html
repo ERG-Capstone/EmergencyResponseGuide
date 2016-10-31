@@ -1,31 +1,31 @@
 
-<!-------------------------->    
+<!-------------------------->
 <!-----INJURY EMERGENCY----->
 <!-------------------------->
-    <div data-role="page"  id="">       
-    
+    <div data-role="page"  id="">
+
         <!--header-->
     {% with page_title='Injury Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
+
     <div data-role="content">
-    <h3 style="color:#800000;text-align: center">Injury Emergency</h3><hr><br>        
+    <h3 style="color:#800000;text-align: center">Injury Emergency</h3><hr><br>
         <li style="text-align: center">For all 'serious' injuries, please call 911.</li><br>
-        
+
           <a href="#911popup" data-rel="popup" data-role="button">Call 911</a><br><hr><br>
-         
+
         <li style="text-align: center">Is the injury a heart-related injury?</li><br>
-       
+
         <a href="#heartyes" data-role="button">Yes</a>
-        <a href="#heartno" data-role="button">No</a> 
-                
+        <a href="#heartno" data-role="button">No</a>
+
     </div>
-        
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
-        <!------CALL 911 POPUP------->   
-    <div data-role="popup" id="911popup">    
+        <!------CALL 911 POPUP------->
+    <div data-role="popup" id="911popup">
 
         <div data-role="content">
             <p style="text-align:center">    Call 911:    </p><br>
@@ -34,18 +34,18 @@
         </div>
     </div>
 
-</div>  
-        
-<!--------------------->    
+</div>
+
+<!--------------------->
 <!------heart yes------>
 <!--------------------->
-    <div data-role="page"  id="heartyes">       
-    
+    <div data-role="page"  id="heartyes">
+
     <!--header-->
     {% with page_title='Injury Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
+
     <div data-role="content">
         <h3 style="color:#800000;text-align: center">Heart-Related</h3><hr>
         <h3 style="text-align:center"><span style="font-weight: bold;">Do the following:</span></h3>
@@ -53,20 +53,20 @@
             <li>Get victim to cool place.</li><br>
             <li>Loosen tight clothing.</li><br>
 		  <li>Apply cool, wet cloths to the skin.</li><br>
-		  <li>Fan the victim.</li><br>  
-            <li>If conscious, give cool water to drink.</li><br>  
-            <li>Obtain medical attention at Campus Heatlth by campus (See <a href="contactPage.html">Emergency Contacts</a>).</li><br> 
+		  <li>Fan the victim.</li><br>
             <li>If conscious, give cool water to drink.</li><br>
-            <li>Call 911 for a anmbulance if victim refuses water, vomits or loses consciousness.</li>        
+            <li>Obtain medical attention at Campus Heatlth by campus (See <a href="contactPage.html">Emergency Contacts</a>).</li><br>
+            <li>If conscious, give cool water to drink.</li><br>
+            <li>Call 911 for a anmbulance if victim refuses water, vomits or loses consciousness.</li>
         </ul>
-        <a href="#911popup" data-rel="popup" data-role="button">Call 911</a><br> 
-              
+        <a href="#911popup" data-rel="popup" data-role="button">Call 911</a><br>
+
     </div>
-        
+
   <!--footer-->
 	{% include 'includes/footerBar.html' %}
-        <!------CALL 911 POPUP------->   
-    <div data-role="popup" id="911popup">    
+        <!------CALL 911 POPUP------->
+    <div data-role="popup" id="911popup">
 
         <div data-role="content">
             <p style="text-align:center">    Call 911:    </p><br>
@@ -76,87 +76,87 @@
     </div>
 
 </div>
-        
-<!---------------------->    
+
+<!---------------------->
 <!-------heart no------->
 <!---------------------->
-<div data-role="page"  id="heartno">       
-    
+<div data-role="page"  id="heartno">
+
         <!--header-->
     {% with page_title='Injury Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
+
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Injury Emergency</h3><hr><br>
-       
+
         <li style="text-align: center">Is it a minor cut or puncture injury?</li><br>
-        
+
         <a href="#cutyes" data-role="button">Yes</a>
-        <a href="#cutno" data-role="button">No</a>         
+        <a href="#cutno" data-role="button">No</a>
     </div>
-    
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
-</div>  
-        
-<!-------------------->    
+</div>
+
+<!-------------------->
 <!------cut yes------->
 <!-------------------->
-<div data-role="page"  id="cutyes">       
-    
+<div data-role="page"  id="cutyes">
+
         <!--header-->
     {% with page_title='Injury Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
+
     <div data-role="content">
         <h3 style="color:#800000;text-align: center">Minor Cut or Puncture</h3>
         <hr><br>
         <ul>
             <li>Vigorously wash injury with soap and water for serveral minutes.</li><br>
-            <li>Obtain medical attention at Campus Heatlth by campus (See <a href="contactPage.html">Emergency Contacts</a>).</li><br> 
+            <li>Obtain medical attention at Campus Heatlth by campus (See <a href="contactPage.html">Emergency Contacts</a>).</li><br>
             <li>If impaled by foreign object DO NOT remove the object. Seek medical attention immediately.</li>
-		</ul>         
+		</ul>
     </div>
-        
-    <!--footer-->
-	{% include 'includes/footerBar.html' %}
-</div> 
-    
-<!-------------------->    
-<!-------cut no------->
-<!-------------------->
-<div data-role="page"  id="cutno">       
-    
-        <!--header-->
-    {% with page_title='Injury Emergency'%}
-{% include 'includes/headerBar.html' %}
-{% endwith %}
-    
-    <div data-role="content">
-    <h3 style="color:#800000;text-align: center">Injury Emergency</h3><hr><br>
-        
-        <li style="text-align: center">Is material splashed in eye?</li><br>
-        
-        <a href="#eyeyes" data-role="button">Yes</a>
-        <a href="#eyeno" data-role="button">No</a>         
-    </div>
-    
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
 </div>
-        
-<!-------------------->    
-<!------eye yes------->
+
 <!-------------------->
-<div data-role="page"  id="eyeyes">       
-    
+<!-------cut no------->
+<!-------------------->
+<div data-role="page"  id="cutno">
+
         <!--header-->
     {% with page_title='Injury Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
+
+    <div data-role="content">
+    <h3 style="color:#800000;text-align: center">Injury Emergency</h3><hr><br>
+
+        <li style="text-align: center">Is material splashed in eye?</li><br>
+
+        <a href="#eyeyes" data-role="button">Yes</a>
+        <a href="#eyeno" data-role="button">No</a>
+    </div>
+
+    <!--footer-->
+	{% include 'includes/footerBar.html' %}
+</div>
+
+<!-------------------->
+<!------eye yes------->
+<!-------------------->
+<div data-role="page"  id="eyeyes">
+
+        <!--header-->
+    {% with page_title='Injury Emergency'%}
+{% include 'includes/headerBar.html' %}
+{% endwith %}
+
     <div data-role="content">
         <h3 style="color:#800000;text-align: center">Material in Eye</h3>
         <hr><br>
@@ -164,44 +164,41 @@
             <li>Immediately rinse eye with water continuously for 15 minutes.</li><br>
             <li>Forcably hold eye open while washing.</li><br>
             <li>Obtain medical attention at Campus Health by campus (See <a href="contactPage.html">Emergency Contacts</a>).</li>
-		</ul>         
+		</ul>
     </div>
-        
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
 </div>
-        
-<!-------------------->    
+
+<!-------------------->
 <!------eye no------->
 <!-------------------->
-<div data-role="page"  id="eyeno">       
-    
+<div data-role="page"  id="eyeno">
+
         <!--header-->
     {% with page_title='Injury Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
+
     <div data-role="content">
         <h3 style="color:#800000;text-align: center">Injury Emergency</h3>
         <hr><br>
         <ul>
-            <li>For all other emergencies, please call 911.</li><br>            
-		</ul> 
+            <li>For all other emergencies, please call 911.</li><br>
+		</ul>
         <a href="#911popup" data-rel="popup" data-role="button">Call 911</a>
     </div>
-        
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
-    <!------CALL 911 POPUP------->   
-    <div data-role="popup" id="911popup">    
+    <!------CALL 911 POPUP------->
+    <div data-role="popup" id="911popup">
 
         <div data-role="content">
             <p style="text-align:center">    Call 911:    </p><br>
-            <a href="#" data-role="button" data-inline="true">Yes</a>
+            <a href="tel:911" data-role="button" data-inline="true">Yes</a>
             <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
         </div>
     </div>
 </div>
-        
-    
-        

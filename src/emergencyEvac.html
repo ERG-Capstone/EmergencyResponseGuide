@@ -1,75 +1,75 @@
 
-<!----------------------->    
+<!----------------------->
 <!----evac emergency----->
-<!----------------------->   
-<div data-role="page"  id="">       
-    
+<!----------------------->
+<div data-role="page"  id="">
+
         <!--header-->
     {% with page_title='Evacuation Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
+
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Evacuation Emergency</h3><hr><br>
-        
+
         <li style="text-align: center">Are you able to safely leave the building?</li><br>
-        
+
         <a href="#yes" data-role="button">Yes</a>
-        <a href="#no" data-role="button">No</a>         
+        <a href="#no" data-role="button">No</a>
     </div>
-        
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
 
 </div>
-<!------------------>    
+<!------------------>
 <!-----evac yes----->
 <!------------------>
-    <div data-role="page"  id="yes">       
-    
+    <div data-role="page"  id="yes">
+
         <!--header-->
     {% with page_title='Evacuation Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
+
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">If SAFE to leave the building:</h3><hr><br>
-        <Ul>  
+        <Ul>
             <li>Find the nearest exit and best route to follow.</li><br>
             <li>If time permits, secure workspace and take personal items.</li><br>
             <li>Walk, DO NOT run.</li><br>
             <li>DO NOT use elevators.</li><br>
-            <li>If safe, assist those with special needs. If necessary, contact ASU Police for further assistance (See <a href="contactPage.html">Emergency Contacts</a>).</li><br>       
+            <li>If safe, assist those with special needs. If necessary, contact ASU Police for further assistance (See <a href="contactPage.html">Emergency Contacts</a>).</li><br>
             <li>Gather outside at designated staging area.</li><br>
             <li>Supervisor is responsible for accounting for all personnel.</li><br>
             <li>Wait for instructions from emergency personnel before returning to building.</li><br>
             <li>Contact ASU EH&S for personnel trained in proper clean-up and containment (See <a href="contactPage.html">Emergency Contacts</a>).</li>
         </Ul>
     </div>
-        
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
 
 </div>
-<!------------------>    
+<!------------------>
 <!------evac no----->
 <!------------------>
-    <div data-role="page"  id="no">       
-    
+    <div data-role="page"  id="no">
+
         <!--header-->
     {% with page_title='Evacuation Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
+
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">If NOT SAFE to leave the building:</h3><hr><br>
-        <Ul>  
+        <Ul>
             <li>If safe to do so, go to the nearest stariwell and tell someone who is evacuating to notify emergency personnel of your location and that you are unable to evacuate the building.</li><br>
-            <li>Call 911 and tell them your name, location, that you are unable to evacuate and why.</li><br>            
+            <li>Call 911 and tell them your name, location, that you are unable to evacuate and why.</li><br>
         </Ul>
-        <a href="#911popup" data-role="button">Call 911</a>
+        <a href="tel:911" data-role="button">Call 911</a>
     </div>
-        
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
 

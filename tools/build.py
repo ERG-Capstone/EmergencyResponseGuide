@@ -44,11 +44,11 @@ for index, i in enumerate(dir_list):
         new_template = env.from_string(output_from_parsed_template)
         final_output = new_template.render()
 
-        soup = bs(final_output)
-        pretty_final_output = soup.prettify().encode('utf-8')
+        # soup = bs(final_output)
+        # pretty_final_output = soup.prettify().encode('utf-8')
 
         with open(dsti, 'wb') as fh:
-            fh.write(pretty_final_output)
+            fh.write(final_output)
     else:
         # Copy the rest of the files and directories
         if '.' not in i:
