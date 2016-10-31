@@ -1,24 +1,24 @@
 
- 
-<!--------------------------->    
+
+<!--------------------------->
 <!----suspicious package----->
 <!--------------------------->
-    <div data-role="page"  id="">       
-    
+    <div data-role="page"  id="">
+
         <!--header-->
     {% with page_title='Suspicious Package Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
+
     <div data-role="content">
-    <h3 style="color:#800000;text-align: center">Suspicious Package Emergency</h3><hr><br>        
+    <h3 style="color:#800000;text-align: center">Suspicious Package Emergency</h3><hr><br>
         <ul>
             <li>DO NOT touch it, tamper with it, or move it!</li><br>
             <li>Immediately dial 911:</li><br/>
         </ul>
-        <a href="#popup" data-rel="popup" data-role="button">Call 911</a><br>
-        <ul>    
-            <li>Refer to the <b>Suspicious Package Checklist</b> for further instructions:</li>   
+        <a href="tel:911" data-rel="popup" data-role="button">Call 911</a><br>
+        <ul>
+            <li>Refer to the <b>Suspicious Package Checklist</b> for further instructions:</li>
         </ul><br>
         <div data-role="collapsible">
             <h3>Package Checklist</h3>
@@ -39,8 +39,8 @@
                     <li>No return address</li><br>
                     <hr>
                 </ul>
-                        
-                <br><b>Handling Suspicious Packages:</b><br> 
+
+                <br><b>Handling Suspicious Packages:</b><br>
                 <ul>
                     <li>Do not open or shake it</li><br>
                     <li>Do not carry or show to others</li><br>
@@ -54,7 +54,7 @@
         </div>
     </div>
 
- 
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
 
@@ -65,7 +65,7 @@
 		    <p style="text-align:center;font-weight:bold">      Call 911:      </p>
 		    <p style="text-align:center">911</p>
                 <div style="text-align:center">
-		          <a href="#" data-role="button" data-inline="true">Yes</a>
+		          <a href="tel:911" data-role="button" data-inline="true">Yes</a>
 		          <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
                 </div>
         </div>

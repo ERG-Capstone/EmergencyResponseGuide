@@ -1,91 +1,91 @@
 
-<!-------------------------->    
+<!-------------------------->
 <!-----MEDICAL EMERGENCY---->
 <!-------------------------->
-    <div data-role="page"  id="">       
-    
+    <div data-role="page"  id="">
+
         <!--header-->
     {% with page_title='Medical Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
+
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Medical Emergency</h3><hr><br>
-        
+
             <li style="text-align: center"><b>Call 911</b> before proceeding with emergency responses.</li><br>
-    
+
           <a href="#911popup" data-role="button">Call 911</a><br><hr><br>
           <li style="text-align: center">Is the victim breathing?</li><br>
-        
+
         <a href="#breathingyes" data-role="button">Yes</a>
-        <a href="#breathingno" data-role="button">No</a>                 
+        <a href="#breathingno" data-role="button">No</a>
     </div>
-        
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
 
-</div>  
+</div>
 
-        
-<!--------------------->    
+
+<!--------------------->
 <!----breathing yes---->
 <!--------------------->
-    <div data-role="page"  id="breathingno">       
-    
+    <div data-role="page"  id="breathingno">
+
     <!--header-->
     {% with page_title='Medical Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
+
     <div data-role="content">
         <h3 style="color:#800000;text-align: center">Victim NOT Breathing</h3><hr><br>
         <h3 style="text-align:center"><span style="font-weight: bold;">Start rescue breaths:</span></h3>
         <ul>
             <li>Tilt victim's head back, lift the chin and pinch nose shut.</li><br>
             <li>Give 2 short one second breaths (Breathe into victim until chest gently rises).</li><br>
-		  <li>Check for circulation, breathing, coughing and/or movement.</li><br>		        
-        </ul>  
+		  <li>Check for circulation, breathing, coughing and/or movement.</li><br>
+        </ul>
         <a href="#next2" data-role="button">Next</a>
     </div>
-        
+
   <!--footer-->
 	{% include 'includes/footerBar.html' %}
 
 </div>
-<!-------------------->    
+<!-------------------->
 <!-------NEXT(2)------>
 <!-------------------->
-    <div data-role="page"  id="next2">       
-    
+    <div data-role="page"  id="next2">
+
         <!--header-->
     {% with page_title='Medical Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
+
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Victim NOT Breathing</h3><hr><br>
-        
-        <li style="text-align:center">Are there signs of circulation?</li>		        
-        
+
+        <li style="text-align:center">Are there signs of circulation?</li>
+
         <a href="#circyes" data-role="button">Yes</a>
         <a href="#circno" data-role="button">No</a>
     </div>
-        
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
 
 </div>
-        
-<!---------------------->    
+
+<!---------------------->
 <!-------circ yes------->
 <!---------------------->
-<div data-role="page"  id="circyes">       
-    
+<div data-role="page"  id="circyes">
+
         <!--header-->
     {% with page_title='Medical Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
+
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Signs of circulation, NOT breathing</h3><hr><br>
         <h3 style="text-align: center">Do the following:</h3>
@@ -93,23 +93,23 @@
             <li>Give one slow breath every 5 seconds.</li><br>
             <li>Recheck for circulation and breathing every minute.</li><br>
             <li>Continue resue breaths until victim is breathing or medical assistance arrives.</li>
-        </ul>        
+        </ul>
     </div>
-    
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
-</div>  
-        
-<!-------------------->    
+</div>
+
+<!-------------------->
 <!------circ no------->
 <!-------------------->
-<div data-role="page"  id="circno">       
-    
+<div data-role="page"  id="circno">
+
         <!--header-->
     {% with page_title='Medical Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
+
     <div data-role="content">
         <h3 style="color:#800000;text-align: center">No Sign of Circulation, NOT Breathing</h3>
         <hr><br>
@@ -123,38 +123,38 @@
             <li>AED unit is automated and will only shock when necessary.</li><br>
             <li>If AED is used, please contact ASU Environmental Health & Safety (See <a href="contactPage.html">Emergency Contacts</a>).</li>
         </ul><br><hr>
-        
+
         <h3 style="text-align: center"><b>OR</b></h3>
-            
+
         <h3 style="text-align: center"><b>Start Cardio Pulmonary Resuscitation (CPR):</b></h3>
         <ul>
             <li>Find the notch where lower ribs meet breastbone. Place heel of hand on breastbone. Place other hand on top of the first.</li><br>
             <li>Position shoulders over your hands. Compress chest 30 times (1-1/2 to 2 inches) using a smooth, even rhythm.</li><br>
             <li>Give 2 short 1 second resue breaths.</li><br>
             <li>Do five (5) more sets of (30) compressions and (2) rescue breaths.</li><br>
-            <li>Check for signs of circulation.</li>            
-		</ul><br>  
+            <li>Check for signs of circulation.</li>
+		</ul><br>
          <a href="#next3" data-role="button">Next</a><br>
     </div>
-        
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
-</div> 
-    
-<!-------------------->    
+</div>
+
+<!-------------------->
 <!-------next3----->
 <!-------------------->
-<div data-role="page"  id="next3">       
-    
+<div data-role="page"  id="next3">
+
         <!--header-->
     {% with page_title='Medical Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
+
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">There ARE Signs of Circulation</h3><hr><br>
-        
-        <h3 style="text-align: center"><b>If sign of circulation but NOT breathing:</b></h3>    
+
+        <h3 style="text-align: center"><b>If sign of circulation but NOT breathing:</b></h3>
         <ul>
             <li>Give one slow breath every 5 seconds. Until victim responds or medical assistance arrives.</li><br><br><hr>
         </ul>
@@ -162,46 +162,46 @@
         <ul>
             <li>Contiue CPR until medical assistance arrives.</li>
         </ul>
-               
+
     </div>
-    
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
 </div>
-        
-<!----------------------->    
+
+<!----------------------->
 <!-----breathing yes----->
 <!----------------------->
-<div data-role="page"  id="breathingyes">       
-    
+<div data-role="page"  id="breathingyes">
+
         <!--header-->
     {% with page_title='Injury Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
+
     <div data-role="content">
         <h3 style="color:#800000;text-align: center">Victim is Breathing</h3>
-        <hr><br>        
-        <li style="text-align:center">Is the victim choking?</li>     
+        <hr><br>
+        <li style="text-align:center">Is the victim choking?</li>
             <a href="#chokeyes" data-role="button">Yes</a>
-            <a href="#chokeno" data-role="button">No</a> 
-		         
+            <a href="#chokeno" data-role="button">No</a>
+
     </div>
-        
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
 </div>
-                
-<!-------------------->    
+
+<!-------------------->
 <!-----choking yes---->
 <!-------------------->
-<div data-role="page"  id="chokeyes">       
-    
+<div data-role="page"  id="chokeyes">
+
         <!--header-->
     {% with page_title='Medical Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
+
     <div data-role="content">
         <h3 style="color:#800000;text-align: center">Victim is Choking</h3>
         <hr><br>
@@ -209,38 +209,38 @@
         <ul>
             <li>Call 911</li>
         </ul>
-        <a href="#911popup" data-role="button">Call 911</a><br>
+        <a href="tel:911" data-role="button">Call 911</a><br>
         <ul>
              <li>Get behind victim, wrap your arms around the persons waist, just above their naval.</li><br>
              <li>Clasp your hands together in a double fist. Press in and up in QUICK thrusts.</li><br>
              <li>Repeat procedure until choking stops.</li><br>
-             <li>Report incident to supervisor. Supervisor is responsible for notifying ASU EH&S.</li><br>             
-		</ul>         
+             <li>Report incident to supervisor. Supervisor is responsible for notifying ASU EH&S.</li><br>
+		</ul>
     </div>
-        
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
 </div>
-<!-------------------->    
+<!-------------------->
 <!------choking no---->
 <!-------------------->
-<div data-role="page"  id="chokeno">       
-    
+<div data-role="page"  id="chokeno">
+
         <!--header-->
     {% with page_title='Injury Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
+
     <div data-role="content">
         <h3 style="color:#800000;text-align: center">Medical Emergency</h3>
         <hr><br>
             <ul>
             <li>For all other emergencies, please call 911.</li>
-        </ul><br>            
-		
-        <a href="#911popup" data-role="button">Call 911</a>
+        </ul><br>
+
+        <a href="tel:911" data-role="button">Call 911</a>
     </div>
-        
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
 </div>
