@@ -1,26 +1,26 @@
 
- 
-<!-------------------->    
+
+<!-------------------->
 <!----bomb threat----->
 <!-------------------->
-    <div data-role="page"  id="">       
-    
+    <div data-role="page"  id="">
+
         <!--header-->
     {% with page_title='Bomb Threat Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
+
     <div data-role="content">
-    <h3 style="color:#800000;text-align: center">Bomb Threat Emergency</h3><hr><br>        
+    <h3 style="color:#800000;text-align: center">Bomb Threat Emergency</h3><hr><br>
         <ul>
             <li>DO NOT hang up!</li><br/>
             <li>Remain Calm.</li><br/>
             <li>Take the caller seriously.</li><br/>
             <li>Have another person call 911 on another line, or call 911 yourself immediately after hanging up.</li><br/>
-            
-            <li>Ask a lot of questions. Use the <b>Bomb Threat Checklist</b> as a guide:</li><br/>    
+
+            <li>Ask a lot of questions. Use the <b>Bomb Threat Checklist</b> as a guide:</li><br/>
         </ul>
-         <a href="#callPopup" data-rel="popup" data-role="button" >Call 911</a><br>
+         <a href="tel:911" data-rel="popup" data-role="button" >Call 911</a><br>
         <ul>
             <li>Refer to the <b>Bomb Threat Checklist</b> for further instructions:</li>
         </ul><br>
@@ -49,19 +49,18 @@
         </div><br>
     </div>
 
- 
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
 
 </div>
-        
-         <!------CALL 911 POPUP------->   
-    <div data-role="popup" id="callPopup">    
+
+         <!------CALL 911 POPUP------->
+    <div data-role="popup" id="callPopup">
 
         <div data-role="content">
             <p style="text-align:center">    Call 911:    </p><br>
-            <a href="#" data-role="button" data-inline="true">Yes</a>
+            <a href="tel:911" data-role="button" data-inline="true">Yes</a>
             <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
         </div>
     </div>
-        
