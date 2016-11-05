@@ -36,16 +36,12 @@ for index, i in enumerate(dir_list):
         # Render can fail occasionally, log filename and exception if it does
         try:
             output_from_parsed_template = template.render(content=file_contents)
+            new_template = env.from_string(output_from_parsed_template)
+            final_output = new_template.render()
         except Exception as e:
             print('\nProblem with file: %s' % i)
             print(e)
-            exit()
-
-        new_template = env.from_string(output_from_parsed_template)
-        final_output = new_template.render()
-
-        # soup = bs(final_output)
-        # pretty_final_output = soup.prettify().encode('utf-8')
+            exit(1)  # Exit and do not continue
 
         with open(dsti, 'wb') as fh:
             fh.write(final_output)
