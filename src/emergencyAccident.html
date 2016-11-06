@@ -19,7 +19,19 @@
         <a href="#aircraft" data-role="button">Aircraft</a><br><br>
 
 
-        <a href="#911popup" data-role="button">Call 911</a><br>
+        <a href="#callPopup" data-rel="popup" data-role="button">Call 911</a>
+    </div>
+
+
+
+    <!------CALL 911 POPUP------->
+    <div data-role="popup" id="callPopup">
+
+      <div data-role="content">
+          <p style="text-align:center">    Call 911:    </p><br>
+          <a href="tel:911" data-role="button" data-inline="true">Yes</a>
+          <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+      </div>
     </div>
 
     <!--footer-->

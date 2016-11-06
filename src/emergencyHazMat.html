@@ -10,30 +10,9 @@
 {% endwith %}
 
     <div data-role="content">
-    <h3 style="color:#800000;text-align: center">Hazardous Material Emergency</h3><hr><br>
+    <h3 style="color:#800000;text-align: center">Hazardous Material Emergency</h3><hr>
 
-        <li style="text-align: center">Is the spill on a persons body?</li><br>
-          <a href="#spillY" data-role="button">Yes</a>
-          <a href="#spillN" data-role="button">No</a>
-
-    </div>
-
-    <!--footer-->
-	{% include 'includes/footerBar.html' %}
-
-</div>
-<!-------------------->
-<!-------spillY------->
-<!-------------------->
-    <div data-role="page"  id="spillY">
-
-        <!--header-->
-    {% with page_title='Hazard Material Emergency'%}
-{% include 'includes/headerBar.html' %}
-{% endwith %}
-
-    <div data-role="content">
-    <h3 style="color:#800000;text-align: center">Chemical Spill on Body</h3><hr><br>
+    <h3>If there is a Chemical Spill on Body</h3>
         <Ul>
             <li>Flood exposed area with running water.</li><br>
             <li>Remove contaminated clothing and place into plastic bag.</li><br>
@@ -42,88 +21,36 @@
             <li>Report incident to supervisor. Supervisor responsible for notifying ASU EH&S.</li><br>
             <li>Contact ASU EH&S for personnel trained in proper clean-up and containment (See <a href="contactPage.html">Emergency Contacts</a>).</li>
         </Ul>
-    </div>
 
-    <!--footer-->
-	{% include 'includes/footerBar.html' %}
+        <hr>
 
-</div>
+      <h3>If it is a <b>Minor</b> spill</h3>
+      <Ul>
+          <li>Alert those in immediate area.</li><br>
+          <li>Wear protective equipement and attempt to clean up.</li><br>
+          <li>Avoid breathing vapors, try to confine the spill to a small area.</li><br>
+          <li>DO NOT allow anything to discharge into drains.</li><br>
+          <li>Bag and label cleanup material with Hazardous Waste Label.</li><br>
+          <li>Report incident to supervisor. Supervisor responsible for notifying ASU EH&S.</li><br>
+          <li>Contact ASU EH&S for personnel trained in proper clean-up and containment (See <a href="contactPage.html">Emergency Contacts</a>).</li>
+      </Ul>
 
-<!--------------------->
-<!--------spillN------->
-<!--------------------->
-    <div data-role="page"  id="spillN">
+      <hr>
 
-        <!--header-->
-    {% with page_title='Hazard Material Emergency'%}
-{% include 'includes/headerBar.html' %}
-{% endwith %}
+      <h3>If it is a <b>Major</b> spill</h3>
+      <Ul>
+          <li>Activate nearest fire alarm.</li><br>
+          <li>Immediately evacuate the area, closing doors behind you.</li><br>
+          <li>Call 911.</li>
+      </ul>
+      <a href="tel:911" data-role="button">Call 911</a>
+      <ul><br>
+          <li>DO NOT attempt to clean up major spills yourself.</li><br>
+          <li>Provide Materials Safety Data Sheets to response personnel.</li><br>
+          <li>Report incident to supervisor. Supervisor responsible for notifying ASU EH&S.</li><br>
+          <li>Contact ASU EH&S for personnel trained in proper clean-up and containment (See <a href="contactPage.html">Emergency Contacts</a>).</li>
+      </Ul>
 
-    <div data-role="content">
-    <h3 style="color:#800000;text-align: center">Hazardous Material Emergency</h3><hr><br>
-
-        <li style="text-align: center">Is the spill <span style="font-weight: bold;">Minor</span> or <span style="font-weight: bold;">Major</span>?<br><br> Choose one:</li><br>
-
-        <a href="#minor" data-role="button">Minor</a>
-        <a href="#major" data-role="button">Major</a>
-
-    </div>
-
-    <!--footer-->
-	{% include 'includes/footerBar.html' %}
-
-</div>
-<!-------------------->
-<!-------minor------->
-<!-------------------->
-    <div data-role="page"  id="minor">
-
-        <!--header-->
-    {% with page_title='Hazard Material Emergency'%}
-{% include 'includes/headerBar.html' %}
-{% endwith %}
-
-    <div data-role="content">
-    <h3 style="color:#800000;text-align: center">Minor Spill/Leak</h3><hr><br>
-        <Ul>
-            <li>Alert those in immediate area.</li><br>
-            <li>Wear protective equipement and attempt to clean up.</li><br>
-            <li>Avoid breathing vapors, try to confine the spill to a small area.</li><br>
-            <li>DO NOT allow anything to discharge into drains.</li><br>
-            <li>Bag and label cleanup material with Hazardous Waste Label.</li><br>
-            <li>Report incident to supervisor. Supervisor responsible for notifying ASU EH&S.</li><br>
-            <li>Contact ASU EH&S for personnel trained in proper clean-up and containment (See <a href="contactPage.html">Emergency Contacts</a>).</li>
-        </Ul>
-    </div>
-
-    <!--footer-->
-	{% include 'includes/footerBar.html' %}
-
-</div>
-<!-------------------->
-<!-------major------->
-<!-------------------->
-    <div data-role="page"  id="major">
-
-        <!--header-->
-    {% with page_title='Hazard Material Emergency'%}
-{% include 'includes/headerBar.html' %}
-{% endwith %}
-
-    <div data-role="content">
-    <h3 style="color:#800000;text-align: center">Chemical Spill on Body</h3><hr><br>
-        <Ul>
-            <li>Activate nearest fire alarm.</li><br>
-            <li>Immediately evacuate the area, closing doors behind you.</li><br>
-            <li>Call 911.</li>
-        </ul>
-        <a href="tel:911" data-role="button">Call 911</a>
-        <ul><br>
-            <li>DO NOT attempt to clean up major spills yourself.</li><br>
-            <li>Provide Materials Safety Data Sheets to response personnel.</li><br>
-            <li>Report incident to supervisor. Supervisor responsible for notifying ASU EH&S.</li><br>
-            <li>Contact ASU EH&S for personnel trained in proper clean-up and containment (See <a href="contactPage.html">Emergency Contacts</a>).</li>
-        </Ul>
     </div>
 
     <!--footer-->

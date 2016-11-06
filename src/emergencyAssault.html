@@ -12,10 +12,27 @@
 
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Personal Threat</h3><hr><br>
-        <li style="text-align: center">Are you being stalked?</li>
-        <a href="#stalkYes" data-role="button">Yes</a>
-        <a href="#stalkNo" data-role="button">No</a>
+        <li style="text-align: center">Please choose your situation below: </li>
+        <a href="#stalk" data-role="button">Being Stalked </a><br>
+        <a href="#assault" data-role="button">Being Assaulted</a><br>
+        <a href="#violence" data-role="button">Relationship Violence</a><br>
+        <a href="#civil" data-role="button">Civil Disturbance</a><br>
+
+        <h4> Please call 911 for any assistance</h4>
+        <a href="#callPopup" data-rel="popup" data-role="button">Call 911</a>
+
+
     </div>
+
+
+    <!------CALL 911 POPUP------->
+    <div data-role="popup" id="callPopup">
+
+      <div data-role="content">
+          <p style="text-align:center">    Call 911:    </p><br>
+          <a href="tel:911" data-role="button" data-inline="true">Yes</a>
+          <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+      </div>
 
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
@@ -25,7 +42,7 @@
 <!------------------------->
 <!------stalk YES-------->
 <!------------------------->
-    <div data-role="page"  id="stalkYes">
+    <div data-role="page"  id="stalk">
 
         <!--header-->
     {% with page_title='Personal Threat'%}
@@ -36,59 +53,24 @@
     <div data-role="content">
         <h3 style="color:#800000;text-align: center">You Are Being Stalked</h3>
         <hr><br>
-        <ul>
-            <li>Call 911:</li>
-        </ul>
-        <a href="#callPopup" data-rel="popup" data-role="button" >Call 911</a><br>
-        <hr style="margin-left:20px"><br>
-        <ul>
+
         <li>Seek safety of others.</li><br>
-		<li>Don't confront stalker.</li><br>
-		<li>Take note of identifying features to report to police.</li><br>
+    		<li>Don't confront stalker.</li><br>
+    		<li>Take note of identifying features to report to police.</li><br>
         </ul>
     </div>
 
   <!--footer-->
 	{% include 'includes/footerBar.html' %}
 
-    <!------CALL 911 POPUP------->
-    <div data-role="popup" id="callPopup">
-
-        <div data-role="content">
-            <p style="text-align:center">    Call 911:    </p><br>
-            <a href="#" data-role="button" data-inline="true">Yes</a>
-            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
-        </div>
-    </div>
-
 
 </div>
 
-<!------------------------->
-<!-------stalk NO-------->
-<!------------------------->
-<div data-role="page"  id="stalkNo">
-
-        <!--header-->
-    {% with page_title='Personal Threat'%}
-{% include 'includes/headerBar.html' %}
-{% endwith %}
-
-    <div data-role="content">
-    <h3 style="color:#800000;text-align: center">Personal Threat</h3><hr><br>
-        <li style="text-align: center">Are you/someone else being assaulted?</li>
-        <a href="#assaultYes" data-role="button" data-ajax="false">Yes</a>
-        <a href="#assaultNo" data-role="button" data-ajax="false">No</a>
-    </div>
-
-    <!--footer-->
-	{% include 'includes/footerBar.html' %}
-</div>
 
 <!----------------------->
 <!----assault YES-------->
 <!----------------------->
-<div data-role="page"  id="assaultYes">
+<div data-role="page"  id="assault">
 
         <!--header-->
     {% with page_title='Personal Threat'%}
@@ -99,13 +81,8 @@
         <h3 style="color:#800000;text-align: center">Assault is taking place</h3>
         <hr><br>
         <ul>
-            <li>Call 911:</li>
-        </ul>
-        <a href="tel:911" data-rel="popup" data-role="button" >Call 911</a><br>
-        <hr style="margin-left:20px"><br>
-        <ul>
-			<li>Remain with victim until help arrives.</li>
-		</ul>
+  			<li>Remain with victim until help arrives.</li>
+    		</ul>
     </div>
 
     <!--footer-->
@@ -113,32 +90,12 @@
 
 </div>
 
-<!----------------------->
-<!-------assault NO-------->
-<!----------------------->
- <div data-role="page"  id="assaultNo">
 
-        <!--header-->
-    {% with page_title='Personal Threat'%}
-{% include 'includes/headerBar.html' %}
-{% endwith %}
-
-    <div data-role="content">
-    <h3 style="color:#800000;text-align: center">Personal Threat</h3><hr><br>
-        <li style="text-align: center">Are you/someone else experiening relationship violence?</li>
-        <a href="#relationYes" data-role="button">Yes</a>
-        <a href="#relationNo" data-role="button">No</a>
-    </div>
-
-	<!--footer-->
-	{% include 'includes/footerBar.html' %}
-
-</div>
 
 <!----------------------->
 <!------relation YES----->
 <!----------------------->
-<div data-role="page"  id="relationYes">
+<div data-role="page"  id="violence">
 
         <!--header-->
     {% with page_title='Personal Threat'%}
@@ -147,9 +104,7 @@
 
     <div data-role="content">
         <h3 style="color:#800000;text-align: center">Experiencing Relationship Violence</h3><hr><br>
-        <li style="text-align: center">Call 911 for medical emergencies or immediate threats:</li>
-        <a href="tel:911" data-rel="popup" data-role="button">Call 911</a>
-        <br><hr><br>
+
         <li style="text-align: center">Get support. Contact Counseling Services:</li>
                 <div data-role="collapsible">
                 	<h3>Students</h3>
@@ -170,15 +125,6 @@
    <!--footer-->
 	{% include 'includes/footerBar.html' %}
 
-    <!------CALL 911 POPUP------->
-    <div data-role="popup" id="callPopup">
-
-        <div data-role="content">
-            <p style="text-align:center">    Call 911:    </p><br>
-            <a href="tel:911" data-role="button" data-inline="true">Yes</a>
-            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
-        </div>
-    </div>
 
     <!------Tempe STUDENT POPUP------->
     <div data-role="popup" id="tempeStudents">
@@ -187,7 +133,7 @@
             <p style="text-align:center;font-weight:bold">    Call Student Counsiling:    </p>
             <p style="text-align:center">(480) 965-6146</p>
             <div style="text-align:center">
-            <a href="#" data-role="button" data-inline="true">Yes</a>
+            <a href="tel:4809656146" data-role="button" data-inline="true">Yes</a>
             <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
             </div>
         </div>
@@ -199,7 +145,7 @@
 	            <p style="text-align:center;font-weight:bold">    Call Student Counsiling:    </p>
 	            <p style="text-align:center">(602) 543-8125</p>
                 <div style="text-align:center">
-	            <a href="#" data-role="button" data-inline="true">Yes</a>
+	            <a href="tel:6025438125" data-role="button" data-inline="true">Yes</a>
 	            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
                 </div>
 	        </div>
@@ -211,7 +157,7 @@
 	            <p style="text-align:center;font-weight:bold">    Call Student Counsiling:    </p>
 	            <p style="text-align:center">(480) 727-1255</p>
                 <div style="text-align:center">
-	            <a href="#" data-role="button" data-inline="true">Yes</a>
+	            <a href="tel:4807271255" data-role="button" data-inline="true">Yes</a>
 	            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
                 </div>
 	        </div>
@@ -223,7 +169,7 @@
 	            <p style="text-align:center;font-weight:bold">    Call Student Counsiling:    </p>
 	            <p style="text-align:center">(602) 496-1155</p>
                 <div style="text-align:center">
-	            <a href="#" data-role="button" data-inline="true">Yes</a>
+	            <a href="tel:6024961155" data-role="button" data-inline="true">Yes</a>
 	            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
                 </div>
 	        </div>
@@ -235,7 +181,7 @@
             <p style="text-align:center;font-weight:bold">    Call Employee Counsiling:    </p>
             <p style="text-align:center">(480) 965-2271</p>
             <div style="text-align:center">
-            <a href="#" data-role="button" data-inline="true">Yes</a>
+            <a href="tel:4809652271" data-role="button" data-inline="true">Yes</a>
             <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
             </div>
         </div>
@@ -247,7 +193,7 @@
             <p style="text-align:center;font-weight:bold">    Call Employee Counsiling:    </p>
             <p style="text-align:center">(480) 965-2271</p>
             <div style="text-align:center">
-            <a href="#" data-role="button" data-inline="true">Yes</a>
+            <a href="tel:4809652271" data-role="button" data-inline="true">Yes</a>
             <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
             </div>
         </div>
@@ -260,39 +206,19 @@
             <p style="text-align:center;font-weight:bold">    Call Crisis Line:    </p>
             <p style="text-align:center">(480) 921-1006</p>
             <div style="text-align:center">
-            <a href="#" data-role="button" data-inline="true">Yes</a>
+            <a href="tel:4809211006" data-role="button" data-inline="true">Yes</a>
             <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
             </div>
         </div>
     </div>
 
 </div>
-<!----------------------->
-<!----relation NO-------->
-<!----------------------->
- <div data-role="page"  id="relationNo">
 
-        <!--header-->
-    {% with page_title='Personal Threat'%}
-{% include 'includes/headerBar.html' %}
-{% endwith %}
-
-    <div data-role="content">
-    <h3 style="color:#800000;text-align: center">Personal Threat</h3><hr><br>
-        <li style="text-align: center">Are you/someone else experiening a civil disturbance?</li>
-        <a href="#civilYes" data-role="button">Yes</a>
-        <a href="#civilNo" data-role="button">No</a>
-    </div>
-
-	<!--footer-->
-	{% include 'includes/footerBar.html' %}
-
-</div>
 
 <!----------------------->
 <!------CIVIL YES-------->
 <!----------------------->
-    <div data-role="page"  id="civilYes">
+    <div data-role="page"  id="civil">
 
         <!--header-->
     {% with page_title='Personal Threat'%}
@@ -300,12 +226,8 @@
 {% endwith %}
 
     <div data-role="content">
-        <h3 style="color:#800000;text-align: center">Witness Civil Desturbance</h3><hr><br>
-        <ul>
-             <li>Call 911.</li>
-            </ul>
+        <h3 style="color:#800000;text-align: center">Witness Civil Disturbance</h3><hr><br>
 
-            <a href="tel:911" data-rel="popup" data-role="button">Call 911</a><br>
         <ul>
             <li>Avoid provoking or obstructing demonstrators.</li><br/>
             <li>Secure your area (lock doors, safes, files, vital records, etc.)</li><br/>
@@ -321,35 +243,3 @@
 
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
-
-        <!------CALL 911 POPUP------->
-    <div data-role="popup" id="callPopup">
-
-        <div data-role="content">
-            <p style="text-align:center">    Call 911:    </p><br>
-            <a href="#tel:911" data-role="button" data-inline="true">Yes</a>
-            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
-        </div>
-    </div>
-    </div>
-
-<!--------------------->
-<!-----CIVIL NO-------->
-<!--------------------->
- <div data-role="page"  id="civilNo">
-
-        <!--header-->
-    {% with page_title='Personal Threat'%}
-{% include 'includes/headerBar.html' %}
-{% endwith %}
-
-    <div data-role="content">
-    <h3 style="color:#800000;text-align: center">Personal Threat</h3><hr><br>
-        <li style="text-align: center">For all emergency situations call 911:</li><br>
-        <a href="#tel:911" data-role="button">Call 911</a>
-    </div>
-
-	<!--footer-->
-	{% include 'includes/footerBar.html' %}
-
-</div>
