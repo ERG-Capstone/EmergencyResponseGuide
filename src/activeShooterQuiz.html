@@ -78,10 +78,10 @@ function showScore() {
   pc = Math.round((correct / questionCount) * 100);
   alertMsg = "You scored " + correct + " out of " + questionCount + "\n\n";
   alertMsg += "You correctly answered " + pc + "% of the questions! \n\n";
-    
+
     document.getElementById("score").innerHTML = alertMsg;
 }
-    
+
 */
 
 <!-----showScore()---->
@@ -116,12 +116,12 @@ function showScore() {
   } else {
     alert(alertMsg);
   }
-}   
-    
-    
-    
-    
-    
+}
+
+
+
+
+
 
 <!---disbleQuestion()-->
 <!--------------------->
@@ -154,7 +154,7 @@ choices[1][0] = "True";
 choices[1][1] = "False";
 answers[1] = choices[1][0];
 
-questions[2] = "3) If there is an active shooter and you choose to run, take all the belongings with you and escape";
+questions[2] = "3) If there is an active shooter and you choose to run, take all your belongings with you";
 choices[2] = new Array();
 choices[2][0] = "True";
 choices[2][1] = "False";
@@ -166,7 +166,7 @@ choices[3][0] = "True";
 choices[3][1] = "False";
 answers[3] = choices[3][1];
 
-questions[4] = "5) If there is an active shooter and you choose to fight, you can incapacitate the shooter by any means possible";
+questions[4] = "5) If there is an active shooter and you choose to fight, you should incapacitate the shooter by any means possible";
 choices[4] = new Array();
 choices[4][0] = "True";
 choices[4][1] = "False";
@@ -175,21 +175,19 @@ answers[4] = choices[4][0];
 renderQuiz();
 </script>
 </div> <!--content-->
-        
+
 <!--footer-->
 {% include 'includes/footerBar.html' %}
 </div><!--page-->
-        
+
     <!------Show Score------->
     <div data-role="popup" id="showScore">
 
         <div data-role="content">
-            
+
             <p id="score" style="text-align:center"></p>
-            <div style="text-align:center">            
+            <div style="text-align:center">
                 <a href="javascript:history.go(-1)" data-role="button">OK</a><br>
             </div>
         </div>
     </div>
-        
-
