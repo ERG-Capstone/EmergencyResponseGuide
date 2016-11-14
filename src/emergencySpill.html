@@ -1,106 +1,56 @@
 
-        
-<!----------------------->    
+
+<!----------------------->
 <!-----spill/fumes------->
 <!----------------------->
-    <div data-role="page"  id="earthquake">       
-    
+    <div data-role="page"  id="earthquake">
+
         <!--header-->
     {% with page_title='Bio/Rad Spill Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
+
     <div data-role="content">
-        
+
         <h3 style="color:#800000;text-align: center">Bio/Rad Spill Emergency</h3><hr><br>
-        <li style="text-align: center">Are you experiencing a <b>spill</b> or <b>fumes/vapor</b> emergency?</li><br>
-        <li style="text-align: center">Select one:</li><br>
-        <a href="#spill" data-role="button">Spill</a>
-        <a href="#fumes" data-role="button">Fumes/Vapor</a>
-    </div>
-        
-    <!--footer-->
-	{% include 'includes/footerBar.html' %}
+        <h3>If you experiencing a <b>spill</b> emergency</li><br>
+        <h3> Do the following:</h3>
 
-</div>
 
-<!-------------->    
-<!----spill----->
-<!-------------->
-    <div data-role="page"  id="spill">       
-    
-        <!--header-->
-    {% with page_title='Spill Emergency'%}
-{% include 'includes/headerBar.html' %}
-{% endwith %}
-    
-    <div data-role="content">
-    <h3 style="color:#800000;text-align: center">Spill Emergency</h3><hr><br>        
-        <Ul>  
-            <li>Notify all persons in the room</li><br>
-            <li>Confine spill immediately</li><br>
-            <li>Liquid spills - Wear protective gloves and place absorbant paper on spill</li><br>   
-            <li>Dry spills - Wear protective gloves and place absorbant paper on spill</li><br>
-            <li>Spill on skin - Flush thoroughly with water</li><br>
-            <li>Spill on clothing - Discard clothing at once</li><br>
-        </Ul><br>
-        <a href="#injury" data-role="button">Next</a>
-    </div>
-        
-    <!--footer-->
-	{% include 'includes/footerBar.html' %}
+              <Ul>
+                  <li>Notify all persons in the room</li><br>
+                  <li>Confine spill immediately</li><br>
+                  <li>Liquid spills - Wear protective gloves and place absorbant paper on spill</li><br>
+                  <li>Dry spills - Wear protective gloves and place absorbant paper on spill</li><br>
+                  <li>Spill on skin - Flush thoroughly with water</li><br>
+                  <li>Spill on clothing - Discard clothing at once</li><br>
+              </Ul><br>
 
-</div>
-        
-<!-------------->    
-<!----fumes----->
-<!-------------->
-    <div data-role="page"  id="fumes">       
-    
-        <!--header-->
-    {% with page_title='Fumes/Vapor Emergency'%}
-{% include 'includes/headerBar.html' %}
-{% endwith %}
-    
-    <div data-role="content">
-    <h3 style="color:#800000;text-align: center">Fumes/Vapor Emergency</h3><hr><br>
-        
-        <Ul>  
-            <li>Notify all personnel to vacaqte the room immediately.</li><br>
-            <li>Hold breath, close all windows and escape valves and switch off circulating air.</li><br>
-            <li>Vacate the room.</li><br>   
-            <li>Notify the Office of Radiation Safety (M-F 8am-5pm, <a href="tel:1(480) 965-3633">480.965.6140</a>) immediately following the incident.</li><br>
-            <li>Assure all doors with access to the room are closed and locked.</li><br>
-            <li>If necessary, post guards to prevent accidental opening of doors.</li><br>
-        </Ul>  
-        <a href="#injury" data-role="button">Next</a>
-    </div>
-        
-    <!--footer-->
-	{% include 'includes/footerBar.html' %}
+              <hr>
+              <h3> If you are experiencing a <b>flumes/vapor</b> emergency</h3>
+              <h3> Do the following:</h3>
 
-</div>
-        
-<!--------------->    
-<!----injury----->
-<!--------------->
-    <div data-role="page"  id="injury">       
-    
-        <!--header-->
-    {% with page_title='Rad/Bio Spill Emergency'%}
-{% include 'includes/headerBar.html' %}
-{% endwith %}
-    
-    <div data-role="content">   
-        <h3 style="color:#800000;text-align: center">Injuries</h3><hr><br>
-        <Ul>  
-            <li>Wash minor wounds immediately under running water.</li><br>
-            <li>Report all radiation accidents (wounds, over exposure, injestion or inhalation) to ORS (M-F 8am-5pm, <a href="tel:1(480) 965-3633">480.965.6140</a>) immediately.</li><br>
-            <li>Obtain medical attention at Campus Heath by campus (see <a href="contactPage.html">Emergency Contacts</a> for campus).</li><br>   
-            <li>DO NOT permit personnel involved in injury to return to work or leave premises without approval of RSO or physician.</li><br>            
-        </Ul>        
+              <Ul>
+                  <li>Notify all personnel to vacaqte the room immediately.</li><br>
+                  <li>Hold breath, close all windows and escape valves and switch off circulating air.</li><br>
+                  <li>Vacate the room.</li><br>
+                  <li>Notify the Office of Radiation Safety (M-F 8am-5pm, <a href="tel:1(480) 965-3633">480.965.6140</a>) immediately following the incident.</li><br>
+                  <li>Assure all doors with access to the room are closed and locked.</li><br>
+                  <li>If necessary, post guards to prevent accidental opening of doors.</li><br>
+              </Ul>
+
+              <hr>
+              <h3> For all injuries:</h3>
+
+              <Ul>
+                  <li>Wash minor wounds immediately under running water.</li><br>
+                  <li>Report all radiation accidents (wounds, over exposure, injestion or inhalation) to ORS (M-F 8am-5pm, <a href="tel:1(480) 965-3633">480.965.6140</a>) immediately.</li><br>
+                  <li>Obtain medical attention at Campus Heath by campus (see <a href="contactPage.html">Emergency Contacts</a> for campus).</li><br>
+                  <li>DO NOT permit personnel involved in injury to return to work or leave premises without approval of RSO or physician.</li><br>
+              </Ul>
+
     </div>
-        
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
 

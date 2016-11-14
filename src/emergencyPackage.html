@@ -16,7 +16,7 @@
             <li>DO NOT touch it, tamper with it, or move it!</li><br>
             <li>Immediately dial 911:</li><br/>
         </ul>
-        <a href="tel:911" data-rel="popup" data-role="button">Call 911</a><br>
+          <a href="#callPopup" data-rel="popup" data-role="button">Call 911</a>
         <ul>
             <li>Refer to the <b>Suspicious Package Checklist</b> for further instructions:</li>
         </ul><br>
@@ -58,15 +58,16 @@
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
 
+  <!------911 popup------->
+  <div data-role="popup" id="911popup">
+      <div data-role="content">
+      <p style="text-align:center;font-weight:bold">      Call 911:      </p>
+      <p style="text-align:center">911</p>
+              <div style="text-align:center">
+            <a href="tel:911" data-role="button" data-inline="true">Yes</a>
+            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+              </div>
+      </div>
+  </div>
+
 </div>
-    <!------911 popup------->
-    <div data-role="popup" id="911popup">
-        <div data-role="content">
-		    <p style="text-align:center;font-weight:bold">      Call 911:      </p>
-		    <p style="text-align:center">911</p>
-                <div style="text-align:center">
-		          <a href="tel:911" data-role="button" data-inline="true">Yes</a>
-		          <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
-                </div>
-        </div>
-    </div>

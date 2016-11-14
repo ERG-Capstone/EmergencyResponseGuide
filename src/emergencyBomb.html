@@ -20,7 +20,7 @@
 
             <li>Ask a lot of questions. Use the <b>Bomb Threat Checklist</b> as a guide:</li><br/>
         </ul>
-         <a href="tel:911" data-rel="popup" data-role="button" >Call 911</a><br>
+        <a href="#callPopup" data-rel="popup" data-role="button">Call 911</a>
         <ul>
             <li>Refer to the <b>Bomb Threat Checklist</b> for further instructions:</li>
         </ul><br>
@@ -52,6 +52,15 @@
 
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
+  <div data-role="popup" id="callPopup">
+
+  <div data-role="content">
+      <p style="text-align:center">    Call 911:    </p><br>
+      <a href="tel:911" data-role="button" data-inline="true">Yes</a>
+      <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+  </div>
+
+
 
 </div>
 

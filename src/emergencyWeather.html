@@ -17,11 +17,29 @@
         <a href="#hail" data-role="button">Hail Storm</a>
         <a href="#lightning" data-role="button">Lightning</a><br><br><hr><br>
         <li style="text-align: center">For all other emergencies dial 911.</li><br>
-        <a href="tel:911" data-role="button">Call 911</a>        
+        <a href="#callPopup" data-rel="popup" data-role="button">Call 911</a>     
     </div>
+
+
+
+
+
+
+
 
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
+
+
+  <!------CALL 911 POPUP------->
+  <div data-role="popup" id="callPopup">
+
+  <div data-role="content">
+      <p style="text-align:center">    Call 911:    </p><br>
+      <a href="tel:911" data-role="button" data-inline="true">Yes</a>
+      <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+  </div>
+
         </div>
 <!------------------------------>
 <!-----earthquake(in/out)------->

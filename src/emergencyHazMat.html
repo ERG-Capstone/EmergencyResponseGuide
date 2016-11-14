@@ -43,7 +43,7 @@
           <li>Immediately evacuate the area, closing doors behind you.</li><br>
           <li>Call 911.</li>
       </ul>
-      <a href="tel:911" data-role="button">Call 911</a>
+        <a href="#callPopup" data-rel="popup" data-role="button">Call 911</a>
       <ul><br>
           <li>DO NOT attempt to clean up major spills yourself.</li><br>
           <li>Provide Materials Safety Data Sheets to response personnel.</li><br>
@@ -55,5 +55,17 @@
 
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
+
+  <!------911 popup------->
+  <div data-role="popup" id="callPopup">
+      <div data-role="content">
+      <p style="text-align:center;font-weight:bold">      Call 911:      </p>
+      <p style="text-align:center">911</p>
+              <div style="text-align:center">
+            <a href="tel:911" data-role="button" data-inline="true">Yes</a>
+            <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+              </div>
+      </div>
+  </div>
 
 </div>

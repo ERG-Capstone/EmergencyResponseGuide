@@ -1,22 +1,28 @@
 
 
-<!------------------>    
+<!------------------>
 <!------shooter----->
 <!------------------>
-    <div data-role="page"  id="">       
-    
+    <div data-role="page"  id="">
+
         <!--header-->
     {% with page_title='Active Shooter Emergency'%}
 {% include 'includes/headerBar.html' %}
 {% endwith %}
-    
+
     <div data-role="content">
     <h3 style="color:#800000;text-align: center">Active Shooter Emergency</h3><br>
+
+
+
+    <a href="#callPopup" data-rel="popup" data-role="button">Call 911</a>
+
+
         <h3 style="color:#800000;text-align: center">Run</h3><hr>
-        <Ul>  
+        <Ul>
             <li>If there is an escape path, attempt to evactuate.</li><br>
             <li>Evacuate whether others agree to or not.</li><br>
-            <li>Leave your belongings behind.</li><br>                       
+            <li>Leave your belongings behind.</li><br>
         </Ul>
         <h3 style="color:#800000;text-align: center">Hide</h3><hr>
         <ul>
@@ -29,7 +35,7 @@
                     <li>Provide protection if shots are fired in your direction</li><br>
                     <li>Do not trap or restrict your options for movement.</li><br>
                 </ul>
-            </li>            
+            </li>
         </Ul>
         <h3 style="color:#800000;text-align: center">Fight</h3><hr>
         <ul>
@@ -42,11 +48,25 @@
         <ul>
             <li>Follow instructions.</li><br>
             <li>Keep hands visible at all times.</li><br>
-            <li>Avoid pointing or yelling.</li><br>           
+            <li>Avoid pointing or yelling.</li><br>
         </Ul>
     </div>
-        
+
+
+
+
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
+
+
+    <!------CALL 911 POPUP------->
+    <div data-role="popup" id="callPopup">
+
+    <div data-role="content">
+        <p style="text-align:center">    Call 911:    </p><br>
+        <a href="tel:911" data-role="button" data-inline="true">Yes</a>
+        <a href="javascript:history.go(-1)" data-role="button" data-inline="true">No</a><br>
+    </div>
+  </div>
 
 </div>
