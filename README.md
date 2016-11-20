@@ -64,4 +64,4 @@ I made a quick guide to hopefully give you a preview of the best way to work on 
 - [Spencer Bywater](https://github.com/spencerbyw) _[(website)](http://spencerbywater.com)_
 - [Dominique Fajardo](https://github.com/dnfajard)
 - [Garett Winkler](https://github.com/garettwinkler)
-- Garrett Decker
+- [Garrett Decker](https://github.com/MeemersGSD)
