@@ -49,6 +49,22 @@ body {
   font-size: 2.75em;
 }
 
+.fancy-sq-container div {
+  height: 30vw;
+}
+
+div.fancy-square {
+  background-color: #8C1D40;
+  border-radius: 5%;
+  text-align: center;
+}
+
+.fancy-sq-container a {
+  color: #FFF !important;
+  text-decoration: none;
+  text-shadow: none;
+}
+
 /*
 ** jQuery Mobile style adjustments
 */

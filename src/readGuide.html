@@ -1,39 +1,61 @@
 
 
-<!-------------------------->    
+<!-------------------------->
 <!-------READ GUIDE--------->
 <!-------------------------->
-<div data-role="page"  id="readGuide">       
-     
+<div data-role="page"  id="readGuide">
+
     <!--header-->
     {% with page_title='ERG'%}
     {% include 'includes/headerBar.html' %}
     {% endwith %}
-    
-    <div data-role="content">
-    <h3 style="color:#800000;text-align:center">Emergency Response Guide</h3>    	        
-	   <ul data-role="listview" data-inset="true">   
-			<li><a href="aboutPage.html" data-ajax="false">About</a></li> 	   
-            <li><a href="fireGuide.html" data-ajax="false">Fire</a></li>           
-            <li><a href="floodGuide.html" data-ajax="false">Flooding</a></li>
-            <li><a href="powerGuide.html" data-ajax="false">Power Outage</a></li>
-            <li><a href="injuryGuide.html" data-ajax="false">Personal Injury</a></li>
-            <li><a href="medicalGuide.html" data-ajax="false">Medical Emergency</a></li>
-            <li><a href="accidentGuide.html" data-ajax="false">Major Accident</a></li>
-            <li><a href="hazardGuide.html" data-ajax="false">Hazardous Materials</a></li>
-            <li><a href="threatGuide.html" data-ajax="false">Personal Threat, Assault, Civil Disturbance</a></li>
-            <li><a href="evacuationGuide.html" data-ajax="false">Evacuation</a></li>
-            <li><a href="shooterGuide.html" data-ajax="false">Active Shooter</a></li>
-            <li><a href="disasterGuide.html" data-ajax="false">Natural/Weather Disaster</a></li>
-           <li><a href="radiationGuide.html" data-ajax="false">Radiation Spills</a></li>
-            <li><a href="bioGuide.html" data-ajax="false">Biological Spills</a></li>
-            <li><a href="bombGuide.html" data-ajax="false">Bomb Threat</a></li>            
-            <li><a href="packageGuide.html" data-ajax="false">Suspicious Package</a></li>        
-        </ul>		
-    </div>   
+
+    <div data-role="content center">
+      <h3 style="color:#800000;text-align:center">Emergency Response Guide</h3>
+      <div class="center fancy-sq-container">
+        <div class="col col-1 my2">&nbsp;</div>
+        <a href="aboutPage.html" data-ajax="false"><div class="col col-4 fancy-square flex items-center justify-center px2 my2">About</div></a>
+        <div class="col col-2">&nbsp;</div>
+        <a href="fireGuide.html" data-ajax="false"><div class="col col-4 fancy-square flex items-center justify-center px2 my2">Fire</div></a>
+        <div class="col col-1 my2">&nbsp;</div>
+        <div class="col col-1 my2">&nbsp;</div>
+        <a href="floodGuide.html" data-ajax="false"><div class="col col-4 fancy-square flex items-center justify-center px2 my2">Flooding</div></a>
+        <div class="col col-2">&nbsp;</div>
+        <a href="powerGuide.html" data-ajax="false"><div class="col col-4 fancy-square flex items-center justify-center px2 my2">Power Outage</div></a>
+        <div class="col col-1 my2">&nbsp;</div>
+        <div class="col col-1 my2">&nbsp;</div>
+        <a href="injuryGuide.html" data-ajax="false"><div class="col col-4 fancy-square flex items-center justify-center px2 my2">Personal Injury</div></a>
+        <div class="col col-2">&nbsp;</div>
+        <a href="medicalGuide.html" data-ajax="false"><div class="col col-4 fancy-square flex items-center justify-center px2 my2">Medical Emergency</div></a>
+        <div class="col col-1 my2">&nbsp;</div>
+        <div class="col col-1 my2">&nbsp;</div>
+        <a href="accidentGuide.html" data-ajax="false"><div class="col col-4 fancy-square flex items-center justify-center px2 my2">Major Accident</div></a>
+        <div class="col col-2">&nbsp;</div>
+        <a href="hazardGuide.html" data-ajax="false"><div class="col col-4 fancy-square flex items-center justify-center px2 my2">Hazardous Materials</div></a>
+        <div class="col col-1 my2">&nbsp;</div>
+        <div class="col col-1 my2">&nbsp;</div>
+        <a href="threatGuide.html" data-ajax="false"><div class="col col-4 fancy-square flex items-center justify-center px2 my2">Personal Threat, Assault, Civil Disturbance</div></a>
+        <div class="col col-2">&nbsp;</div>
+        <a href="evacuationGuide.html" data-ajax="false"><div class="col col-4 fancy-square flex items-center justify-center px2 my2">Evacuation</div></a>
+        <div class="col col-1 my2">&nbsp;</div>
+        <div class="col col-1 my2">&nbsp;</div>
+        <a href="shooterGuide.html" data-ajax="false"><div class="col col-4 fancy-square flex items-center justify-center px2 my2">Active Shooter</div></a>
+        <div class="col col-2">&nbsp;</div>
+        <a href="disasterGuide.html" data-ajax="false"><div class="col col-4 fancy-square flex items-center justify-center px2 my2">Natural/Weather Disaster</div></a>
+        <div class="col col-1 my2">&nbsp;</div>
+        <div class="col col-1 my2">&nbsp;</div>
+        <a href="radiationGuide.html" data-ajax="false"><div class="col col-4 fancy-square flex items-center justify-center px2 my2">Radiation Spills</div></a>
+        <div class="col col-2">&nbsp;</div>
+        <a href="bioGuide.html" data-ajax="false"><div class="col col-4 fancy-square flex items-center justify-center px2 my2">Biological Spills</div></a>
+        <div class="col col-1 my2">&nbsp;</div>
+        <div class="col col-1 my2">&nbsp;</div>
+        <a href="bombGuide.html" data-ajax="false"><div class="col col-4 fancy-square flex items-center justify-center px2 my2">Bomb Threat</div></a>
+        <div class="col col-2">&nbsp;</div>
+        <a href="packageGuide.html" data-ajax="false"><div class="col col-4 fancy-square flex items-center justify-center px2 my2">Suspicious Package</div></a>
+      </div>
+    </div>
 
     <!--footer-->
 	{% include 'includes/footerBar.html' %}
 
     </div>
-
