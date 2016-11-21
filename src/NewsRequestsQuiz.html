@@ -1,0 +1,158 @@
+    <div data-role="page"  id="quizPage">
+
+    <!--header-->
+    {% with page_title='How to Handle News Requests Quiz'%}
+    {% include 'includes/headerBar.html' %}
+    {% endwith %}
+
+    <div data-role="content">
+        <h3 style="color:#800000;text-align: center">How to Handle News Requests Quiz</h3><hr><br>
+
+<script type="text/javascript">
+
+var useranswers = new Array();
+var answered = 0;
+
+<!-----renderQuiz()---->
+<!--------------------->
+function renderQuiz() {
+
+  for(i=0;i<questions.length;i++) {
+    document.writeln('<p class="question">' + questions[i] + ' <span id="result_' + i + '"></span></p>');
+
+    for(j=0;j<choices[i].length;j++) {
+      document.writeln('<input type="radio" name="answer_' + i + '" value="' + choices[i][j] + '" id="answer_' + i + '_' + j + '" class="question_' + i + '" onclick="submitAnswer(' + i + ', this, \'question_' + i + '\', \'label_' + i + '_' + j + '\')" /><label id="label_' + i + '_' + j + '" for="answer_' + i + '_' + j + '"> ' + choices[i][j] + '</label><br />');
+    }
+  }
+  document.writeln('<hr><p><input type="submit" value="Show Score" onclick="showScore()" /> <input type="submit" value="Reset Quiz" onclick="resetQuiz(true)" /><a style="text-decoration:none" href="quizPage.html"><button>Quiz Menu</button></a></p><p style="display:none"><img src="correct.gif" style="border:0" alt="Correct!" /><img src="incorrect.gif" style="border:0" alt="Incorrect!" /></p>');
+}
+
+<!-----resetQuiz()---->
+<!--------------------->
+function resetQuiz(showConfirm) {
+  if(showConfirm)
+    if(!confirm("Are you sure you want to reset your answers and start from the beginning?"))
+      return false;
+  document.location = document.location;
+}
+
+<!-----submitAnswer()---->
+<!--------------------->
+function submitAnswer(questionId, obj, classId, labelId) {
+  useranswers[questionId] = obj.value;
+  document.getElementById(labelId).style.fontWeight = "bold";
+  disableQuestion(classId);
+  if(answers[questionId] == useranswers[questionId]) {
+    document.getElementById('result_' + questionId).style.color="green";
+    document.getElementById('result_' + questionId).style.fontSize="large";
+    document.getElementById('result_' + questionId).innerHTML = 'Correct';
+  } else {
+    document.getElementById('result_' + questionId).style.color="red";
+    document.getElementById('result_' + questionId).style.fontSize="large";
+    document.getElementById('result_' + questionId).innerHTML ="Wrong. The right answer is \"</b>"+answers[questionId]+"\"<br>";
+  }
+  answered++;
+}
+
+<!-----showScore()---->
+<!--------------------->
+function showScore() {
+
+  if(answered != answers.length) {
+    alert("You have not answered all of the questions yet!");
+    return false;
+  }
+
+  questionCount = answers.length;
+  correct = 0;
+  incorrect = 0;
+
+  for(i=0;i<questionCount;i++) {
+    if(useranswers[i] == answers[i])
+      correct++;
+    else
+      incorrect++;
+  }
+
+  pc = Math.round((correct / questionCount) * 100);
+  alertMsg = "You scored " + correct + " out of " + questionCount + "\n\n";
+  alertMsg += "You correctly answered " + pc + "% of the questions! \n\n";
+
+  if(pc < 100) {
+    if(confirm(alertMsg))
+      resetQuiz(false);
+    else
+      return false;
+  } else {
+    alert(alertMsg);
+  }
+}
+
+<!---disableQuestion()-->
+<!--------------------->
+function disableQuestion(classId) {
+  var alltags=document.all? document.all : document.getElementsByTagName("*")
+  for (i=0; i<alltags.length; i++) {
+    if (alltags[i].className == classId) {
+      alltags[i].disabled = true;
+    }
+  }
+}
+
+<!-----start()---->
+<!---------------->
+
+var questions = new Array();
+var choices = new Array();
+var answers = new Array();
+var response = new Array();
+
+questions[0] = "1) If there is an active shooter, the right order of actions is run, hide, fight";
+choices[0] = new Array();
+choices[0][0] = "True";
+choices[0][1] = "False";
+answers[0] = choices[0][0];
+
+questions[1] = "2) If there is an active shooter and you choose to run, evacuate no matter whether others agree to or not";
+choices[1] = new Array();
+choices[1][0] = "True";
+choices[1][1] = "False";
+answers[1] = choices[1][0];
+
+questions[2] = "3) If there is an active shooter and you choose to run, take all your belongings with you";
+choices[2] = new Array();
+choices[2][0] = "True";
+choices[2][1] = "False";
+answers[2] = choices[2][1];
+
+questions[3] = "4) If there is an active shooter and you choose to hide, then find a place to hide and call 911 to tell them the situation";
+choices[3] = new Array();
+choices[3][0] = "True";
+choices[3][1] = "False";
+answers[3] = choices[3][1];
+
+questions[4] = "5) If there is an active shooter and you choose to fight, you should incapacitate the shooter by any means possible";
+choices[4] = new Array();
+choices[4][0] = "True";
+choices[4][1] = "False";
+answers[4] = choices[4][0];
+
+renderQuiz();
+</script>
+</div> <!--content-->
+
+<!--footer-->
+{% include 'includes/footerBar.html' %}
+</div><!--page-->
+
+    <!------Show Score------->
+    <div data-role="popup" id="showScore">
+
+        <div data-role="content">
+
+            <p id="score" style="text-align:center"></p>
+            <div style="text-align:center">
+                <a href="javascript:history.go(-1)" data-role="button">OK</a><br>
+            </div>
+        </div>
+    </div>

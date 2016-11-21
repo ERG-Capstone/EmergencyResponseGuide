@@ -4,15 +4,33 @@
 <div data-role="page" id="threatGuide">
 
      <!--header-->
-    {% with page_title='Personal Threat'%}
+    {% with page_title='Crimes Against a Person or Property'%}
     {% include 'includes/headerBar.html' %}
     {% endwith %}
 
     <div data-role="content">
-        <h3 style="color:#800000;text-align:center">Personal Threat</h3>
+        <h3 style="color:#800000;text-align:center">Crimes Against a Person or Property</h3>
         <!--- Sub-sections (Collapsible set)------>
         <div data-role="collapsible-set" data-inset="true">
        
+            <div data-role="collapsible">
+                <h3>Crimes Against a Person</h3>
+                <ul>
+                    <li>The university has a zero-tolerance policy (SPP 814) with regard to acts of intimidation, threats of violence and acts of violence in the workplace. Visit the <a href="https://cfo.asu.edu/workplacebehavior" onClick="javascript:return openExternal(this)">violence in the workplace</a> page for more information.</li><br/>
+                </ul>
+            </div>
+            
+            <div data-role="collapsible">
+                <h3>Acts of Violence</h3>
+                <ul>
+                    <li>Flee the area to put distance between yourself and the attacker.</li><br/>
+                    <li>Call 911 and seek the safety of others.</li><br/>
+                    <li>Shelter yourself. Try to place solid items between you and the attacker.</li><br/>
+                    <li>Fight back. If possible, flee from fighting if the opportunity presents itself.</li><br/>
+                    <li>Emergency call boxes (aka Blue Light Phones) are strategically located across each ASU campus. Immediate access to your local police department can be summoned by merely pushing a button.</li><br/>
+                </ul>
+            </div>
+            
             <div data-role="collapsible">
                 <h3>Stalking</h3>
                 <ul>
@@ -50,16 +68,26 @@
                 <h3>Civil Disturbance</h3>
                 <ul>
                     <li>Civil disturbances include riots, demonstrations, threatening individuals, crimes in progress, or assemblies that have become significantly disruptive.</li><br/>
-                    <li>Call 911.</li><br/>
+                    <li>Report the situation to the ASU Police or local law enforcement agency.</li><br/>
+                    <li>Avoid the area.</li><br/>
                     <li>Avoid provoking or obstructing demonstrators.</li><br/>
                     <li>Secure your area (lock doors, safes, files, vital records, etc.).</li><br/>
-                    <li>Avoid area of disturbance.</li><br/>
                     <li>Continue with normal routines if possible.</li><br/>
                     <li>If the disturbance is outside, stay away from doors/windows. <b>STAY INSIDE!</b></li><br/>
                     <li>Prepare for evacuation or relocation.</li><br/>
-<br/>
+                    <li>Follow law enforcement instructions.</li><br/>
                 </ul>
             </div>
+            
+            <div data-role="collapsible">
+                <h3>Property Crimes</h3>
+                <ul>
+                    <li>ASU takes damage to property seriously and will promptly act to replace stolen or damaged property, remove graffiti, etc.</li><br/>
+                    <li>Criminal Damage or loss of State Property or Sponsor-Owned Equipment should be immediately reported to the ASU Police or local law enforcement agency.</li><br/>
+                    <li>Personal property, such as bikes should be registered at the site located on the contacts page.  If stolen, bikes and other personal items may be covered by your homeowner's policy, credit card insurance programs, or other non-traditional replacement programs.</li><br/>
+                </ul>
+            </div>
+            
                 <!---Contact--->
             <div data-role="collapsible">
                 <h3>Emergency Contacts</h3>
@@ -73,9 +101,9 @@
 
                 <!---Quiz--->
             <div data-role="collapsible">
-                <h3>Threat/Assault Quiz</h3>
+                <h3>Crimes Against a Person or Property Quiz</h3>
                 <div>
-                    <p>Take personal threat safety quiz:</p>
+                    <p>Take Crimes Against a Person or Property safety quiz:</p>
                     <a data-ajax = "false" href="PersonalThreatQuiz.html" data-role="button">Take Quiz</a>
                 </div>
             </div>

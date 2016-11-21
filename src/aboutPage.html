@@ -8,18 +8,18 @@
             return false;
         }
     </script>
-<!-------------------------->
-<!-----------ABOUT---------->
-<!-------------------------->
+<!--------------------------------->
+<!-----------INTRODUCTION---------->
+<!--------------------------------->
 <div data-role="page"  id="aboutPage">
 
     <!--header-->
-    {% with page_title='About'%}
+    {% with page_title='Introduction'%}
     {% include 'includes/headerBar.html' %}
     {% endwith %}
 
     <div data-role="content">
-         <h3 style="color:#800000;text-align:center">About the ERG</h3>
+         <h3 style="color:#800000;text-align:center">Introduction</h3>
         <hr><br>
         <ul>
             <li style="text-align-:center">The Emergency Response Guide is designed to assist in minimizing the negative effects from emergency events.</li><br>
@@ -32,21 +32,12 @@
 	</div>
 
     <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	       <div data-role="navbar">
-		      <ul>
-			<li><a href="alertPage.html" data-ajax="false">Alerts</a></li>
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-		      </ul>
-	       </div><!-- /navbar -->
-        </div>
+	{% include 'includes/footerBar.html' %}
 </div>
 
-<!-------------------------->
-<!--ABOUT (Preparedness)---->
-<!-------------------------->
+<!--------------------------------->
+<!--Introduction (Preparedness)---->
+<!--------------------------------->
 <div data-role="page"  id="preparednessPage">
 
     <!--header-->
@@ -89,24 +80,13 @@
             </div><br>
     </div>
     <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	       <div data-role="navbar">
-		      <ul>
-			<li><a href="alertPage.html" data-ajax="false">Alerts</a></li>
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-		      </ul>
-	       </div><!-- /navbar -->
-        </div>
+	{% include 'includes/footerBar.html' %}
 </div>
 
 
-</div>
-
-<!-------------------------->
-<!------ABOUT (Recovery)---->
-<!-------------------------->
+<!--------------------------------->
+<!------Introduction (Recovery)---->
+<!--------------------------------->
 <div data-role="page"  id="recoveryPage">
 
     <!--header-->
@@ -160,14 +140,5 @@
         </div><!--end collapsible set-->
     </div>
     <!--footer-->
-	<div data-role="footer" data-position="fixed">
-	       <div data-role="navbar">
-		      <ul>
-			<li><a href="alertPage.html" data-ajax="false">Alerts</a></li>
-            <li><a href="readGuide.html">Guide</a></li>
-			<li><a href="mapPage.html"data-ajax="false">Map</a></li>
-            <li><a href="contactPage.html">Contacts</a></li>
-		      </ul>
-	       </div><!-- /navbar -->
-        </div>
-    </div>
+    {% include 'includes/footerBar.html' %}
+</div>
