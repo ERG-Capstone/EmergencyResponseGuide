@@ -6,7 +6,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "blankproject",
       "projectGuid": "f3e55f4e-e28f-4480-8bce-7bb830584025",
-      "lastModifiedDate": 1477933475190,
+      "lastModifiedDate": 1479758204760,
       "creationDate": 1417663282079
     },
     "sourceDirectory": "www",
@@ -308,7 +308,32 @@
           "navigation": [],
           "properties": {}
         },
-        "icons_": [],
+        "icons_": [
+          {
+            "density": "xhdpi",
+            "relPath": "package-assets/app_logo96.png",
+            "width": 96,
+            "height": 96
+          },
+          {
+            "density": "hdpi",
+            "relPath": "package-assets/app_logo72.png",
+            "width": 72,
+            "height": 72
+          },
+          {
+            "density": "mdpi",
+            "relPath": "package-assets/app_logo48.png",
+            "width": 48,
+            "height": 48
+          },
+          {
+            "density": "ldpi",
+            "relPath": "package-assets/app_logo36.png",
+            "width": 36,
+            "height": 36
+          }
+        ],
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
@@ -340,7 +365,13 @@
           "navigation": [],
           "properties": {}
         },
-        "icons_": [],
+        "icons_": [
+          {
+            "relPath": "package-assets/app_logo72.png",
+            "width": 72,
+            "height": 72
+          }
+        ],
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
